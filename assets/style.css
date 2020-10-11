@@ -292,3 +292,55 @@ li {
 /* .me-social:hover {
   cursor: pointer;
 } */
+
+.footer {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: transparent;
+}
+
+.footer-text {
+  font-family: 'Moon 2.0 Regular';
+  color: silver;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+}
+
+.footer-social {
+  width: 7%;
+  padding: 1%;
+}
+
+.scroll-to-top {
+  position: fixed;
+  left: 0px;
+  top: auto;
+  right: 0px;
+  bottom: 0px;
+  z-index: 5;
+  display: block;
+  overflow: visible;
+  height: 100px;
+  margin: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  float: right;
+  padding-right: 2%;
+}
+
+.scroll-arrow {
+  opacity: 1;
+  float: right;
+}
+
+.arrowup {
+  opacity: 0.4;
+  width: 25%;
+  float: right;
+}
+
+.scroll-arrow :hover {
+  opacity: 1;
+}

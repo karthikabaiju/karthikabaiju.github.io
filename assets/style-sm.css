@@ -35,6 +35,10 @@
     top: 50%;
   }
 
+  /* .scroll-to-top {
+    display: none !important;
+  } */
+
   /* .art-column {
     -ms-flex: 100%;
     flex: 100%;
