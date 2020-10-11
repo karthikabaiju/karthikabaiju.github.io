@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/style-sm.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<title>Claire App Design by Karthika</title>
+<meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body>
+    <!-- Navigation Bar   -->
+    <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
+  <a class="navbar-brand" href="#"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/">Design</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/art.html">Art</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/me.html">Me</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="assets/resume/Karthika_Resume.pdf" target="_blank">Resume</a>
+      </li>
+    </ul>
+  </div>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  </button>
+</nav>
+
+<script>
+  // Scroll setting
+  $(document).scroll(function () {
+    const nav = $(".navbar");
+    nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+  });
+
+  // Active tab setting
+  $(document).ready(function () {
+    let currentLink = window.location.href.split(/\//);
+    currentLink = currentLink[currentLink.length-1];
+    if (!currentLink){
+      currentLink = "Design"; //Default home page
+    }
+    $("ul.navbar-nav > li.nav-item").each(function() {
+      $(this).toggleClass('active', currentLink.toUpperCase().includes($(this).text().trim().toUpperCase()));
+    });
+  });
+</script>
+ 
+<!-- Introduction -->
+<section>
+  <div class="content-padding content-header" style="text-align: center">Personal Project - 2020</div>
+  <div class="row content-padding">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img class="project-header-image" src="../assets/images/claire/ClaireThumbnail.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="content-padding">
+        <p class="content-header">Who are they?</p>
+        <p class="content-body">
+          Claire is the poster child of fun, sophisticated and instagrammable styles that target the new “online”
+          generation. Their boutiques have become a huge hit but they want to keep up with their customers who are used
+          to having everything literally at their fingertip.
+        </p>
+      </div>
+
+      <div class="content-padding">
+        <p class="content-header">My Role</p>
+        <p class="content-body">Entire product design from research to conception, visualization and testing</p>
+      </div>
+      <div class="content-padding">
+        <p class="content-header">Timeline</p>
+        <p class="content-body">June 2020; 8 weeks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Video -->
+<section>
+  <!-- <div><img class="project-header-image" src="../assets/images/claire/appGif.gif" /></div> -->
+  <div>
+    <video class="project-header-image" controls>
+      <source src="../assets/images/claire/Claire.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+<!-- Challenge -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">The Challenge</p>
+    <p class="content-body">
+      Design Claire’s online journey. They want an app that makes online shopping easy and exciting for the user. The
+      new moto of Claire is FFE (Fun, Fast and Easy) and they want an app that translates that. The main challenge is to
+      create an online store for Claire that makes shopping quick and easy.
+    </p>
+  </div>
+</section>
+
+<!-- The Goal -->
+<section>
+  <div class="content-padding"><p class="content-header">The Goal</p></div>
+  <div class="row content-padding" style="padding-top: 1%">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img src="../assets/images/claire/Goal.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <p class="content-body">
+        The main goal was to move the shopping experience online. Claire wanted to focus on their long-term goals; They
+        are known for their quick and easy shopping experience and they wanted that experience translated into their
+        online shopping app.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- User Research -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">User Research & Insights</p>
+    <p class="content-body">
+      With the company goal and assumptions in mind, I conducted interviews with online shoppers and boutique shoppers
+      in the age range of 16 - 35 to get an idea of what they would expect from a shopping app. From the response, I
+      created an experience map stating the main functionalities as well as the main goals and expectations that the
+      users have. From this, I get to understand the main interview insights and compare it with the company goal.
+    </p>
+    <img style="padding-top: 5%" src="../assets/images/claire/ExperienceMap.svg" />
+    <div class="row insights-row">
+      <div class="col-md-7 insights">
+        <p>
+          Users didn’t want to be compelled to create an account in the app just to purchase. They all love a “Guest”
+          option.
+        </p>
+        <p class="content-quote">“I don’t want to create an account for one-time shopping”</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-5">&nbsp;</div>
+      <div class="col-md-7 insights">
+        <p>Everyone wanted a good categorization of the catalogs.</p>
+        <p class="content-quote">“Good categorization of stuff so I can find things easily”</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-7 insights">
+        <p>
+          A set of people come to the app with a specific sort of dress in mind. They then mostly have to filter out or
+          browse till they find that. They wanted an easy way to find a specific kind of dress they had in mind.
+        </p>
+        <p class="content-quote">“I usually go to the app to buy things and not browse things”</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-5">&nbsp;</div>
+      <div class="col-md-7 insights">
+        <p>
+          Many stated that they always had problems with the size of the dress. Since they could not try on the dress
+          and the same size number means different things for different brands, many had to return dresses as the dress
+          didn’t fit them.
+        </p>
+        <p class="content-quote">
+          <img src="../assets/images/user.svg" class="insights-icon" />“Good size conversion, small in one brand does
+          not mean the same in another”
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">The Map</p>
+    <img style="padding-top: 5%" src="../assets/images/claire/Map.svg" />
+    <p class="content-body">
+      While defining the map that includes the steps required for customers to move from beginning to completion, I
+      identified the major 2 paths for the actors (Customer) to reach their goal of getting a new dress. Creating the
+      map helped me to visualize how the customer is going to move through the service and to narrow down the broad
+      target to specific targets that I can focus on solving. Discussing and refining the map gave me 4 touchpoints that
+      I can focus on.
+    </p>
+  </div>
+  <div class="subcontent content-body">
+    <p>
+      <b>Quick browse through the app:</b> users have an interface to quickly and easily browse through the options they
+      have.
+    </p>
+    <br />
+    <p><b>Find dress & size:</b> the user should be able to find the dress they have in mind and the correct size.</p>
+    <br />
+    <p><b>Take a picture of a dress to find similar: </b>Find out if the same dress or a similar dress is available.</p>
+    <br />
+    <p>
+      <b>Buy online:</b> Online buying and delivering like any other e-commerce site. Reliable and easy couch shopping.
+    </p>
+  </div>
+  <div>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/TouchPoints.svg" />
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/MapAndTargets.svg" />
+  </div>
+</section>
+
+<!-- Personas -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">Personas</p>
+    <p class="content-body">
+      From this study, I could further segment the main users into 2 groups: users who can afford to spend time browsing
+      through the shop catalog and those who come to the shop for a specific goal.
+    </p>
+  </div>
+  <div class="row content-padding" style="padding-top: 1%">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img style="padding-top: 5%" src="../assets/images/claire/Nicole.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img style="padding-top: 5%" src="../assets/images/claire/Mell.svg" />
+    </div>
+  </div>
+</section>
+
+<!-- Wireframe -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
+    <p class="content-body">
+      Using the insights I gathered from the research, I began creating user flows. I started creating the information
+      architecture and low-fi concepts for primary use cases.
+    </p>
+    <p class="content-body">
+      I did a quick session with the user to see if the information architecture for the online shopping app made sense
+      to them.
+    </p>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/InfoArch.png" />
+    <p class="content-body" style="padding-top: 5%">
+      With low-fidelity sketched wireframe, the general structure of the application could easily be tested in usability
+      tests. Without much effort, adjustments could be made before going into the much more costly digital
+      implementation.
+    </p>
+    <img style="padding-top: 5%" src="../assets/images/claire/SketchPrototype.svg" />
+    <p class="content-body">
+      After some adjustments on the sketched wireframe, a clickable prototype was created in Figma. Again, user tests
+      revealed small vulnerabilities in the structure of the user interface, in some formulations and interactions.
+      Along the way, the users gave some awesome suggestions and asked some questions that we had not thought about,
+      which helped to enhance the prototype.
+    </p>
+    <img style="padding-top: 5%" src="../assets/images/claire/Prototype.svg" />
+  </div>
+</section>
+
+<!-- My Learnings -->
+<section>
+  <div class="content-padding" style="padding-top: 0%">
+    <p class="content-header">My Learnings</p>
+    <ol class="content-body">
+      <li>
+        <b>Design is all about solving a problem:</b> I got to learn that design is not about the UI, it’s about the
+        problem that you are solving for the users.
+      </li>
+      <li>
+        <b>Always start with a long term goal:</b> The long term goal of the solution gives you an idea about how to
+        approach the interview questions. If unsure of how to start a new project, the first step can be noting down the
+        long term goal you want to achieve through your solution.
+        <br />
+      </li>
+      <li>
+        <b>The Map is my new best friend:</b> It can be frustrating to figure out where to proceed once you have talked
+        to the users. I found that making a map about how the actor (user) reaches the goal helps to get an idea about
+        the user flow and the points I need to focus on.
+      </li>
+      <li>
+        <b>A sketch is worth more than a prototype:</b> I made the mistake of jumping directly into the high fidelity
+        prototype in the beginning. When doing a usability test with that, everything went downhills. Then I had to
+        start over with the design process. This made me realize that usability testing with a sketch is easier, gives
+        more insights and saves a lot of time in the long run.
+      </li>
+      <li>
+        <b>Your first idea is never your best idea:</b>
+        Learn to let go of ideas as new insights and user feedbacks comes along.
+      </li>
+    </ol>
+  </div>
+</section>
+
+<script></script>
+
+  </body>
+</html>

@@ -1,0 +1,294 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  float: right;
+}
+
+a.nav-link {
+  font-family: 'Moon 2.0 Light';
+  font-size: 1.5em;
+  color: black;
+}
+
+.nav-item {
+  min-width: 8vw;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.nav-item.large-nav:hover,
+.nav-item.large-nav.active {
+  border-bottom: solid 2px black;
+}
+
+.navbar.scrolled {
+  background-color: #fff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: background-color 200ms linear;
+  transition: box-shadow 200ms linear;
+}
+
+.logo {
+  margin-left: 40%;
+  margin-top: 20%;
+  width: 60%;
+}
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(0deg, #ffffff 50%, #f6efe7 50%);
+}
+
+#hero > div > div {
+  height: 100vh;
+}
+
+.center-content {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro {
+  font-family: 'Moon 2.0 Regular';
+  font-size: 3.5rem;
+  line-height: 1.5em;
+}
+
+.intro-link,
+h1,
+p {
+  color: #5f4e4e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5f4e4e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.intro-container {
+  padding: 2vw;
+  width: 80%;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.yellow-highlight {
+  background-image: radial-gradient(left, #e3e1a6 0%, #e3e1a6 100%);
+  background-image: -webkit-radial-gradient(left, #e3e1a6 0%, #e3e1a6 100%);
+  background-image: -moz-radial-gradient(left, #e3e1a6 0%, #e3e1a6 100%);
+  background-image: -ms-radial-gradient(left, #e3e1a6 0%, #e3e1a6 100%);
+  background-image: -o-radial-gradient(left, #e3e1a6 0%, #e3e1a6 100%);
+  border-radius: 50px;
+  transform: rotate(-10deg);
+}
+
+.yellow-highlight-text {
+  transform: rotate(10deg);
+}
+
+.brown-highlight {
+  background-image: radial-gradient(left, #e3b8a6 0%, #e3b8a6 100%);
+  background-image: -webkit-radial-gradient(left, #e3b8a6 0%, #e3b8a6 100%);
+  background-image: -moz-radial-gradient(left, #e3b8a6 0%, #e3b8a6 100%);
+  background-image: -ms-radial-gradient(left, #e3b8a6 0%, #e3e1a6 100%);
+  background-image: -o-radial-gradient(left, #e3b8a6 0%, #e3b8a6 100%);
+  border-radius: 50px;
+  transform: rotate(10deg);
+}
+
+.brown-highlight-text {
+  transform: rotate(-10deg);
+}
+
+#hero-img-content {
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+}
+
+.designContentPadding {
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.designContentHeading {
+  padding-top: 2%;
+  font-family: 'Moon 2.0 Regular';
+  font-size: 3em;
+}
+
+.designContentBody {
+  padding-top: 5%;
+  font-family: 'Moon 2.0 Regular';
+  font-size: 1.2em;
+}
+
+.designContentRead {
+  padding-top: 2%;
+  font-family: 'Moon 2.0 Regular';
+  color: #a19595;
+  font-size: 1em;
+}
+
+.content-header {
+  font-family: 'Moon 2.0 light';
+  color: #5f4e4e;
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+.content-body {
+  font-family: 'Moon 2.0 Regular';
+  font-weight: normal;
+  font-size: 1.3em;
+  /* or 160% */
+  text-align: justify;
+  letter-spacing: 0.02em;
+  color: #5f4e4e;
+}
+
+.content-quote {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  /* or 107% */
+  letter-spacing: 0.05em;
+  color: #7a7474;
+}
+
+.project-header-image {
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.content-padding {
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.subcontent {
+  padding-top: 2%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+li {
+  margin-top: 5%;
+}
+
+/* For Art */
+/* Create four equal columns that sits next to each other */
+.art-column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.art-column img {
+  margin-top: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.art-page-padding {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.insights {
+  background: rgba(232, 224, 224, 0.5);
+  padding: 5%;
+  text-align: center;
+}
+
+.insights-row {
+  padding-top: 2%;
+}
+
+.insights-icon {
+  width: 4%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.me-hello {
+  font-family: 'Moon 2.0 Light';
+  font-style: normal;
+  font-size: 30px;
+  /* or 100% */
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  /* P Project Colors */
+  color: #5f4e4e;
+}
+
+.me-email {
+  font-family: 'Moon 2.0 Light';
+  color: #5f4e4e;
+  letter-spacing: 0.05em;
+}
+
+.me-social {
+  width: 10%;
+  padding: 2%;
+}
+
+/* .me-social:hover {
+  cursor: pointer;
+} */
