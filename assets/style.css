@@ -30,6 +30,10 @@ a.nav-link {
   transition: box-shadow 200ms linear;
 }
 
+/* .header-margin {
+  margin-right: 0px;
+} */
+
 .logo {
   margin-left: 40%;
   margin-top: 20%;
@@ -43,6 +47,10 @@ a.nav-link {
 
 #hero > div > div {
   height: 100vh;
+}
+
+.cartoon {
+  max-height: 75vh;
 }
 
 .center-content {
@@ -136,6 +144,7 @@ img {
   padding-top: 5%;
   font-family: 'Moon 2.0 Regular';
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .designContentRead {

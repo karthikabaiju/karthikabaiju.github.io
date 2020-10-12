@@ -22,7 +22,7 @@
   }
 
   #hero-txt-content {
-    background-image: url('../images/hero-bg.jpg');
+    background-image: url('../assets/images/hero-bg.jpg');
     background-size: 105vw;
   }
 
@@ -31,19 +31,68 @@
     margin-top: 10%;
     width: 40%;
   }
+
   .center-content {
     top: 50%;
   }
 
-  /* .scroll-to-top {
-    display: none !important;
-  } */
+  .intro {
+    font-size: 2rem;
+  }
 
-  /* .art-column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  } */
+  .cartoon {
+    max-height: 75vh;
+    width: 80%;
+  }
+
+  .content-header {
+    font-size: 1.5em;
+  }
+
+  .content-body {
+    font-size: 1em;
+  }
+
+  .content-padding {
+    padding-top: 15%;
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+
+  .subcontent {
+    padding-left: 12%;
+    padding-right: 10%;
+  }
+
+  .designContentHeading {
+    font-size: 2.5em;
+  }
+
+  .designContentBody {
+    font-size: 1em;
+  }
+
+  .designContentRead {
+    font-size: 0.8em;
+  }
+
+  .designContentPadding {
+    padding-top: 30%;
+  }
+
+  .scroll-arrow {
+    padding-right: 2%;
+  }
+
+  .art-column {
+    padding-top: 15%;
+    padding-left: 5%;
+  }
+
+  .arrowup {
+    opacity: 0.8;
+    background: white;
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
