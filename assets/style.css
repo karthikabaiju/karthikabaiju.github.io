@@ -294,8 +294,8 @@ li {
 }
 
 .me-social {
-  width: 10%;
-  padding: 2%;
+  width: 12%;
+  padding-right: 5%;
 }
 
 /* .me-social:hover {
@@ -319,12 +319,11 @@ li {
 
 .footer-social {
   width: 7%;
-  padding: 1%;
+  padding-left: 3%;
 }
 
 .scroll-to-top {
   position: fixed;
-  left: 0px;
   top: auto;
   right: 0px;
   bottom: 0px;
@@ -337,6 +336,8 @@ li {
   padding-bottom: auto;
   float: right;
   padding-right: 2%;
+  width: 20%;
+  left: 80%;
 }
 
 .scroll-arrow {

@@ -93,6 +93,22 @@
     opacity: 0.8;
     background: white;
   }
+
+  .me-social {
+    width: 15%;
+    padding-right: 7%;
+    display: none;
+  }
+
+  .me-social-text {
+    display: none;
+  }
+
+  .footer-social {
+    width: 15%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
