@@ -92,7 +92,7 @@
       currentLink = "Design"; //Default home page
     }
     $("ul.navbar-nav > li.nav-item").each(function() {
-      $(this).toggleClass('active', currentLink.toUpperCase().includes($(this).text().trim().toUpperCase()));
+      $(this).toggleClass('active', currentLink.toUpperCase() == $(this).text().trim().toUpperCase());
     });
   });
 </script>
