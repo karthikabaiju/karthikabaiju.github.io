@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/style-sm.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<title>Mentoring App Design by Karthika</title>
+<meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body>
+    <!-- Navigation Bar   -->
+    <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
+  <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/">Design</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/art.html">Art</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="/me.html">Me</a>
+      </li>
+      <li class="nav-item large-nav">
+        <a class="nav-link" href="assets/resume/Karthika_Resume.pdf" target="_blank">Resume</a>
+      </li>
+    </ul>
+  </div>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  </button>
+</nav>
+
+<script>
+  // Scroll setting
+  $(document).scroll(function () {
+    const nav = $(".navbar");
+    nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+  });
+
+  // Active tab setting
+  $(document).ready(function () {
+    let currentLink = window.location.href.split(/\//);
+    currentLink = currentLink[currentLink.length-1];
+    if (!currentLink){
+      currentLink = "Design"; //Default home page
+    }
+    $("ul.navbar-nav > li.nav-item").each(function() {
+      $(this).toggleClass('active', currentLink.toUpperCase().includes($(this).text().trim().toUpperCase()));
+    });
+  });
+</script>
+ 
+<!-- Introduction -->
+<section>
+  <div class="content-padding content-header" style="text-align: center"><p>Team Project - 2020</p><p style="font-family: 'Moon 2.0 Regular';">Mentoring App</p></div>
+  <div class="row content-padding">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img class="project-header-image" src="../assets/images/mentoring_app/MentoringApp.svg" style="width:100%; padding-left: 1%; padding-right: 1%;"/>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="content-padding">
+        <p class="content-header">My Role</p>
+        <p class="content-body">Researcher, Designer and Developer</p>
+      </div>
+      <div class="content-padding">
+        <p class="content-header">Timeline</p>
+        <p class="content-body">September 2020; 5 weeks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Video -->
+<section>
+  <!-- <div><img class="project-header-image" src="../assets/images/claire/appGif.gif" /></div> -->
+  <div>
+    <video class="project-header-image" controls>
+      <source src="../assets/images/mentoring_app/FigmaPrototype.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+<!-- Challenge -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">The Challenge</p>
+    <p class="content-body">
+      When I had joined as a new hire 2 years ago, one of the main issues I faced was that I didn't have a mentor. Since I was new to Microsoft, 
+      I didn't know many people or how to approach people for mentorship. I have faced the same challenge as I started learning UX. 
+      Finding a mentor inside the organization who can help me was difficult. When my team came up with the idea of creating a mentoring app that allows you to find a mentor, 
+      I was more than happy to join the team and start on the problem.  
+    </p>
+  </div>
+</section>
+
+<!-- The Goal -->
+<section>
+  <div class="content-padding"><p class="content-header">The Goal</p></div>
+  <div class="row content-padding" style="padding-top: 1%">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img src="../assets/images/mentoring_app/Goals.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <p class="content-body">
+        When talking to other people in the organization, I came to realize that I was not the only person facing the challenges of finding a mentor. 
+        And more challenges the people were having on this topic came to light as well. After discussions and brainstorming within the team, we were able to recognize 
+        4 major goals for this project.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- User Research -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">User Research & Insights</p>
+    <p class="content-body">
+      I conducted user interviews with employees who were new hires, learning a new skill and looking for a role change. 
+      Talking to them made me realize that finding the correct mentor was only half of the problem, the other issues that they faces were that they were not able to 
+      keep the mentoring session properly arranged, see the progress, find a mentor that they had proper rapport with, reaching out to more people and so on. 
+      From the user interview I was able to create an experience map and categorize them into 3 main scenarios:   
+    </p>
+    <ol class="content-body" style="padding-left: 15%;">
+      <li>Finding a mentor</li>
+      <li>Organizing mentoring session</li>
+      <li>Experimental 1:1 session before long term commitment</li>
+    </ol>
+    <img style="padding-top: 5%" src="../assets/images/mentoring_app/ExperienceMap.svg" />
+    <div class="row insights-row">
+      <div class="col-md-7 insights">
+        <p>
+          The most consistent opinion was on finding a mentor that would be able to mentor you in your area of interest. Easy of finding such a mentor was the top request.
+        </p>
+        <p class="content-quote">"If I am a PM looking for a design mentor, better to have a PM with design skills so they can help me in knowing how much design knowledge I would need"</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-5">&nbsp;</div>
+      <div class="col-md-7 insights">
+        <p>Role-based mentorship was also something people were interested in. If they are looking for a role change or want to know the future of their role, 
+          they want someone who went through that journey to mentor them.</p>
+        <p class="content-quote">"If I am changing my role, i need a mentor who went through the same transition"</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-7 insights">
+        <p>
+          Everyone wanted to choose their mentors and not have it auto-assigned or chosen for them. They want to know about the mentor, 
+          what they are offering in the mentorship and their available time before they decide on a mentor.
+        </p>
+        <p class="content-quote">"Prefer to have a choice. In case I don't know who to choose, then auto-assign"</p>
+        <p class="content-quote">"Scheduling the timing that works for both mentor and mentee"</p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-5">&nbsp;</div>
+      <div class="col-md-7 insights">
+        <p>
+          They want a place where they can easily access their mentorship status and organize resources and conversations. A dedicated place of collaboration with the mentor.
+        </p>
+        <p class="content-quote">
+          "See my mentorship status and activities at a single place"
+        </p>
+      </div>
+    </div>
+    <div class="row insights-row">
+      <div class="col-md-7 insights">
+        <p>
+          Users wanted to ensure that they have a good rapport with the mentor, So they want the option to either continue or terminate the mentorship after the first meeting.
+        </p>
+        <p class="content-quote">
+          "Trial talk to understand if the mentor is on the same page as a mentee"
+        </p>
+        <p class="content-quote">
+          "Ensure that the first meeting scheduled between the mentor and mentee occurs"
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">The Map</p>
+    <img style="padding-top: 5%" src="../assets/images/mentoring_app/Map.svg" />
+    <p class="content-body">
+      After the user interview, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
+      how the steps were going to look for the mentor, mentee and the system. We focused on the flow for getting everything ready and having the first 1:1 mentoring session with 
+      a new mentor. We were able to identify the major touchpoints of the user flow. 
+    </p>
+  </div>
+  <div class="subcontent content-body">
+    <p>
+      <b>Recommendations:</b> Get a mentor recommendation for available mentors for the topic they selected. 
+    </p>
+    <br />
+    <p><b>The mentee should have the option to state their preference on who they would like to be their mentor:</b> 
+      Request gets sends to the mentor.</p>
+    <br />
+    <p><b>The connection created: </b>If the mentor feels that they will be able to help the mentee, then they will accept the request. 
+      A dedicated channel is created for this mentor-mentee collaboration.</p>
+    <br />
+    <p>
+      <b>First meeting:</b> The first meeting is automatically scheduled and set up.
+    </p>
+    <p>
+      <b>Option to reject/accept the mentorship for further advancements:</b> 
+      Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. If they accept the request, then the long term schedule will be set up.
+    </p>
+  </div>
+  <div>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Touchpoints.svg" />
+  </div>
+</section>
+
+<!-- Personas -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">Personas</p>
+    <p class="content-body">
+      Discussion more on the user research, we were able to identify 3 personas for whom we wanted to focus on and sketched them out.
+    </p>
+    <ol class="content-body" style="padding-left: 15%;">
+      <li>Users who are new hires, </li>
+      <li>Users who want to learn a new skill,</li>
+      <li> Users who are going for a career role transition.</li>
+    </ol>
+  </div>
+  <div class="row content-padding" style="padding-top: 1%">
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Ananya.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Syed.svg" />
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Sarah.svg" />
+    </div>
+  </div>
+</section>
+
+<!-- Wireframe -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
+    <p class="content-body">
+      We iterated through multiple versions of the app before finally settling on one to create a PowerApps prototype. Each usability test provided insights, 
+      corners and cases that we had missed. We iterated through 3 versions of sketches, a sketch wireframe for low fidelity, 
+      low fidelity prototype and finally the high fidelity Figma prototype.
+    </p>
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 1 - Sketch</b>
+    </p>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch1.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 2 - Sketch</b>
+    </p>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Sketch2.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 3 - Sketch</b>
+    </p>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch3.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 4 - Wireframe</b>
+    </p>
+    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Wireframe.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 5 - Low fidelity prototype</b>
+    </p>
+    <video class="project-header-image" controls>
+      <source src="../assets/images/mentoring_app/SketchPrototype.mp4" type="video/mp4" />
+    </video>
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 6 - Sketch</b>
+    </p>
+    <video class="project-header-image" controls>
+      <source src="../assets/images/mentoring_app/FigmaPrototype.mp4" type="video/mp4" />
+    </video>
+    
+  </div>
+</section> 
+
+<!-- Going forward -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">Going Forward</p>
+    <p class="content-body">We have moved onto the development phase of this solution integrating Microsoft Teams and Power Platform. 
+      We are planning on getting the development done and moving it as a default team available in teams for all employees in the organization</p>
+  </div>
+</section>
+
+
+<!-- My Learnings -->
+<section>
+  <div class="content-padding">
+    <p class="content-header">My Learnings</p>
+    <ol class="content-body">
+      <li>
+        <b>Iteration makes things better:</b> The solution gets better with each iteration that you run.
+        Your solution will go from "this won't work" to "when can I start using it" with each iteration with the user.  
+      </li>
+      <li>
+        <b>Sketch prototype is as good as Figma: </b> Having multiple sketch prototypes allows you to go through different solutions fast and easily. 
+        You won't feel bad about changing the whole layout when things are in the sketch.
+        <br />
+      </li>
+      <li>
+        <b>Breakthrough suggestions on technology can come from the user as well:</b> 
+        We were planning on going with an app for this, then a user suggested that we can have most of the function within Microsoft Teams. 
+        Teams already most of the functionality that we were trying to create and we do not have to build from scratch. 
+      </li>
+    </ol>
+  </div>
+</section>
+
+<script></script>
+
+    <!-- Footer -->
+    <div class="footer row">
+    <div class="row col-md-6 col-sm-12">
+        <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
+        ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
+      /></a>
+        <a href="https://www.linkedin.com/in/karthikabaiju/" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/linkedin.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://medium.com/@karthikabaiju.mec" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/github.svg" style="width: 100%" alt=""
+        /></a>
+    </div>
+    <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
+    <div class="scroll-to-top">
+        <a href="#top" class="scroll-arrow" data-ix="opacity-on-hover">
+            <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
+        </a>
+    </div>
+</div>
+
+  
+  </body>
+</html>
