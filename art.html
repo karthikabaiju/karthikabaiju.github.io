@@ -80,7 +80,6 @@
 </div> 
 
 <script>
-
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -99,11 +98,14 @@ function myFunction() {
   $(document).ready(function () {
     let currentLink = window.location.href.split(/\//);
     currentLink = currentLink[currentLink.length-1];
+    currentLink = currentLink.split('.');
+    currentPage = currentLink[0];
     if (!currentLink){
       currentLink = "Design"; //Default home page
+      console.log("Design");
     }
     $("ul.navbar-nav > li.nav-item").each(function() {
-      $(this).toggleClass('active', currentLink.toUpperCase() == $(this).text().trim().toUpperCase());
+      $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
     });
   });
 </script>
