@@ -53,6 +53,7 @@
   </head>
 
   <body>
+    
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
   <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
@@ -99,18 +100,22 @@ function myFunction() {
   $(document).ready(function () {
     let currentLink = window.location.href.split(/\//);
     currentLink = currentLink[currentLink.length-1];
-    currentLink = currentLink.split('.');
-    currentPage = currentLink[0];
     if (!currentLink){
-      currentLink = "Design"; //Default home page
+      currentPage = "Design"; //Default home page
       console.log("Design");
     }
+    else {
+      currentLink = currentLink.split('.');
+      currentPage = currentLink[0];
+    }
     $("ul.navbar-nav > li.nav-item").each(function() {
-      $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
-    });
+        $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
+      });
+    
   });
 </script>
  
+    
 <!-- Introduction -->
 <section>
   <div class="content-padding content-header" style="text-align: center">
@@ -119,7 +124,7 @@ function myFunction() {
   </div>
   <div class="row content-padding">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img class="project-header-image" src="../assets/images/claire/ClaireThumbnail.svg" />
+      <img class="project-header-image imageModal" src="../assets/images/claire/ClaireThumbnail.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="content-padding">
@@ -169,7 +174,7 @@ function myFunction() {
   <div class="content-padding"><p class="content-header">The Goal</p></div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img src="../assets/images/claire/Goal.svg" />
+      <img class="imageModal" src="../assets/images/claire/Goal.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
       <p class="content-body">
@@ -191,7 +196,7 @@ function myFunction() {
       created an experience map stating the main functionalities, goals and expectations that the
       users have. From this I derived the main interview insights and compared it with the company goal.
     </p>
-    <img style="padding-top: 5%" src="../assets/images/claire/ExperienceMap.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/ExperienceMap.svg" />
     <div class="row insights-row">
       <div class="col-md-7 insights">
         <p>
@@ -226,8 +231,7 @@ function myFunction() {
           times to check which corresponds to their size
         </p>
         <p class="content-quote">
-          <img src="../assets/images/user.svg" class="insights-icon" />"Good size conversion, small in one brand does
-          not mean the same in another"
+          "Good size conversion, small in one brand does not mean the same in another"
         </p>
       </div>
     </div>
@@ -238,7 +242,7 @@ function myFunction() {
 <section>
   <div class="content-padding">
     <p class="content-header">The Map</p>
-    <img style="padding-top: 5%" src="../assets/images/claire/Map.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Map.svg" />
     <p class="content-body">
       While defining the map with the steps for customers to complete a shopping task, I
       identified 2 major paths for the actors (Customer) to reach their goal of getting a new dress. Creating this
@@ -261,8 +265,8 @@ function myFunction() {
     </p>
   </div>
   <div>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/TouchPoints.svg" />
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/MapAndTargets.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/TouchPoints.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/MapAndTargets.svg" />
   </div>
 </section>
 
@@ -277,10 +281,10 @@ function myFunction() {
   </div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img style="padding-top: 5%" src="../assets/images/claire/Nicole.svg" />
+      <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Nicole.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img style="padding-top: 5%" src="../assets/images/claire/Mell.svg" />
+      <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Mell.svg" />
     </div>
   </div>
 </section>
@@ -297,19 +301,19 @@ function myFunction() {
       I did a quick session with the users to see if the information architecture for the online shopping app made sense
       to them.
     </p>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/claire/InfoArch.png" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/InfoArch.png" />
     <p class="content-body" style="padding-top: 5%">
       With low-fidelity wireframe sketches, the general structure of the application could easily be tested in usability
       tests. Without much effort, adjustments could be made before starting the costlier digital implementation.
     </p>
-    <img style="padding-top: 5%" src="../assets/images/claire/SketchPrototype.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/SketchPrototype.svg" />
     <p class="content-body">
       After some adjustments on the sketched wireframe, a clickable prototype was created in Figma. Again, user tests
       revealed small vulnerabilities in the structure of the user interface, in some formulations and interactions.
       Along the way, the users gave some awesome suggestions and asked some questions that we had not thought about,
       which helped to enhance the prototype.
     </p>
-    <img style="padding-top: 5%" src="../assets/images/claire/Prototype.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Prototype.svg" />
   </div>
 </section>
 
@@ -349,6 +353,42 @@ function myFunction() {
 
 <script></script>
 
+
+    <!-- Modal Image -->
+    
+<!-- The Modal -->
+<div id="Model" class="modal">
+  <span id ="close" class="close">&times;</span>
+  <img class="modal-content" id="divImg">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+  $('.imageModal').click(function (){
+    // Get the modal
+    let img = $(this);
+    console.log(img);
+    let imgId = img.id;
+    let modal = document.getElementById(`Model`);
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let modalImg = document.getElementById(`divImg`);
+    let captionText = document.getElementById(`caption`);
+
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    var span = document.getElementById("close");
+    span.onclick = function() { 
+    modal.style.display = "none";}
+
+  }) 
+
+</script>
+
+    
     <!-- Footer -->
     <div class="footer row">
     <div class="row col-md-6 col-sm-12">
@@ -370,7 +410,7 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="#top" class="scroll-arrow" data-ix="opacity-on-hover">
+        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
             <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
         </a>
     </div>

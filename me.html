@@ -51,6 +51,7 @@
   </head>
 
   <body>
+    
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
   <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
@@ -97,18 +98,22 @@ function myFunction() {
   $(document).ready(function () {
     let currentLink = window.location.href.split(/\//);
     currentLink = currentLink[currentLink.length-1];
-    currentLink = currentLink.split('.');
-    currentPage = currentLink[0];
     if (!currentLink){
-      currentLink = "Design"; //Default home page
+      currentPage = "Design"; //Default home page
       console.log("Design");
     }
+    else {
+      currentLink = currentLink.split('.');
+      currentPage = currentLink[0];
+    }
     $("ul.navbar-nav > li.nav-item").each(function() {
-      $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
-    });
+        $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
+      });
+    
   });
 </script>
  
+    
 
 <section>
   <div class="row designContentPadding">
@@ -168,6 +173,42 @@ function myFunction() {
 </section>
 
 
+
+    <!-- Modal Image -->
+    
+<!-- The Modal -->
+<div id="Model" class="modal">
+  <span id ="close" class="close">&times;</span>
+  <img class="modal-content" id="divImg">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+  $('.imageModal').click(function (){
+    // Get the modal
+    let img = $(this);
+    console.log(img);
+    let imgId = img.id;
+    let modal = document.getElementById(`Model`);
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let modalImg = document.getElementById(`divImg`);
+    let captionText = document.getElementById(`caption`);
+
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    var span = document.getElementById("close");
+    span.onclick = function() { 
+    modal.style.display = "none";}
+
+  }) 
+
+</script>
+
+    
     <!-- Footer -->
     <div class="footer row">
     <div class="row col-md-6 col-sm-12">
@@ -189,7 +230,7 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="#top" class="scroll-arrow" data-ix="opacity-on-hover">
+        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
             <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
         </a>
     </div>

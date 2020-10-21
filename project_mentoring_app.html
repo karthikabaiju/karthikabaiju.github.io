@@ -53,6 +53,7 @@
   </head>
 
   <body>
+    
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
   <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
@@ -99,24 +100,28 @@ function myFunction() {
   $(document).ready(function () {
     let currentLink = window.location.href.split(/\//);
     currentLink = currentLink[currentLink.length-1];
-    currentLink = currentLink.split('.');
-    currentPage = currentLink[0];
     if (!currentLink){
-      currentLink = "Design"; //Default home page
+      currentPage = "Design"; //Default home page
       console.log("Design");
     }
+    else {
+      currentLink = currentLink.split('.');
+      currentPage = currentLink[0];
+    }
     $("ul.navbar-nav > li.nav-item").each(function() {
-      $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
-    });
+        $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
+      });
+    
   });
 </script>
  
+    
 <!-- Introduction -->
 <section>
   <div class="content-padding content-header" style="text-align: center"><p>Team Project - 2020</p><p style="font-family: 'Moon 2.0 Regular';">Mentoring App</p></div>
   <div class="row content-padding">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img class="project-header-image" src="../assets/images/mentoring_app/MentoringApp.svg" style="width:100%; padding-left: 1%; padding-right: 1%;"/>
+      <img class="project-header-image imageModal" src="../assets/images/mentoring_app/MentoringApp.svg" style="width:100%; padding-left: 1%; padding-right: 1%;"/>
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="content-padding">
@@ -159,7 +164,7 @@ function myFunction() {
   <div class="content-padding"><p class="content-header">The Goal</p></div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img src="../assets/images/mentoring_app/Goals.svg" />
+      <img class="imageModal" src="../assets/images/mentoring_app/Goals.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
       <p class="content-body">
@@ -186,7 +191,7 @@ function myFunction() {
       <li>Organizing mentoring session</li>
       <li>Experimental 1:1 session before long term commitment</li>
     </ol>
-    <img style="padding-top: 5%" src="../assets/images/mentoring_app/ExperienceMap.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/ExperienceMap.svg" />
     <div class="row insights-row">
       <div class="col-md-7 insights">
         <p>
@@ -244,7 +249,7 @@ function myFunction() {
 <section>
   <div class="content-padding">
     <p class="content-header">The Map</p>
-    <img style="padding-top: 5%" src="../assets/images/mentoring_app/Map.svg" />
+    <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Map.svg" />
     <p class="content-body">
       After the user interview, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
       how the steps were going to look for the mentor, mentee and the system. We focused on the flow for getting everything ready and having the first 1:1 mentoring session with 
@@ -271,7 +276,7 @@ function myFunction() {
     </p>
   </div>
   <div>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Touchpoints.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Touchpoints.svg" />
   </div>
 </section>
 
@@ -290,13 +295,13 @@ function myFunction() {
   </div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Ananya.svg" />
+      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Ananya.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Syed.svg" />
+      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Syed.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img style="padding-top: 5%" src="../assets/images/mentoring_app/Sarah.svg" />
+      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Sarah.svg" />
     </div>
   </div>
 </section>
@@ -314,22 +319,22 @@ function myFunction() {
     <p class="content-body" style="padding-top: 5%">
       <b>Version 1 - Sketch</b>
     </p>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch1.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch1.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 2 - Sketch</b>
     </p>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Sketch2.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Sketch2.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 3 - Sketch</b>
     </p>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch3.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch3.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 4 - Wireframe</b>
     </p>
-    <img class="project-header-image" style="padding-top: 5%" src="../assets/images/mentoring_app/Wireframe.svg" />
+    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Wireframe.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 5 - Low fidelity prototype</b>
@@ -383,6 +388,42 @@ function myFunction() {
 
 <script></script>
 
+
+    <!-- Modal Image -->
+    
+<!-- The Modal -->
+<div id="Model" class="modal">
+  <span id ="close" class="close">&times;</span>
+  <img class="modal-content" id="divImg">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+  $('.imageModal').click(function (){
+    // Get the modal
+    let img = $(this);
+    console.log(img);
+    let imgId = img.id;
+    let modal = document.getElementById(`Model`);
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let modalImg = document.getElementById(`divImg`);
+    let captionText = document.getElementById(`caption`);
+
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    var span = document.getElementById("close");
+    span.onclick = function() { 
+    modal.style.display = "none";}
+
+  }) 
+
+</script>
+
+    
     <!-- Footer -->
     <div class="footer row">
     <div class="row col-md-6 col-sm-12">
@@ -404,7 +445,7 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="#top" class="scroll-arrow" data-ix="opacity-on-hover">
+        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
             <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
         </a>
     </div>

@@ -92,6 +92,7 @@
   .arrowup {
     opacity: 0.8;
     background: white;
+    width: 55%;
   }
 
   .me-social {
@@ -108,6 +109,11 @@
     width: 15%;
     padding-right: 5%;
     padding-bottom: 2%;
+  }
+
+  /* Image Model */
+  .modal-content {
+    width: 100%;
   }
 }
 
