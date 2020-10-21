@@ -115,6 +115,11 @@
   .modal-content {
     width: 100%;
   }
+
+  .project-navigation {
+    font-family: 'Moon 2.0 Regular';
+    font-size: 0.7em;
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

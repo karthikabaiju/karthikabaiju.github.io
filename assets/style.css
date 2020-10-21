@@ -456,3 +456,148 @@ li {
   text-decoration: none;
   cursor: pointer;
 }
+
+.kktfwp-nav {
+  margin: 10% 0 0 0;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 26px;
+  position: relative;
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kktfwp-nav a {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: block;
+  line-height: 1em;
+  transition: color 0.15s ease;
+}
+
+.kktfwp-nav a span {
+  display: block;
+  position: relative;
+}
+
+.kktfwp-nav div.kktfwp-prev {
+  padding: 0 3% 0 27%;
+  width: 50%;
+}
+
+.kktfwp-nav div.kktfwp-prev a .n-desc {
+  padding-bottom: 12px;
+  border-bottom: 2px solid currentColor;
+}
+
+.kktfwp-nav a .n-title {
+  padding-top: 12px;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  transform: translate3d(0, -12px, 0);
+  width: 100%;
+  cursor: default;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition-delay: 0s;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+
+.kktfwp-nav div.kktfwp-prev a .n-desc:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 60%;
+  background-color: currentColor;
+  transition: width 0.25s ease;
+}
+
+.kktfwp-nav div.kktfwp-prev a:hover > .n-desc:after {
+  width: 100%;
+}
+
+.kktfwp-nav div.kktfwp-prev a:hover > .n-title {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.kktfwp-nav a .n-title {
+  padding-top: 12px;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  transform: translate3d(0, -12px, 0);
+  width: 100%;
+  cursor: default;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition-delay: 0s;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+
+.kktfwp-nav div.kktfwp-next {
+  padding: 0 27% 0 3%;
+  width: 50%;
+}
+
+.kktfwp-nav div.kktfwp-next a .n-desc {
+  padding-bottom: 12px;
+  border-bottom: 2px solid currentColor;
+}
+
+.kktfwp-nav div.kktfwp-next a .n-desc:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 60%;
+  background-color: currentColor;
+  transition: width 0.25s ease;
+}
+
+.kktfwp-nav div.kktfwp-next a:hover > .n-desc:after {
+  width: 100%;
+}
+
+.kktfwp-nav div.kktfwp-next a:hover > .n-title {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.kktfwp-nav a .n-title {
+  padding-top: 12px;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  transform: translate3d(0, -12px, 0);
+  width: 100%;
+  cursor: default;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition-delay: 0s;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.3;
+}
+
+.project-navigation {
+  font-family: 'Moon 2.0 Regular';
+  font-size: 1em;
+}
