@@ -117,8 +117,13 @@
   }
 
   .project-navigation {
-    font-family: 'Moon 2.0 Regular';
+    font-family: 'Avenir Next Cyr Thin';
     font-size: 0.7em;
+  }
+
+  /* Hide side nav */
+  .sidenav {
+    display: none;
   }
 }
 

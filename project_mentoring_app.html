@@ -3,12 +3,15 @@
   <head>
     <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
     <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -46,7 +49,9 @@
     
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+<link rel="stylesheet" href="assets/style-project.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <title>Mentoring App Design by Karthika</title>
 <meta name="theme-color" content="#ffffff">
 
@@ -111,14 +116,32 @@ function myFunction() {
     $("ul.navbar-nav > li.nav-item").each(function() {
         $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
       });
-    
   });
 </script>
  
     
+
+<!-- Side Index -->
+<div class="sidenav">
+  <ul class="navbar-nav ml-auto">
+    <li data-val="overview" class="side-nav-item large-nav sidenav-active"><a>Overview</a></li>
+    <li data-val="challenge" class="side-nav-item large-nav"><a>Challenge</a></li>
+    <li data-val="goal" class="side-nav-item large-nav"><a>Goal</a></li>
+    <li data-val="research" class="side-nav-item large-nav"><a>Research</a></li>
+    <li data-val="map" class="side-nav-item large-nav"><a>Map</a></li>
+    <li data-val="personas" class="side-nav-item large-nav"><a>Personas</a></li>
+    <li data-val="iterations" class="side-nav-item large-nav"><a>Iterations</a></li>
+    <li data-val="forward" class="side-nav-item large-nav"><a>Going Forward</a></li>
+    <li data-val="learnings" class="side-nav-item large-nav"><a>Learnings</a></li>
+  </ul>
+</div>
+
 <!-- Introduction -->
-<section>
-  <div class="content-padding content-header" style="text-align: center"><p>Team Project - 2020</p><p style="font-family: 'Moon 2.0 Regular';">Mentoring App</p></div>
+<section id="overview">
+  <div class="project-header-padding content-header" style="text-align: center">
+    <p>Team Project - 2020</p>
+    <p style="font-family: 'Moon 2.0 Regular';">Mentoring App</p>
+  </div>
   <div class="row content-padding">
     <div class="col-md-6 col-sm-12" style="text-align: left">
       <img class="project-header-image imageModal" src="../assets/images/mentoring_app/MentoringApp.svg" style="width:100%; padding-left: 1%; padding-right: 1%;"/>
@@ -147,7 +170,7 @@ function myFunction() {
 </section>
 
 <!-- Challenge -->
-<section>
+<section id="challenge">
   <div class="content-padding">
     <p class="content-header">The Challenge</p>
     <p class="content-body">
@@ -160,7 +183,7 @@ function myFunction() {
 </section>
 
 <!-- The Goal -->
-<section>
+<section id="goal">
   <div class="content-padding"><p class="content-header">The Goal</p></div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
@@ -177,7 +200,7 @@ function myFunction() {
 </section>
 
 <!-- User Research -->
-<section>
+<section id="research">
   <div class="content-padding">
     <p class="content-header">User Research & Insights</p>
     <p class="content-body">
@@ -191,7 +214,7 @@ function myFunction() {
       <li>Organizing mentoring session</li>
       <li>Experimental 1:1 session before long term commitment</li>
     </ol>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/ExperienceMap.svg" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/ExperienceMap.svg" />
     <div class="row insights-row">
       <div class="col-md-7 insights">
         <p>
@@ -246,10 +269,10 @@ function myFunction() {
 </section>
 
 <!-- Map -->
-<section>
+<section id="map">
   <div class="content-padding">
     <p class="content-header">The Map</p>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Map.svg" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/Map.svg" />
     <p class="content-body">
       After the user interview, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
       how the steps were going to look for the mentor, mentee and the system. We focused on the flow for getting everything ready and having the first 1:1 mentoring session with 
@@ -270,18 +293,19 @@ function myFunction() {
     <p>
       <b>First meeting:</b> The first meeting is automatically scheduled and set up.
     </p>
+    <br/>
     <p>
       <b>Option to reject/accept the mentorship for further advancements:</b> 
       Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. If they accept the request, then the long term schedule will be set up.
     </p>
   </div>
   <div>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Touchpoints.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Touchpoints.svg" />
   </div>
 </section>
 
 <!-- Personas -->
-<section>
+<section id="personas">
   <div class="content-padding">
     <p class="content-header">Personas</p>
     <p class="content-body">
@@ -295,19 +319,19 @@ function myFunction() {
   </div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Ananya.svg" />
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/Ananya.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Syed.svg" />
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/Syed.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img class="imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Sarah.svg" />
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/Sarah.svg" />
     </div>
   </div>
 </section>
 
 <!-- Wireframe -->
-<section>
+<section id="iterations">
   <div class="content-padding">
     <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
     <p class="content-body">
@@ -319,22 +343,22 @@ function myFunction() {
     <p class="content-body" style="padding-top: 5%">
       <b>Version 1 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch1.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/sketch1.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 2 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Sketch2.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Sketch2.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 3 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/sketch3.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/sketch3.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 4 - Wireframe</b>
     </p>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/mentoring_app/Wireframe.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Wireframe.svg" />
 
     <p class="content-body" style="padding-top: 5%">
       <b>Version 5 - Low fidelity prototype</b>
@@ -354,7 +378,7 @@ function myFunction() {
 </section> 
 
 <!-- Going forward -->
-<section>
+<section id="forward">
   <div class="content-padding">
     <p class="content-header">Going Forward</p>
     <p class="content-body">We have moved onto the development phase of this solution integrating Microsoft Teams and Power Platform. 
@@ -364,7 +388,7 @@ function myFunction() {
 
 
 <!-- My Learnings -->
-<section>
+<section id="learnings">
   <div class="content-padding">
     <p class="content-header">My Learnings</p>
     <ol class="content-body">
@@ -403,7 +427,44 @@ function myFunction() {
   </div>
 </section>
 
-<script></script>
+<!-- Side Nav -->
+<script>
+    // Active tab setting
+    $('.side-nav-item').click(function () {
+      let currentSection = $(this).data('val');
+  
+      $('html, body').animate({
+          scrollTop: $(`#${currentSection}`).offset().top
+      }, 1000);
+  
+      $(this).addClass('sidenav-active');
+      $("ul.navbar-nav > li.side-nav-item").each(function() {
+        let currentItem = $(this).data('val');
+        if(currentItem != currentSection){
+          $(this).removeClass('sidenav-active');
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.add('sidenav-active');
+            } else {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.remove('sidenav-active');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });});
+  </script>
+
 
 
     <!-- Modal Image -->
@@ -435,9 +496,8 @@ function myFunction() {
     var span = document.getElementById("close");
     span.onclick = function() { 
     modal.style.display = "none";}
-
   }) 
-
+  
 </script>
 
     

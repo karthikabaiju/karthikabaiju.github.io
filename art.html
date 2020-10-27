@@ -3,12 +3,15 @@
   <head>
     <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
     <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -46,6 +49,7 @@
     
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+<link rel="stylesheet" href="assets/style-art.css" />
 <script type="text/javascript" src="../assets/gallery.js"></script>
 <title>Art by Karthika</title>
 
@@ -110,7 +114,6 @@ function myFunction() {
     $("ul.navbar-nav > li.nav-item").each(function() {
         $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
       });
-    
   });
 </script>
  
@@ -149,9 +152,8 @@ function myFunction() {
     var span = document.getElementById("close");
     span.onclick = function() { 
     modal.style.display = "none";}
-
   }) 
-
+  
 </script>
 
     

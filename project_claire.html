@@ -3,12 +3,15 @@
   <head>
     <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
     <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -46,7 +49,9 @@
     
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+<link rel="stylesheet" href="assets/style-project.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <title>Claire App Design by Karthika</title>
 <meta name="theme-color" content="#ffffff">
 
@@ -111,16 +116,30 @@ function myFunction() {
     $("ul.navbar-nav > li.nav-item").each(function() {
         $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
       });
-    
   });
 </script>
  
     
+
+<!-- Side Index -->
+<div class="sidenav">
+  <ul class="navbar-nav ml-auto">
+    <li data-val="overview" class="side-nav-item large-nav sidenav-active"><a>Overview</a></li>
+    <li data-val="challenge" class="side-nav-item large-nav"><a>Challenge</a></li>
+    <li data-val="goal" class="side-nav-item large-nav"><a>Goal</a></li>
+    <li data-val="research" class="side-nav-item large-nav"><a>Research</a></li>
+    <li data-val="map" class="side-nav-item large-nav"><a>Map</a></li>
+    <li data-val="personas" class="side-nav-item large-nav"><a>Personas</a></li>
+    <li data-val="iterations" class="side-nav-item large-nav"><a>Iterations</a></li>
+    <li data-val="learnings" class="side-nav-item large-nav"><a>Learnings</a></li>
+  </ul>
+</div>
+
 <!-- Introduction -->
-<section>
-  <div class="content-padding content-header" style="text-align: center">
+<section id="overview">
+  <div class="project-header-padding content-header" style="text-align: center">
     <p>Personal Project - 2020</p>
-    <p style="font-family: 'Moon 2.0 Regular';">Claire Boutique App</p>
+    <p style="font-family: 'Avenir Next Cyr Regular';">Claire Boutique App</p>
   </div>
   <div class="row content-padding">
     <div class="col-md-6 col-sm-12" style="text-align: left">
@@ -159,7 +178,7 @@ function myFunction() {
 </section>
 
 <!-- Challenge -->
-<section>
+<section id="challenge">
   <div class="content-padding">
     <p class="content-header">The Challenge</p>
     <p class="content-body">
@@ -170,7 +189,7 @@ function myFunction() {
 </section>
 
 <!-- The Goal -->
-<section>
+<section id="goal">
   <div class="content-padding"><p class="content-header">The Goal</p></div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
@@ -187,7 +206,7 @@ function myFunction() {
 </section>
 
 <!-- User Research -->
-<section>
+<section id="research">
   <div class="content-padding">
     <p class="content-header">User Research & Insights</p>
     <p class="content-body">
@@ -196,7 +215,7 @@ function myFunction() {
       created an experience map stating the main functionalities, goals and expectations that the
       users have. From this I derived the main interview insights and compared it with the company goal.
     </p>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/ExperienceMap.svg" />
+    <img class="imageModal image-padding" src="../assets/images/claire/ExperienceMap.svg" />
     <div class="row insights-row">
       <div class="col-md-7 insights">
         <p>
@@ -239,10 +258,10 @@ function myFunction() {
 </section>
 
 <!-- Map -->
-<section>
+<section id="map">
   <div class="content-padding">
     <p class="content-header">The Map</p>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Map.svg" />
+    <img class="imageModal image-padding" src="../assets/images/claire/Map.svg" />
     <p class="content-body">
       While defining the map with the steps for customers to complete a shopping task, I
       identified 2 major paths for the actors (Customer) to reach their goal of getting a new dress. Creating this
@@ -265,13 +284,13 @@ function myFunction() {
     </p>
   </div>
   <div>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/TouchPoints.svg" />
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/MapAndTargets.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/claire/TouchPoints.svg" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/claire/MapAndTargets.svg" />
   </div>
 </section>
 
 <!-- Personas -->
-<section>
+<section id="personas">
   <div class="content-padding">
     <p class="content-header">Personas</p>
     <p class="content-body">
@@ -281,16 +300,16 @@ function myFunction() {
   </div>
   <div class="row content-padding" style="padding-top: 1%">
     <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Nicole.svg" />
+      <img class="imageModal image-padding" src="../assets/images/claire/Nicole.svg" />
     </div>
     <div class="col-md-6 col-sm-12">
-      <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Mell.svg" />
+      <img class="imageModal image-padding" src="../assets/images/claire/Mell.svg" />
     </div>
   </div>
 </section>
 
 <!-- Wireframe -->
-<section>
+<section id="iterations">
   <div class="content-padding">
     <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
     <p class="content-body">
@@ -301,24 +320,24 @@ function myFunction() {
       I did a quick session with the users to see if the information architecture for the online shopping app made sense
       to them.
     </p>
-    <img class="project-header-image imageModal" style="padding-top: 5%" src="../assets/images/claire/InfoArch.png" />
+    <img class="project-header-image imageModal image-padding" src="../assets/images/claire/InfoArch.png" />
     <p class="content-body" style="padding-top: 5%">
       With low-fidelity wireframe sketches, the general structure of the application could easily be tested in usability
       tests. Without much effort, adjustments could be made before starting the costlier digital implementation.
     </p>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/SketchPrototype.svg" />
+    <img class="imageModal image-padding" src="../assets/images/claire/SketchPrototype.svg" />
     <p class="content-body">
       After some adjustments on the sketched wireframe, a clickable prototype was created in Figma. Again, user tests
       revealed small vulnerabilities in the structure of the user interface, in some formulations and interactions.
       Along the way, the users gave some awesome suggestions and asked some questions that we had not thought about,
       which helped to enhance the prototype.
     </p>
-    <img class="imageModal" style="padding-top: 5%" src="../assets/images/claire/Prototype.svg" />
+    <img class="imageModal image-padding" src="../assets/images/claire/Prototype.svg" />
   </div>
 </section>
 
 <!-- My Learnings -->
-<section>
+<section id="learnings">
   <div class="content-padding" style="padding-top: 0%">
     <p class="content-header">My Learnings</p>
     <ol class="content-body">
@@ -374,7 +393,44 @@ function myFunction() {
   </div>
 </section>
 
-<script></script>
+<!-- Side Nav -->
+<script>
+    // Active tab setting
+    $('.side-nav-item').click(function () {
+      let currentSection = $(this).data('val');
+  
+      $('html, body').animate({
+          scrollTop: $(`#${currentSection}`).offset().top
+      }, 1000);
+  
+      $(this).addClass('sidenav-active');
+      $("ul.navbar-nav > li.side-nav-item").each(function() {
+        let currentItem = $(this).data('val');
+        if(currentItem != currentSection){
+          $(this).removeClass('sidenav-active');
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.add('sidenav-active');
+            } else {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.remove('sidenav-active');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });});
+  </script>
+
 
 
     <!-- Modal Image -->
@@ -406,9 +462,8 @@ function myFunction() {
     var span = document.getElementById("close");
     span.onclick = function() { 
     modal.style.display = "none";}
-
   }) 
-
+  
 </script>
 
     

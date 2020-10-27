@@ -1,0 +1,53 @@
+/* For Art */
+/* Create four equal columns that sits next to each other */
+.art-column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.art-column img {
+  margin-top: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.art-page-padding {
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

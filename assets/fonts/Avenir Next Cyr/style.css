@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Avenir Next Cyr Demi';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Demi'), url('AvenirNextCyr-Demi.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Medium'), url('AvenirNextCyr-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Regular'), url('AvenirNextCyr-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Thin'), url('AvenirNextCyr-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr Light'), url('AvenirNextCyr-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr UltraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr UltraLight'), url('AvenirNextCyr-UltraLight.woff') format('woff');
+}

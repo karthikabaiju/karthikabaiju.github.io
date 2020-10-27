@@ -1,0 +1,29 @@
+/* About me page */
+.me-hello {
+  /* font-family: 'Moon 2.0 Light'; */
+  font-family: 'Avenir Next Cyr Thin';
+  font-style: normal;
+  font-size: 30px;
+  /* or 100% */
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  /* P Project Colors */
+  color: #5f4e4e;
+}
+
+.me-email {
+  /* font-family: 'Moon 2.0 Light'; */
+  font-family: 'Avenir Next Cyr Regular';
+  color: #5f4e4e;
+  letter-spacing: 0.05em;
+}
+
+.me-social {
+  width: 12%;
+  padding-right: 5%;
+}
+
+/* .me-social:hover {
+    cursor: pointer;
+  } */

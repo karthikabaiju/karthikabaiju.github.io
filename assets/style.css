@@ -21,7 +21,7 @@ body {
 }
 
 a.nav-link {
-  font-family: 'Moon 2.0 Light';
+  font-family: 'Avenir Next Cyr Thin';
   font-size: 1.5em;
   color: black;
 }
@@ -153,34 +153,34 @@ img {
 
 .designContentBody {
   padding-top: 5%;
-  font-family: 'Moon 2.0 Regular';
+  font-family: 'Avenir Next Cyr Regular';
   font-size: 1.2em;
   text-align: justify;
 }
 
 .designContentRead {
   padding-top: 2%;
-  font-family: 'Moon 2.0 Regular';
+  font-family: 'Avenir Next Cyr Regular';
   color: #a19595;
   font-size: 1em;
 }
 
 .content-header {
-  font-family: 'Moon 2.0 light';
-  color: #5f4e4e;
+  font-family: 'Moon 2.0 thin';
+  color: #5b5050;
   font-weight: 300;
   font-size: 2em;
   letter-spacing: 0.05em;
 }
 
 .content-body {
-  font-family: 'Moon 2.0 Regular';
+  font-family: 'Avenir Next Cyr Regular';
   font-weight: normal;
   font-size: 1.3em;
+  line-height: 1.7em;
   /* or 160% */
-  text-align: justify;
   letter-spacing: 0.02em;
-  color: #5f4e4e;
+  color: #5b5050;
 }
 
 .content-quote {
@@ -193,126 +193,17 @@ img {
   color: #7a7474;
 }
 
-.project-header-image {
-  width: 100%;
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 .content-padding {
-  padding-top: 8%;
-  padding-left: 10%;
+  padding-top: 10%;
+  padding-left: 25%;
   padding-right: 10%;
 }
 
 .subcontent {
   padding-top: 2%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 30%;
+  padding-right: 15%;
 }
-
-li {
-  margin-top: 5%;
-}
-
-/* For Art */
-/* Create four equal columns that sits next to each other */
-.art-column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
-}
-
-.art-column img {
-  margin-top: 2%;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.art-page-padding {
-  padding-top: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.insights {
-  background: rgba(232, 224, 224, 0.5);
-  padding: 5%;
-  text-align: center;
-}
-
-.insights-row {
-  padding-top: 2%;
-}
-
-.insights-icon {
-  width: 4%;
-  padding-right: 3%;
-  padding-left: 3%;
-}
-
-.overlay-container {
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 98%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: black;
-}
-
-.overlay-container:hover .overlay {
-  opacity: 0.5;
-}
-
-.overlay-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* About me page */
-.me-hello {
-  font-family: 'Moon 2.0 Light';
-  font-style: normal;
-  font-size: 30px;
-  /* or 100% */
-  text-align: center;
-  letter-spacing: 0.05em;
-
-  /* P Project Colors */
-  color: #5f4e4e;
-}
-
-.me-email {
-  font-family: 'Moon 2.0 Light';
-  color: #5f4e4e;
-  letter-spacing: 0.05em;
-}
-
-.me-social {
-  width: 12%;
-  padding-right: 5%;
-}
-
-/* .me-social:hover {
-  cursor: pointer;
-} */
 
 .footer {
   padding-top: 10%;
@@ -323,10 +214,11 @@ li {
 }
 
 .footer-text {
-  font-family: 'Moon 2.0 Regular';
+  font-family: 'Avenir Next Cyr Regular';
   color: silver;
   font-size: 0.7em;
   letter-spacing: 0.05em;
+  z-index: 2;
 }
 
 .footer-social {
@@ -334,6 +226,7 @@ li {
   padding-left: 3%;
 }
 
+/* Scroll to the top */
 .scroll-to-top {
   position: fixed;
   top: auto;
@@ -455,149 +348,4 @@ li {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
-}
-
-.kktfwp-nav {
-  margin: 10% 0 0 0;
-  text-align: center;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 26px;
-  position: relative;
-  color: inherit;
-  font-family: 'Poppins', sans-serif;
-}
-
-.kktfwp-nav a {
-  text-decoration: none;
-  position: relative;
-  color: inherit;
-  display: block;
-  line-height: 1em;
-  transition: color 0.15s ease;
-}
-
-.kktfwp-nav a span {
-  display: block;
-  position: relative;
-}
-
-.kktfwp-nav div.kktfwp-prev {
-  padding: 0 3% 0 27%;
-  width: 50%;
-}
-
-.kktfwp-nav div.kktfwp-prev a .n-desc {
-  padding-bottom: 12px;
-  border-bottom: 2px solid currentColor;
-}
-
-.kktfwp-nav a .n-title {
-  padding-top: 12px;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  transform: translate3d(0, -12px, 0);
-  width: 100%;
-  cursor: default;
-  opacity: 0;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  transition-delay: 0s;
-  pointer-events: none;
-  word-wrap: break-word;
-}
-
-.kktfwp-nav div.kktfwp-prev a .n-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-  height: 4px;
-  width: 60%;
-  background-color: currentColor;
-  transition: width 0.25s ease;
-}
-
-.kktfwp-nav div.kktfwp-prev a:hover > .n-desc:after {
-  width: 100%;
-}
-
-.kktfwp-nav div.kktfwp-prev a:hover > .n-title {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-}
-
-.kktfwp-nav a .n-title {
-  padding-top: 12px;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  transform: translate3d(0, -12px, 0);
-  width: 100%;
-  cursor: default;
-  opacity: 0;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  transition-delay: 0s;
-  pointer-events: none;
-  word-wrap: break-word;
-}
-
-.kktfwp-nav div.kktfwp-next {
-  padding: 0 27% 0 3%;
-  width: 50%;
-}
-
-.kktfwp-nav div.kktfwp-next a .n-desc {
-  padding-bottom: 12px;
-  border-bottom: 2px solid currentColor;
-}
-
-.kktfwp-nav div.kktfwp-next a .n-desc:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  height: 4px;
-  width: 60%;
-  background-color: currentColor;
-  transition: width 0.25s ease;
-}
-
-.kktfwp-nav div.kktfwp-next a:hover > .n-desc:after {
-  width: 100%;
-}
-
-.kktfwp-nav div.kktfwp-next a:hover > .n-title {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
-}
-
-.kktfwp-nav a .n-title {
-  padding-top: 12px;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  transform: translate3d(0, -12px, 0);
-  width: 100%;
-  cursor: default;
-  opacity: 0;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  transition-delay: 0s;
-  pointer-events: none;
-  word-wrap: break-word;
-}
-
-.disabled {
-  pointer-events: none;
-  cursor: default;
-  opacity: 0.3;
-}
-
-.project-navigation {
-  font-family: 'Moon 2.0 Regular';
-  font-size: 1em;
 }
