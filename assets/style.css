@@ -183,16 +183,6 @@ img {
   color: #5b5050;
 }
 
-.content-quote {
-  font-family: 'Indie Flower';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 30px;
-  /* or 107% */
-  letter-spacing: 0.05em;
-  color: #7a7474;
-}
-
 .content-padding {
   padding-top: 10%;
   padding-left: 25%;

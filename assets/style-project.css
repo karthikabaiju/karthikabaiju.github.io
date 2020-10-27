@@ -21,19 +21,30 @@ li {
 }
 
 .insights {
-  background: rgba(232, 224, 224, 0.5);
-  padding: 5%;
-  text-align: center;
+  padding-left: 1%;
+  padding-right: 5%;
+  padding-top: 2%;
+  /* text-align: center; */
 }
 
 .insights-row {
-  padding-top: 2%;
+  padding-top: 5%;
 }
 
 .insights-icon {
   width: 4%;
   padding-right: 3%;
   padding-left: 3%;
+}
+
+.content-quote {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #7a7474;
+  text-align: center;
 }
 
 .kktfwp-nav {

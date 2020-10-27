@@ -7,7 +7,7 @@ const imageCol1 = [
   'Spring Mountain.jpg',
   'Ice and Fire.jpg',
   'Hidden Fall.jpg',
-  'the drop.jpg',
+  'Drop.jpg',
 ];
 const imageCol2 = [
   'The Pale Flowers.jpg',
@@ -15,7 +15,7 @@ const imageCol2 = [
   'Purple.jpg',
   'The Lady.jpg',
   'Sandy Beach.jpg',
-  'The Ocean Calls.jpg',
+  'Ocean Call.jpg',
   'Cherries.jpg',
   'Tranquility.jpg',
   'Yellow.jpg',
@@ -30,6 +30,7 @@ const imageCol3 = [
   'Umbrella.JPG',
   'Voyage.JPG',
   'Gold.jpg',
+  'Apple.jpg'
 ];
 gallery = [imageCol1, imageCol2, imageCol3];
 function galleryContainer(column) {
