@@ -1,4 +1,5 @@
 const imageCol1 = [
+  'The Valley Rise.jpg',
   'Boat.jpg',
   'Rise.jpg',
   'Santorini.jpg',
