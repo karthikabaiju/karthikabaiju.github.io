@@ -224,13 +224,14 @@ li {
 
 .side-nav-item {
   min-width: 8vw;
+  font-size: 1.2em;
   font-family: 'Avenir Next Cyr Regular';
-  color: #5f4e4e;
+  color: #352c2c;
 }
 
 .sidenav-active {
   border-right: solid 2px #5f4e4e;
   /* border-bottom-width: 20px; */
   font-family: 'Avenir Next Cyr Demi';
-  font-size: 1.3em;
+  font-size: 1.5em;
 }

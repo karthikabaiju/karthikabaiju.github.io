@@ -67,16 +67,24 @@ a.nav-link {
 
 .center-content {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .intro {
   font-family: 'Moon 2.0 Regular';
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   line-height: 1.5em;
   text-align: justify;
+}
+
+.intro-child {
+  font-family: 'Moon 2.0 Regular';
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  text-align: justify;
+  color: #a19595;
 }
 
 .intro-link,
