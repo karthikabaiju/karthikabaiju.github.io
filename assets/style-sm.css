@@ -41,7 +41,11 @@
   }
 
   .intro {
-    font-size: 2rem;
+    font-size: 2.1em;
+  }
+
+  .intro-child {
+    font-size: 1.3em;
   }
 
   .cartoon {
@@ -163,6 +167,14 @@
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .intro {
+    font-size: 1.8em;
+    text-align: justify;
+  }
+
+  .intro-child {
+    font-size: 1.1em;
+  }
   .art-column {
     -ms-flex: 100%;
     flex: 100%;
