@@ -256,3 +256,11 @@ li {
   background-color: #5b5050;
   color: white;
 }
+
+.project-subheader {
+  font-family: 'Avenir Next Cyr Regular';
+  color: #a19595;
+  font-weight: 300;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+}
