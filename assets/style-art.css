@@ -1,5 +1,10 @@
 /* For Art */
 /* Create four equal columns that sits next to each other */
+.portfolio {
+  column-count: 4;
+  column-gap: 1em;
+}
+
 .art-column {
   -ms-flex: 33%; /* IE10 */
   flex: 33%;
@@ -21,35 +26,49 @@
 
 .overlay-container {
   position: relative;
+  padding-top: 1em;
+  position: relative;
 }
 
 .overlay {
   position: absolute;
-
   bottom: 0;
   left: 0;
   right: 0;
-  height: 98%;
-  width: 100%;
-  opacity: 0;
+  background-color: #242424;
+  overflow: hidden;
+  height: 0;
   transition: 0.5s ease;
-  background-color: black;
 }
 
 .overlay-container:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.9;
+  height: 60%;
 }
 
 .overlay-text {
   color: white;
-  font-size: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 1em;
+}
+
+.overlay-text-name {
+  font-family: 'Avenir Next Cyr Regular';
+  font-size: 16px;
+}
+
+.overlay-text-date {
+  font-family: 'Avenir Next Cyr Thin';
+  font-size: 12px;
+}
+
+.overlay-text-description {
+  padding-top: 1%;
+  font-family: 'Avenir Next Cyr Light';
+  font-size: 14px;
+  font-style: italic;
 }
 
 .heading-padding {

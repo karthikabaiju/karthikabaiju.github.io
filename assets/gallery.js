@@ -1,6 +1,6 @@
 const imageCol1 = [
   'Into the Unknown.jpg',
-  'Boat.jpg',
+  'Journey Begin.jpg',
   'Stroll.jpg',
   'Rise.jpg',
   'Santorini.jpg',
@@ -38,27 +38,52 @@ const imageCol3 = [
   'Gold.jpg',
 ];
 gallery = [imageCol1, imageCol2, imageCol3];
-function galleryContainer(column) {
-  let container = `<div class="art-column">`;
+function galleryContainer(element) {
+  let container = `<div>`;
   let imageContainerHTML = `<div class="overlay-container">
-        <img src="../assets/art/{{imageFull}}" style="width:100%">
+        <img src="../assets/art/{{imageFull}}.jpg" style="width:100%">
         <div class="overlay">
-          <div class="overlay-text">{{imageName}}</div>
+          <div class=overlay-text>
+            <div class=overlay-text-name>"{{imageName}}"</div>
+            <div class=overlay-text-date>{{date}}</div>
+            <br>
+            <div class=overlay-text-description>{{imageDescription}}</div>
+          </div>
         </div>
       </div>`;
-  column.forEach((element) => {
     let img = imageContainerHTML
-      .replace('{{imageFull}}', element)
-      .replace('{{imageName}}', element.replace(/\.[^/.]+$/, ''));
+      .replace('{{imageFull}}', element.Art)
+      .replace('{{imageName}}', element.Art.replace(/\.[^/.]+$/, ''))
+      .replace('{{date}}', element.CreatedMonth)
+      .replace('{{imageDescription}}', element.Detail);
     container += img;
-  });
+  
   container += `</div>`;
   return container;
 }
 
 function galleryCreate() {
-  let container = gallery.map((element) => galleryContainer(element)).join('');
-  $('#imageGrid').html(container);
+  var excel_file_API = './assets/art/Inventory/Inventory.csv';
+  $.ajax({
+
+    type: 'GET',
+    url: excel_file_API,
+    dataType: 'text',
+    error: function (e) {
+        alert('An error occurred while processing API calls');
+        console.log("API call Failed: ", e);
+    },
+    success: function (data) {
+        var jsonData = $.csv.toObjects(data);
+        let container = '<div class="portfolio">'
+        container = container + jsonData.map((element) => galleryContainer(element)).join('') + '</div>';
+        
+        $('#imageGrid').html(container);
+        
+        console.log(jsonData);
+    } // end: Ajax success API call
+
+}); // end: of Ajax call
 }
 
 $(document).ready(function () {

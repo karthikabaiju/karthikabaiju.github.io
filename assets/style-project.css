@@ -264,3 +264,7 @@ li {
   font-size: 1.3em;
   letter-spacing: 0.05em;
 }
+
+li {
+  margin: 0 0 2% 0;
+}
