@@ -163,6 +163,13 @@ img {
   color: #5f4e4e;
 }
 
+.year {
+  padding-top: 5%;
+  font-family: 'Moon 2.0 Regular';
+  font-size: 5em;
+  color: #5f4e4e;
+}
+
 .designContentPadding {
   padding-top: 15%;
   padding-left: 10%;

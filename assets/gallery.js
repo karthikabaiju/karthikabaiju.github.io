@@ -38,6 +38,8 @@ const imageCol3 = [
   'Gold.jpg',
 ];
 gallery = [imageCol1, imageCol2, imageCol3];
+years = ['2020', '2019'];
+
 function galleryContainer(element) {
   let container = `<div>`;
   let imageContainerHTML = `<div class="overlay-container">
@@ -65,7 +67,6 @@ function galleryContainer(element) {
 function galleryCreate() {
   var excel_file_API = './assets/art/Inventory/Inventory.csv';
   $.ajax({
-
     type: 'GET',
     url: excel_file_API,
     dataType: 'text',
@@ -75,12 +76,20 @@ function galleryCreate() {
     },
     success: function (data) {
         var jsonData = $.csv.toObjects(data);
-        let container = '<div class="portfolio">'
-        container = container + jsonData.map((element) => galleryContainer(element)).join('') + '</div>';
-        
+        var container = '';
+        container = years.map(function(year) {
+          let yearContainer= '';
+          console.log(year);
+          let yearArray = jsonData.filter((element) => element.CreatedMonth.split('/')[0] == year);
+          console.log(yearArray);
+          yearContainer = yearContainer + '<div class="year">{{year}}</div>';
+          yearContainer = yearContainer + '<div class="portfolio" id={{year}}>'
+          yearContainer = yearContainer.replace('{{year}}', year);
+          yearContainer = yearContainer + yearArray.map((element) => galleryContainer(element)).join('') + '</div>';
+          return yearContainer
+        })
         $('#imageGrid').html(container);
-        
-        console.log(jsonData);
+      
     } // end: Ajax success API call
 
 }); // end: of Ajax call

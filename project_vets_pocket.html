@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+    
+<link rel="stylesheet" href="assets/style-project.css" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="stylesheet" href="assets/style-sm.css" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<title>Vet's Pocket Design by Karthika</title>
+<meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body>
+    
+    <!-- Navigation Bar   -->
+    <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
+  <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item large-nav">
+          <a class="nav-link" href="/">Design</a>
+        </li>
+        <li class="nav-item large-nav">
+          <a class="nav-link" href="/art.html">Art</a>
+        </li>
+        <li class="nav-item large-nav">
+          <a class="nav-link" href="/me.html">Me</a>
+        </li>
+        <li class="nav-item large-nav">
+          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  </button>
+</nav>
+<div class="progress-container fixed-top">
+  <div class="progress-bar" id="myBar"></div>
+</div> 
+
+<script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+  // Scroll setting
+  $(document).scroll(function () {
+    const nav = $(".navbar");
+    nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+  });
+
+  // Active tab setting
+  $(document).ready(function () {
+    let currentLink = window.location.href.split(/\//);
+    currentLink = currentLink[currentLink.length-1];
+    if (!currentLink){
+      currentPage = "Design"; //Default home page
+      console.log("Design");
+    }
+    else {
+      currentLink = currentLink.split('.');
+      currentPage = currentLink[0];
+    }
+    $("ul.navbar-nav > li.nav-item").each(function() {
+        $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
+      });
+  });
+</script>
+ 
+    
+
+<!-- Side Index -->
+<div class="sidenav">
+  <ul class="navbar-nav ml-auto">
+    <li data-val="overview" class="side-nav-item large-nav sidenav-active"><a>Overview</a></li>
+    <li data-val="challenge" class="side-nav-item large-nav"><a>Challenge</a></li>
+    <li data-val="howisitnow" class="side-nav-item large-nav"><a>How is it now</a></li>
+    <li data-val="goal" class="side-nav-item large-nav"><a>Goal</a></li>
+    <li data-val="whatsoutthere" class="side-nav-item large-nav"><a>What’s Out There</a></li>
+    <li data-val="research" class="side-nav-item large-nav"><a>Research</a></li>
+    <li data-val="map" class="side-nav-item large-nav"><a>Journey Map</a></li>
+    <li data-val="personas" class="side-nav-item large-nav"><a>Personas</a></li>
+    <li data-val="iterations" class="side-nav-item large-nav"><a>Iterations</a></li>
+    <li data-val="learnings" class="side-nav-item large-nav"><a>Learnings</a></li>
+  </ul>
+</div>
+
+<!-- Introduction -->
+<section id="overview">
+  <div class="project-header-padding" style="text-align: center">
+    <p class="content-header">Team Project - 2021</p>
+    <p class="content-header-project">Vet’s Pocket</p>
+    <p class="project-subheader">Freelance</p>
+  </div>
+  <div class="row content-padding">
+    <div class="col-md-6 col-sm-12">
+      <div class="project-content-left">
+        <p class="content-header">Overview</p>
+        <p class="content-body">Vet’s Pocket is a record, appointment, and inventory management system for new, on-field veterinarians.</p>
+          <p class="content-body">The app allows you to,</p>
+          <ol class="content-body" style="padding-left: 15%;">
+            <li>Create and manage patient and owner records</li>
+            <li>Record and schedule visits and consultations</li>
+            <li>Manage your inventory</li>
+          </ol>
+      </div> 
+      <div>
+        <button class="prototype-button content-body" 
+        onclick="window.open('https://www.figma.com/proto/sE8G7UpnJpUizhFeUAowLj/Vet-App?node-id=107%3A3023&viewport=431%2C139%2C0.07766217738389969&scaling=scale-down', '_blank');">
+          Prototype
+        </button>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img class="imageModal" src="../assets/images/vets_pocket/Front.png"/>
+    </div> 
+  </div>
+</section>
+
+<!-- Project Details -->
+<section id="project details">
+  <div class="row content-padding" style="padding-top: 5%;">
+    <div class="col-md-4 col-sm-12">
+      <p class="content-header">My Role</p>
+      <p class="content-body">Researcher and Designer</p>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <p class="content-header">My Team</p>
+      <p class="content-body">We are a team of 2. 1 designer and 1 developer </p>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <p class="content-header">Timeline</p>
+      <p class="content-body">November 2020 - On going</p>
+    </div>
+  </div>
+</section>
+
+<!-- Demo Video -->
+<section>
+  <div>
+    <img class="project-header-image imageModal image-padding" src="../assets/images/vets_pocket/Prototype.gif" />
+  </div>
+</section>
+
+<!-- Challenge -->
+<section id="challenge">
+  <div class="content-padding">
+    <p class="content-header">The Challenge</p>
+    <p class="content-body">
+        On the field veterinarians are always on the move, so they have a hard time using traditional hospital management software. 
+        The few available mobile versions are either too expensive for a new vet just starting in the field or just a big nightmare to use 
+        (you end up chucking it to the corner of your app list).
+    </p>
+    <ol class="content-body" style="padding-left: 15%;">
+        <li>OneDrive</li>
+        <li>Excel/Google Sheets</li>
+        <li>Good old pen and paper</li>
+      </ol>
+  </div>
+</section>
+
+<!-- How is it now -->
+<section id="howisitnow">
+    <div class="content-padding">
+      <p class="content-header">How is it now</p>
+      <p class="content-body">
+        When talking to many on the field vets, I came to realize that what they are in dire need of is an easy and portable way to keep track of their appointments and patients. 
+      </p>
+      <p class="content-body">So I defined the goal as to,</p>
+      <p class="content-body"><b>'Create an easy, light, user-friendly, and affordable patient and visit management system for a budget on site vets just starting.'</b></p>
+    </div>
+  </section>
+
+<!-- The Goal -->
+<section id="goal">
+  <div class="content-padding"><p class="content-header">The Goal</p></div>
+  <div class="row content-padding" style="padding-top: 1%">
+    <div class="col-md-6 col-sm-12">
+      <p class="content-body  project-content-left">
+        When talking to 5 other people in the organization, I came to realize that I was not the only person facing the challenges of finding a mentor. 
+        And more challenges the people were having on this topic came to light as well. After discussions and brainstorming within the team,
+        we were able to converge on the major goal that we wished to accomplish with this application,   
+      </p>
+      <p class="content-body  project-content-left"><b>Provide easy and better mentorship experience to anyone in the organisation</b></p>
+    </div>
+    <div class="col-md-6 col-sm-12" style="text-align: left">
+      <img class="imageModal" src="../assets/images/vets_pocket/Goal.svg" />
+    </div>
+  </div>
+</section>
+
+<!-- What’s Out There -->
+<section id="whatsoutthere">
+    <div class="content-padding">
+      <p class="content-header">What’s Out There</p>
+      <p class="content-body">
+        I scoured the internet and App Store thinking there must be something that can help. 
+        This is a very common requirement for all in the Vet industry. 
+        Most of the options I came across were either expense for a new person on the field (Digitail, VitusVet), 
+        too focused on pets or simply were a nightmare to use (Animal Record On the Go).
+      </p>
+      <img class="imageModal" src="../assets/images/vets_pocket/Study.svg" />
+      <div class="row" style="padding-top: 10%">
+        <div class="col-md-6 col-sm-12" style="padding-right: 5%">
+            <img class="imageModal" src="../assets/images/vets_pocket/Budget.svg" />
+        </div>
+        <div class="col-md-6 col-sm-12" style="text-align: left; padding-left: 6%">
+            <img class="imageModal" src="../assets/images/vets_pocket/Userfriendly.svg" />
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+<!-- User Research -->
+<section id="research">
+  <div class="content-padding">
+    <p class="content-header">User Research</p>
+    <p class="content-body">
+        I went out into the field to see what the users had to say. 
+        I interviewed 3-4 users for the initial interview. 
+        From the data I collected, I created an ideal experience map to capture the current user journey and pain pointed.     
+    </p>
+
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/ExperienceMap.svg" />
+
+    <p class="content-body">
+        From the experience map, I was able to figure out the major touch points where the user will be turning to the app while they are on-site or before.  
+    </p>
+    <ol class="content-body" style="padding-left: 15%;">
+        <li>When a patient calls, to add in the appointment and the initial data</li>
+        <li>Preparation and taking patient history </li>
+        <li>Patient records</li>
+        <li>At the appointment place, to record observations, treatments, and billing</li>
+      </ol>
+  </div>
+</section>
+
+<!-- Map -->
+<section id="map">
+  <div class="content-padding">
+    <p class="content-header">Journey Map</p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Journey Map.svg" />
+    <p class="content-body" style="padding-top: 7%;">
+        The experience map later developed into a <b>journey map</b>, to have an idea of how I imagined my app to pan out and what my desired user experience would entail. 
+    </p>
+  </div>
+  <div class="subcontent content-body">
+    <p>
+      <b>Getting call about a patient:</b>  On getting a call about a patient, the users have to either schedule an appointment 
+      (need to note down the place and time) or have an online consultation (note down the observations, treatments and billing).
+    </p>
+    <br />
+    <p><b>Patient history:</b> 
+        Most owners will not have the animal history in hand. So the user will have to take the patient history initially. 
+        Since most on the field vets work alone, they will mostly be taking the history and observations orally. 
+        Also, the users need a place to keep track of the patient history they recorded plus the ones they treated. </p>
+    <br />
+    <p><b>The connection created: </b>If the mentor feels that they will be able to help the mentee, then they will accept the request. 
+      A dedicated channel is created for this mentor-mentee collaboration.</p>
+    <br />
+    <p>
+      <b>Visit: </b>Note down all the observation, treatment and billing for a visit. Have them stored along with the patient. Schedule follow up appointment for the visit.
+    </p>
+    <br/>
+    <p>
+      <b>Inventory:</b> 
+      Keep track of medical items that the user have in hand and what all they have used.
+    </p>
+  </div>
+</section>
+
+<!-- Personas -->
+<section id="personas">
+  <div class="row content-padding">
+    <div class="col-md-6 col-sm-12">
+      <p class="content-header">Personas</p>
+      <p class="content-body project-content-left">
+        The user persona that is focused on for this is of a new vet,
+        right out of college, setting up their first on the field vet service called “Vet’s on Wheels”. They would be visiting the patients and doing treatment. </b>
+      </p>
+    </div>
+    <div class="col-md-6 col-sm-12" style="padding-top: 1%">
+      <img class="imageModal" style="padding-left: 15%;" src="../assets/images/vets_pocket/Kim.svg" />
+    </div>
+  </div>
+</section>
+
+<!-- Wireframe -->
+<section id="iterations">
+  <div class="content-padding">
+    <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
+    <p class="content-body">
+      We iterated through multiple versions of the app before finally settling on one to create a PowerApps prototype. Each usability test provided insights, 
+      corners and cases that we had missed. We iterated through 3 versions of sketches, a sketch wireframe for low fidelity, 
+      low fidelity prototype and finally the mid fidelity Figma prototype.
+    </p>
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 1 - Sketch</b>
+    </p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Version 1.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 2 - Sketch</b>
+      <ol class="content-body" style="padding-left: 5%;">
+        <li>We verified the 2 assumptions that we started with in sketch 1. 
+            The marking of items needed for a visit was not used frequently. While the other to note down animal details as confirmed.</li>
+        <li>They needed options to know when their next visits where.</li>
+        </ol>
+    </p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Version 2.svg" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 3 - Sketch</b>
+      <ol class="content-body" style="padding-left: 5%;">
+        <li>The first thing the user did when given the dashboard page was to look at the upcoming appointment. 
+            So I decided to make the landing page into the upcoming visits page in the coming iterations. 
+            Letting the home focus on one element rather than trying to display all. </li>
+        <li>The users mentioned that they would like to view all the appointments in their Google calendar as well.</li>
+        <li>When recording a new patient call, they went for entering the owner details first. Contrary to the assumption that the animal details are first to be entered.</li>
+        <li>Similarly, when searching for an animal, they were more comfortable in finding the owner first and searching for the animal by the owner.</li>
+        <li>Quick create should be accessible from everywhere.</li>
+
+    </ol>
+    </p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Version 3.svg" />
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Sketch Wireframe.gif" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 4 - Wireframe</b>
+      <ol class="content-body" style="padding-left: 5%;">
+        <li>Adding more medical-related details to the animal record.</li>
+        <li>The layout was designed so that all the details for the visits were on a single page. This caused the users to get confused about how to find a section. 
+            So I decided to break down the data entry into chunks and make it into tabs so that navigation between elements will be easier. 
+            Easy to find the stuff that you need.</li>
+        <li>Ability to add all sorts of files as attachments.</li>
+    </ol>
+    </p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Wireframe.gif" />
+
+    <p class="content-body" style="padding-top: 5%">
+      <b>Version 5 - High fidelity prototype </b>
+      <ol class="content-body" style="padding-left: 5%;">
+        <li>The record button did not signify a record. Changed the button.</li>
+        <li>The users were not able to find out where the recording and the attachments for each visit get stored. 
+            So we provided a clear tab to show where they are stored.</li>
+        <li>The appointment shown on the home page opens to the respective visit.</li>
+        <li>The users were trying to find out where they can tally out their daily income. 
+            So we added an account section under user so that the user can see their billing history.</li>
+        <li>Allowing the user to choose whether to schedule a visit or start it now from the quick create option. 
+            So that the users have a clear distinction of the next action they need to perform. Similarly explicitly allows closing a visit.</li>
+        </ol>
+    </p>
+    <img class="imageModal image-padding" src="../assets/images/vets_pocket/Prototype.gif" />
+    <div>
+        <button class="prototype-button content-body" 
+        onclick="window.open('https://www.figma.com/proto/sE8G7UpnJpUizhFeUAowLj/Vet-App?node-id=107%3A3023&viewport=431%2C139%2C0.07766217738389969&scaling=scale-down', '_blank');">
+          Prototype
+        </button>
+    </div>
+
+  </div>
+</section> 
+
+<!-- My Learnings -->
+<section id="learnings">
+  <div class="content-padding">
+    <p class="content-header">My Learnings</p>
+    <ol class="content-body">
+      <li>
+        <b>Talking to clients and seeing them use the product is different: </b> For user research, the more you watch what the users use and do, the more you find their problems. 
+        It's way better than just doing user interview. During the initial interview, the users were mostly talking about how they are not able to keep track of their patient records,
+        but while observing them, we were able to find the additional problems in inventory, animal history and recording of data.
+      </li>
+      <li>
+        <b>Clearly articulate design decisions: </b> When the clients are people who are in a field that has nothing to do with UX or techology. 
+        You need to better articulate your design decisions so as to make them understand.
+        <br />
+      </li>
+      <li>
+        <b>Fast paced research:</b> 
+        Doctors especially on the field vets are very busy people. Its hard pressed to get their time for user testing. 
+        So we need to be prepared fully and conduct the user testing real fast.
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Project Navigation -->
+<section>
+  <div class="kktfwp-nav">
+    <div class="kktfwp-prev">
+      <a class="disabled project-navigation" rel="next">
+        <span class="n-desc" data-delay="0">Previous</span>
+      </a>
+    </div>
+    
+    <div class="kktfwp-next">
+      <a class="project-navigation" href="./project_mentoring_app.html" rel="prev">
+        <span class="n-desc" data-delay="0" style="color: #5f4e4e">Next</span>
+        <span class="n-title" style="color: #5f4e4e">Mentoring App</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Side Nav -->
+<script>
+    // Active tab setting
+    $('.side-nav-item').click(function () {
+      let currentSection = $(this).data('val');
+  
+      $('html, body').animate({
+          scrollTop: $(`#${currentSection}`).offset().top
+      }, 1000);
+  
+      $(this).addClass('sidenav-active');
+      $("ul.navbar-nav > li.side-nav-item").each(function() {
+        let currentItem = $(this).data('val');
+        if(currentItem != currentSection){
+          $(this).removeClass('sidenav-active');
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.add('sidenav-active');
+            } else {
+                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.remove('sidenav-active');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });});
+  </script>
+
+
+
+    <!-- Modal Image -->
+    
+<!-- The Modal -->
+<div id="Model" class="modal">
+  <span id ="close" class="close">&times;</span>
+  <img class="modal-content" id="divImg">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+  $('.imageModal').click(function (){
+    // Get the modal
+    let img = $(this);
+    console.log(img);
+    let imgId = img.id;
+    let modal = document.getElementById(`Model`);
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    let modalImg = document.getElementById(`divImg`);
+    let captionText = document.getElementById(`caption`);
+
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
+    var span = document.getElementById("close");
+    span.onclick = function() { 
+    modal.style.display = "none";}
+  }) 
+  
+</script>
+
+    
+    <!-- Footer -->
+    <div class="footer row">
+    <div class="row col-md-6 col-sm-12">
+        <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
+        ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
+      /></a>
+        <a href="https://www.linkedin.com/in/karthikabaiju/" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/linkedin.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://medium.com/@karthikabaiju.mec" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
+        /></a>
+        <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
+          ><img src="../assets/images/me/github.svg" style="width: 100%" alt=""
+        /></a>
+    </div>
+    <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
+    <div class="scroll-to-top">
+        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
+            <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
+        </a>
+    </div>
+</div>
+
+  
+  </body>
+</html>

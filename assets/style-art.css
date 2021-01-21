@@ -43,7 +43,7 @@
 
 .overlay-container:hover .overlay {
   opacity: 0.9;
-  height: 60%;
+  height: 45%;
 }
 
 .overlay-text {
@@ -56,18 +56,18 @@
 
 .overlay-text-name {
   font-family: 'Avenir Next Cyr Regular';
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .overlay-text-date {
   font-family: 'Avenir Next Cyr Thin';
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 .overlay-text-description {
   padding-top: 1%;
   font-family: 'Avenir Next Cyr Light';
-  font-size: 14px;
+  font-size: 0.8em;
   font-style: italic;
 }
 
