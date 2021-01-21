@@ -111,7 +111,11 @@ function myFunction() {
     }
     else {
       currentLink = currentLink.split('.');
-      currentPage = currentLink[0];
+      currentPage = currentLink[0].split('_');
+      currentPage = currentPage[0];
+      if(currentPage == 'project'){
+        currentPage = "Design";
+      }
     }
     $("ul.navbar-nav > li.nav-item").each(function() {
         $(this).toggleClass('active', currentPage.toUpperCase() == $(this).text().trim().toUpperCase());
