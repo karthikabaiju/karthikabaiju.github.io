@@ -5,6 +5,18 @@
   column-gap: 1em;
 }
 
+.year {
+  font-size: 3rem;
+  padding-top: 10%;
+}
+
+.project {
+  font-family: 'Chillax Regular';
+  color: #242424;
+  margin: 7% 10% 5% 12%;
+  font-size: 1rem;
+}
+
 .art-column {
   -ms-flex: 33%; /* IE10 */
   flex: 33%;
@@ -55,32 +67,31 @@
 }
 
 .overlay-text-name {
-  font-family: 'Avenir Next Cyr Regular';
+  font-family: 'Chillax Regular';
   font-size: 1em;
 }
 
 .overlay-text-date {
-  font-family: 'Avenir Next Cyr Thin';
+  font-family: 'Chillax Light';
   font-size: 0.8em;
 }
 
 .overlay-text-description {
   padding-top: 1%;
-  font-family: 'Avenir Next Cyr Light';
+  font-family: 'Chillax Light';
   font-size: 0.8em;
   font-style: italic;
 }
 
 .heading-padding {
-  font-family: 'Avenir Next Cyr Regular';
-  font-size: 1.5em;
+  font-family: 'Chillax Regular';
+  font-size: 2em;
   padding-top: 8%;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .link {
-  font-family: 'Avenir Next Cyr Regular';
   font-size: 1.2em;
   color: black;
 }
@@ -93,28 +104,3 @@
 /* .link :hover {
   border-bottom: solid 2.5px black;
 } */
-
-.shop-icon {
-  width: 15%;
-  height: 15%;
-  padding-bottom: 1%;
-  padding-right: 1%;
-}
-
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}

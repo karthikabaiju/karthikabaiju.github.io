@@ -1,35 +1,84 @@
-.project-header-padding {
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 10%;
+/* Header */
+.banner {
+  margin-top: 10%;
+  background-color: #475a51;
 }
 
-.project-header-image {
-  width: 100%;
+.header-padding {
+  padding: 10% 0 10% 0;
+  font-family: 'Chillax Regular';
+  text-align: center;
+  color: white;
+}
+
+.header-text-1 {
+  font-size: 1.2rem;
+  font-family: 'Chillax Light';
+}
+
+.header-text-2 {
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+.header-text-3 {
+  font-size: 2rem;
+  line-height: 5rem;
+  font-family: 'Chillax Light';
+}
+
+/* Content */
+.project {
+  font-family: 'Chillax Regular';
+  color: #242424;
+  margin: 7% 15% 5% 15%;
+  font-size: 1rem;
+}
+
+.content-heading {
+  font-family: 'Chillax Medium';
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+
+.subcontent {
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+.version {
   padding-top: 5%;
-  padding-left: 25%;
+}
+
+.goal-padding {
   padding-right: 10%;
 }
 
-.project-content-left {
-  padding-right: 15%;
-  padding-bottom: 10%;
-}
-
+/* Image */
 .image-padding {
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
-li {
-  margin-top: 5%;
+.image-shadow {
+  box-shadow: 7.04638px 7.04638px 60px 12px rgba(0, 0, 0, 0.25);
 }
 
+.image-round-edge {
+  border-radius: 14.0928px;
+}
+
+/* General */
+
+li {
+  margin: 2% 0 0 3%;
+}
+
+/* User insights */
 .insights {
   padding-left: 1%;
   padding-right: 5%;
   padding-top: 2%;
-  /* text-align: center; */
 }
 
 .insights-row {
@@ -52,6 +101,7 @@ li {
   text-align: center;
 }
 
+/* Navigation */
 .kktfwp-nav {
   margin: 10% 0 0 0;
   text-align: center;
@@ -193,9 +243,15 @@ li {
 }
 
 .project-navigation {
-  font-family: 'Avenir Next Cyr Thin';
+  font-family: 'Chillax Regular';
   font-size: 1em;
 }
+
+.nav-color {
+  color: #242424;
+}
+
+/* Side Navigation */
 
 .sidenav {
   text-align: right;
@@ -213,7 +269,7 @@ li {
   padding: 5% 2% 2% 5%;
   text-decoration: none;
   font-size: 1em;
-  color: #5f4e4e;
+  color: #242424;
   display: block;
 }
 
@@ -225,46 +281,13 @@ li {
 .side-nav-item {
   min-width: 8vw;
   font-size: 1.2em;
-  font-family: 'Avenir Next Cyr Regular';
-  color: #352c2c;
+  font-family: 'Chillax Regular';
+  color: #242424;
 }
 
 .sidenav-active {
-  border-right: solid 2px #5f4e4e;
+  border-right: solid 2px #242424;
   /* border-bottom-width: 20px; */
   font-family: 'Avenir Next Cyr Demi';
   font-size: 1.5em;
-}
-
-.prototype-button {
-  background-color: #e3b8a6; /* Green */
-  border: 2px solid #5b5050;
-  border-radius: 4px;
-  color: #5b5050;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.prototype-button:hover {
-  border: 2px solid #5b5050;
-  background-color: #5b5050;
-  color: white;
-}
-
-.project-subheader {
-  font-family: 'Avenir Next Cyr Regular';
-  color: #a19595;
-  font-weight: 300;
-  font-size: 1.3em;
-  letter-spacing: 0.05em;
-}
-
-li {
-  margin: 0 0 2% 0;
 }

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Chillax/chillax.css" />
+    <link rel="stylesheet" href="/assets/fonts/Kathumo/style.css" />
 
     <link
       rel="stylesheet"
@@ -29,6 +31,10 @@
     ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta name="viewport" content="width=device-width">
+    
+    <script type="text/javascript" src="../assets/interactions/simpleTypingCarousel.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
@@ -54,25 +60,37 @@
 
   </head>
 
+  <!-- FCF9F4 -->
   <body>
     
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
-  <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+  <a class="navbar-brand" href="/">
+    <img class="logo" src="assets/images/kb_vector.svg"/>
+  </a>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item large-nav">
           <a class="nav-link" href="/">Design</a>
         </li>
         <li class="nav-item large-nav">
-          <a class="nav-link" href="/art.html">Art</a>
+          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item large-nav">
           <a class="nav-link" href="/me.html">Me</a>
         </li>
-        <li class="nav-item large-nav">
-          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
-        </li>
+        <!-- <div class="dropdown">
+          <li class="nav-item large-nav">
+            <a class="nav-link" href="/me.html">Me</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="/me.html">About Me</a>
+              <a href="#">Art from the artist</a>
+            </div>
+          </li> -->
+        </div>
+          
+        
+        
       </ul>
     </div>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -123,23 +141,27 @@ function myFunction() {
     
 
 <section>
+  <div class="me">
   <div class="row designContentPadding">
-    <div class="col-md-8" style="width: 100%"><img src="../assets/images/me/fu.jpg" alt="" /></div>
-    <div class="col-md-4">&nbsp;</div>
+    <div class="col-lg-8 col-sm-12 me-image-1" data-aos="fade-bottom" style="width: 100%">
+      <img src="../assets/images/me/fu.jpg" alt="" />
+    </div>
+    <div class="col-lg-4 col-sm-12">&nbsp;</div>
   </div>
-  <div class="row designContentPadding" style="padding-top: 2%; padding-right: 10%">
-    <div class="col-md-7">
+
+  <div class="row me-content-padding">
+    <div class="col-lg-7 col-sm-12">
       <div>&nbsp;</div>
       <div class="me-hello">
         <p>Hello!</p>
         <p>Thank you for stopping by!</p>
       </div>
       <div>&nbsp;</div>
-      <div class="content-body">
+      <div class="me-content-text">
         <p>
-          I am currently working at <b>Microsoft</b> and settled in <b>Hyderabad</b>. I grew up in a small town in the
-          beautiful state of Kerala, India and back here again as the whole of the tech industry in India went into work
-          from home mode. I love the rain and green in Kerala.
+          I am a <b>freelance designer</b> as well as a Software Engineer at <b>Microsoft</b> and settled in <b>Hyderabad</b>. 
+          I grew up in a small town in the beautiful state of Kerala, India and back here again as the whole of the tech industry in India went into work from home mode. 
+          I love the rain and green in Kerala.
         </p>
         <p>
           I am an avid traveler, I love traveling mainly because I get to eat different types of food. I am a dessert
@@ -152,30 +174,55 @@ function myFunction() {
         </p>
       </div>
     </div>
-    <div class="col-md-5 content-body" style="width: 100%">
-      <img src="../assets/images//me/ikea.jpg" alt="" style="padding-left: 10%;"/>
-      <div class="designContentPadding">
-        <p><b>Contact</b></p>
-        <a href="mailto: karthikabaiju.mec@gmail.com" class="me-email">karthikabaiju.mec@gmail.com</a>
-        <p>&nbsp;</p>
+    <div class="col-lg-5 col-sm-12 content-body" data-aos="fade-bottom" style="width: 100%">
+      <img src="../assets/images//me/me.jpg" alt="" class="me-image-2"/>
+    </div>
 
-        <p class='me-social-text'><b>Social</b></p>
-        <div class="row" style="padding-left: 5%">
-          <a href="https://www.linkedin.com/in/karthikabaiju/" class="me-social" target="_blank"
-            ><img src="../assets/images/me/linkedin.svg" style="width: 100%" alt=""
-          /></a>
-          <a href="https://www.instagram.com/karthika.baiju/" class="me-social" target="_blank"
-            ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
-          /></a>
-          <a href="https://medium.com/@karthikabaiju.mec" class="me-social" target="_blank"
-            ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
-          /></a>
-          <a href="https://github.com/karthikabaiju" class="me-social" target="_blank"
-            ><img src="../assets/images/me/github.svg" style="width: 100%" alt=""
-          /></a>
-        </div>
+    <div class="me-contact">
+      <p class="me-social-text"><b>Contact</b></p>
+      <a href="mailto: karthikabaiju.mec@gmail.com" class="me-email">karthikabaiju.mec@gmail.com</a>
+      <p>&nbsp;</p>
+
+      <p class='me-social-text'><b>Social</b></p>
+      <div class="row" style="padding-left: 3%">
+        <a href="https://www.linkedin.com/in/karthikabaiju/" class="me-social" target="_blank"
+          ><img src="../assets/images/me/linkedin.svg" style="width: 80%" alt=""
+        /></a>
+        <a href="https://www.instagram.com/karthika.baiju/" class="me-social" target="_blank"
+          ><img src="../assets/images/me/instagram.svg" style="width: 80%" alt=""
+        /></a>
+        <a href="https://medium.com/@karthikabaiju" class="me-social" target="_blank"
+          ><img src="../assets/images/me/medium.svg" style="width: 80%" alt=""
+        /></a>
+        <a href="https://github.com/karthikabaiju" class="me-social" target="_blank"
+          ><img src="../assets/images/me/github.svg" style="width: 80%" alt=""
+        /></a>
       </div>
     </div>
+
+  </div>
+  
+</section>
+
+<section id="More about me">
+  <div class="center-align more me">
+    <p>More about me</p>
+    
+    <div class="row art">
+      <div class="col-lg-6 col-sm-12 zoom">
+        <a href="./art.html">
+        <img class="filter" src="../assets/images/me/art.jpg">
+        <div class="centered">Art</div></a>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 zoom blog"
+      onclick="window.open('https://medium.com/@karthikabaiju', '_blank');">
+        <img class="filter" src="../assets/images/me/Blog.jpg">
+        <div class="centered">Blog</div>
+      </div>
+      
+    </div>
+    
   </div>
 </section>
 
@@ -216,8 +263,10 @@ function myFunction() {
 
     
     <!-- Footer -->
-    <div class="footer row">
-    <div class="row col-md-6 col-sm-12">
+    <script type="text/javascript" src="../assets/interactions/scrollToTop.js"></script>
+
+<div class="footer row" style="margin-right: 0">
+    <div class="row col-md-6 col-sm-12 footer-icons">
         <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
         ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
       /></a>
@@ -227,7 +276,7 @@ function myFunction() {
         <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
           ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
         /></a>
-        <a href="https://medium.com/@karthikabaiju.mec" class="footer-social" target="_blank"
+        <a href="https://medium.com/@karthikabaiju" class="footer-social" target="_blank"
           ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
         /></a>
         <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
@@ -236,12 +285,12 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
-            <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
-        </a>
+      <button id="scrollToTopBtn"
+      onclick=scrollToTop()>&#8593</button>
     </div>
 </div>
 
   
+    <script type="text/javascript" src="../assets/interactions/animationOnScroll.js"></script>
   </body>
 </html>

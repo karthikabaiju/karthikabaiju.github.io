@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Chillax/chillax.css" />
+    <link rel="stylesheet" href="/assets/fonts/Kathumo/style.css" />
 
     <link
       rel="stylesheet"
@@ -29,6 +31,10 @@
     ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta name="viewport" content="width=device-width">
+    
+    <script type="text/javascript" src="../assets/interactions/simpleTypingCarousel.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
@@ -49,29 +55,42 @@
     
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+
 <title>Karthika Baiju</title>
 
   </head>
 
+  <!-- FCF9F4 -->
   <body>
     
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
-  <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+  <a class="navbar-brand" href="/">
+    <img class="logo" src="assets/images/kb_vector.svg"/>
+  </a>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item large-nav">
           <a class="nav-link" href="/">Design</a>
         </li>
         <li class="nav-item large-nav">
-          <a class="nav-link" href="/art.html">Art</a>
+          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item large-nav">
           <a class="nav-link" href="/me.html">Me</a>
         </li>
-        <li class="nav-item large-nav">
-          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
-        </li>
+        <!-- <div class="dropdown">
+          <li class="nav-item large-nav">
+            <a class="nav-link" href="/me.html">Me</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="/me.html">About Me</a>
+              <a href="#">Art from the artist</a>
+            </div>
+          </li> -->
+        </div>
+          
+        
+        
       </ul>
     </div>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -121,135 +140,144 @@ function myFunction() {
  
     
 
+<div style="background-color: #FCF9F4;">
+
 <!-- Introduction -->
 <section id="hero">
-  <div class="header-margin row">
-    <div id="hero-txt-content" class="col-lg-8 col-sm-12">
+  <div class="row hero-row">
+    <div id="" class="col-lg-6 col-sm-12">
       <div class="intro-container center-content">
-        <h1 class="intro">Hi,</h1>
-        <h1 class="intro" style="display: inline">I am &nbsp</h1>
-        <div style="display: inline-block" class="yellow-highlight">
-          <h1 class="intro yellow-highlight-text" style="display: inline-block">
-            <a class="intro-link" href="/me.html"><b>Karthika</b></a>
-          </h1>
+        <div style="text-align: center;">
+          <span class="intro">Hi, I am </span> 
+          <span class="intro-script">Karthika</span>
         </div>
-        <h1 class="intro" style="display: inline">, I am an <b>UX Designer</b> with a background in engineering, currently working at 
-          <b>Microsoft</b>. I am someone who found her calling in &nbsp</h1>
-        <div style="display: inline-block" class="brown-highlight">
-          <h1 class="intro brown-highlight-text" style="display: inline-block">
-            <a class="intro-link" href="/"><b>Design</b>.</a>
-          </h1>
+        <p></p>
+        <br><br>
+        <p class="intro-child">I am a</p>
+        <div class="text-type">
+          <span 
+              class="txt-rotate"
+              speed="50"
+              data-period="2000"
+              data-rotate='["Software &nbsp Engineer by Day", 
+              "UX Designer by Night", 
+              "Passionate &nbsp problem &nbsp solver", 
+              "Fulltime &nbsp artist &nbsp at &nbsp heart!"]'></span>
+              
         </div>
-        <div class="intro-child">UX Designer | Engineer | Microsoft</div>
+        <br>
+        <br>
+        <div class="intro-child-1">UX Designer | Engineer | Microsoft</div>
       </div>
-      
     </div>
-    <div id="hero-img-content" class="col-lg-4 col-sm-12">
-      <img id = "Cartoon_image" class="center-content cartoon imageModal" src="../assets/images/Cartoon.svg"/>
+
+    <div id="hero-img-content" class="col-lg-6 col-sm-12">
+      <img id = "intro-image" class="into-image" src="../assets/images/Intro.svg"/>
+    </div>
+  </div>
+  <!-- <div class="arrow bounce">
+    <a class="fa fa-arrow-down fa-2x" href="#"></a>
+  </div> -->
+</section>
+
+<!-- Project -->
+<section id="Vet's Pocket">
+  <div style="background-color: #475A51;">
+    <div class="row project-container" data-aos="fade-bottom" >
+      <div class="col-lg-6 col-sm-12" style="text-align: center;">
+        <img src="../assets/images/vets_pocket/Mock.svg" style="background-color: #475A51;">
+        <!-- <div class="item" data-aos="fade-bottom">4</div> -->
+
+      </div>
+
+      <div class="col-lg-6 col-sm-12 project-content-container">
+        <div class="project-content-h1">Vet's Pocket</div>
+        <div class="project-content-h2">Freelance - UX Designer</div>
+        <br>
+        <div class="project-content-h3">Vet’s Pocket is a record, appointment, and inventory management system for new, on-field veterinarians.</div>
+
+        <a href="/project_vets_pocket.html">
+          <button class="project-button">Explore more</button>
+        </a>
+
+      </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="projectHeading designContentHeading">
-    Projects
+<section id="Mentoring App">
+  <div style="background-color: #475A51;">
+    <div class="row project-container" data-aos="fade-bottom" >
+      <div class="col-lg-6 col-sm-12">
+        <img src="../assets/images/mentoring_app/Mentoring App Mock.svg" style="background-color: #475A51;">
+      </div>
+
+      <div class="col-lg-6 col-sm-12 project-content-container">
+        <div class="project-content-h1">Mentoring App</div>
+        <div class="project-content-h2">Microsoft - UX Designer</div>
+        <br>
+        <div class="project-content-h3">Reimagining your experience of finding a mentor inside the organization</div>
+        
+        <a href="/project_mentoring_app.html">
+          <button class="project-button">Explore more</button>
+        </a>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Vet's Pocket -->
-<section>
-  <div class="designContentPadding initial">
-    <a class="intro-link app-row" href="/project_vets_pocket.html">
-      <div class="row app-row-child">
-        <div class="col-md-6 col-sm-12" style="text-align: left; ">
-          <img style="padding-top: 2%; padding-bottom: 2%;" src="assets/images/vets_pocket/Front.png" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="content-header" style="padding-top: 5%;">Team Project</p>
-          <h1 class="designContentHeading">Vet's Pocket</h1>
-          <h2 class="intro-child">Freelance - UX Designer</h2>
-          <br />
-          <p class="designContentBody">
-            Vet’s Pocket is a record, appointment, and inventory management system for new, on-field veterinarians  
-          </p>
-          <!-- <p class="designContentRead">Read More &nbsp<img src="assets/images/arrow.png" /></p> -->
-        </div>
+<section id="TinyBoldStrokes">
+  <div style="background-color: #475A51;">
+    <div class="row project-container" data-aos="fade-bottom">
+      <div class="col-lg-6 col-sm-12">
+        <img src="../assets/images/tinyboldstrokes/Shop 1.svg" style="background-color: #475A51;">
       </div>
-    </a>
+
+      <div class="col-lg-6 col-sm-12 project-content-container">
+        <div class="project-content-h1">Tiny Bold Strokes</div>
+        <div class="project-content-h2">Freelance - UX Designer</div>
+        <br>
+        <div class="project-content-h3">Art E-commerce website for the brand Tiny Bold Strokes, which sells original paintings and giclee prints</div>
+        
+        <a href="/project_tinyboldstrokes.html">
+          <button class="project-button">Explore more</button>
+        </a>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Mentoring App -->
-<section>
-  <div class="designContentPadding">
-    <a class="intro-link app-row" href="/project_mentoring_app.html">
-      <div class="row app-row-child">
-        <div class="col-md-6 col-sm-12" style="text-align: left; ">
-          <img style="padding-top: 2%; padding-bottom: 2%;" src="assets/images/mentoring_app/Dashboard _ New Mentor _ Topic.svg" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="content-header" style="padding-top: 5%;">Team Project</p>
-          <h1 class="designContentHeading">Mentoring App</h1>
-          <h2 class="intro-child">Microsoft - UX Designer</h2>
-          <br />
-          <p class="designContentBody">
-            Finding a mentor has always been a difficult spot for many professionals. 
-            One solution we came up with is an organization-wide mentoring app that allows you to find a mentor and keep your mentorships organized.  
-          </p>
-          <!-- <p class="designContentRead">Read More &nbsp<img src="assets/images/arrow.png" /></p> -->
-        </div>
+<section id="Compass issues">
+  <div style="background-color: #475A51; padding-bottom: 5rem">
+    <div class="row project-container" data-aos="fade-bottom" >
+      <div class="col-lg-6 col-sm-12">
+        <img src="../assets/images/compass_issue/Compass.svg" style="background-color: #475A51;">
       </div>
-    </a>
+
+      <div class="col-lg-6 col-sm-12 project-content-container">
+        <div class="project-content-h1">Compass Issue Management</div>
+        <div class="project-content-h2">Freelance - UX Designer</div>
+        <br>
+        <div class="project-content-h3"> Redesigning the existing issue management module of Compass project</div>
+        
+        <a href="/project_compass_issue.html">
+          <button class="project-button">Explore more</button>
+        </a>
+
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Compass Issue Module Redesign
-<section>
-  <div class="designContentPadding">
-    <a class="intro-link app-row" href="/project_compass_issue.html">
-      <div class="row app-row-child">
-        <div class="col-md-6 col-sm-12" style="text-align: left; ">
-          <img style="padding-top: 2%; padding-bottom: 2%;" src="assets/images/compass_issue/Logo.svg" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="content-header" style="padding-top: 5%;">Team Project</p>
-          <h1 class="designContentHeading">Compass Issue Module Redesign</h1>
-          <h2 class="intro-child">Microsoft - UX Researcher</h2>
-          <br />
-          <p class="designContentBody">
-            Redesign of one of the widely used modules in the Compass app. 
-            This project gave me a lot of learnings on the role and importance of UX research in the project, the kind of impact research can have on a project.  
-          </p>
-          
-        </div>
-      </div>
-    </a>
-  </div>
-</section> -->
-
-<!-- Claire -->
-<section>
-  <div class="designContentPadding">
-    <a class="intro-link app-row" href="/project_claire.html">
-      <div class="row app-row-child">
-        <div class="col-md-6 col-sm-12" style="text-align: left">
-          <img style="padding-top: 3%; padding-bottom: 3%;" src="assets/images/claire/ClaireThumbnail.svg" />
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <p class="content-header" style="padding-top: 5%;">Personal Project</p>
-          <h1 class="designContentHeading">Claire Boutique App</h1>
-          <h2 class="intro-child">Freelance - UX Designer</h2>
-          <br />
-          <p class="designContentBody">
-            Claire is one of the new and upcoming boutiques, which mainly focus on the new generation shoppers. Their
-            collection is elegent, sophisticated and fun. They are planning on moving on to the online realm.
-          </p>
-          <!-- <p class="designContentRead">Read More &nbsp<img src="assets/images/arrow.png" /></p> -->
-        </div>
-      </div>
-    </a>
-  </div>
+<!-- Thank you -->
+<section id="Thank you">
+  <div class="thankyou">Thank you for stopping by! </div>
 </section>
+
+</div>
+
 
 
     <!-- Modal Image -->
@@ -287,8 +315,10 @@ function myFunction() {
 
     
     <!-- Footer -->
-    <div class="footer row">
-    <div class="row col-md-6 col-sm-12">
+    <script type="text/javascript" src="../assets/interactions/scrollToTop.js"></script>
+
+<div class="footer row" style="margin-right: 0">
+    <div class="row col-md-6 col-sm-12 footer-icons">
         <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
         ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
       /></a>
@@ -298,7 +328,7 @@ function myFunction() {
         <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
           ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
         /></a>
-        <a href="https://medium.com/@karthikabaiju.mec" class="footer-social" target="_blank"
+        <a href="https://medium.com/@karthikabaiju" class="footer-social" target="_blank"
           ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
         /></a>
         <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
@@ -307,12 +337,12 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
-            <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
-        </a>
+      <button id="scrollToTopBtn"
+      onclick=scrollToTop()>&#8593</button>
     </div>
 </div>
 
   
+    <script type="text/javascript" src="../assets/interactions/animationOnScroll.js"></script>
   </body>
 </html>

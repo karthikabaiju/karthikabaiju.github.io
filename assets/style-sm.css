@@ -7,14 +7,54 @@
   }
 } */
 
-@media only screen and (max-width: 991px) {
-  #hero {
+@media only screen and (max-width: 1548px) {
+  .into-image {
+    padding-top: 15%;
+  }
+
+  .project-content-h1 {
+    font-size: 4em;
+    line-height: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 1233px) {
+  .hero-row {
+    margin-top: 7rem;
+  }
+
+  .project-content-h1 {
+    font-size: 3em;
+    line-height: 3.5rem;
+  }
+
+  .project-content-h2 {
+    font-size: 1.5em;
+  }
+
+  .txt-rotate {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1065px) {
+  /* #hero {
     height: 200vh;
     background: linear-gradient(0deg, #ffffff 50%, #f6efe7 50%);
+  } */
+
+  #hero-txt-content {
+    margin-top: 5%;
+    max-width: 100%;
+    max-height: 362px;
   }
 
   #hero-img-content {
     text-align: center;
+  }
+
+  .intro-container {
+    width: 100%;
   }
 
   .navbar {
@@ -25,20 +65,15 @@
     background-color: #ffffff;
   }
 
-  #hero-txt-content {
-    background-image: url('../assets/images/hero-bg.jpg');
-    background-size: 105vw;
-  }
-
   .logo {
     margin-left: 30%;
     margin-top: 10%;
-    width: 40%;
+    width: 25%;
   }
 
-  .center-content {
+  /* .center-content {
     top: 50%;
-  }
+  } */
 
   .intro {
     font-size: 2.1em;
@@ -125,7 +160,7 @@
   }
 
   .project-navigation {
-    font-family: 'Avenir Next Cyr Light';
+    font-family: 'Chillax Regular';
     font-size: 0.7em;
   }
 
@@ -156,6 +191,63 @@
   }
 }
 
+@media screen and (max-width: 990px) {
+  #hero > div > div {
+    padding: 8rem;
+  }
+
+  .intro-container {
+    padding-right: 10%;
+  }
+
+  .into-image {
+    padding-top: 2%;
+  }
+
+  .me-image-2,
+  .blog {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .me-image-1 {
+    padding: 10% 0 0 8%;
+  }
+
+  .txt-rotate {
+    font-size: 2rem;
+  }
+
+  .project-container {
+    padding: 7% 7% 15% 7%;
+  }
+
+  .center-content {
+    top: 30%;
+    bottom: 30%;
+  }
+
+  .center-align {
+    text-align: left;
+  }
+
+  .thankyou {
+    font-size: 3rem;
+  }
+
+  .project {
+    margin: 7% 10% 5% 10%;
+    font-size: 1.3rem;
+  }
+
+  .me {
+    font-size: 1.3rem;
+  }
+
+  .more {
+    font-size: 2.8rem;
+  }
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .art-column {
@@ -170,11 +262,40 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .banner {
+    margin-top: 15%;
+  }
+
+  .footer {
+    padding-right: 5%;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-text {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .thankyou {
+    font-size: 2.5rem;
+  }
+}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
+  .scroll-to-top {
+    visibility: hidden;
+  }
   .intro {
     font-size: 1.8em;
     text-align: justify;
+  }
+  .intro-script {
+    font-size: 1.8em;
   }
 
   .intro-child {
@@ -193,5 +314,34 @@
 
   .overlay-container:hover .overlay {
     opacity: 0;
+  }
+
+  .thankyou {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  html {
+    font-size: 10px;
+  }
+
+  .banner {
+    margin-top: 20%;
+  }
+
+  /* .intro-container {
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 340px) {
+  .txt-rotate {
+    font-size: 1.5rem;
+  }
+
+  #hero > div > div:last-child {
+    padding-top: 9rem;
+    padding: 6rem;
   }
 }

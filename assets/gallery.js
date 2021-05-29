@@ -1,4 +1,4 @@
-years = ['2020', '2019'];
+years = ['2021', '2020', '2019'];
 
 function galleryContainer(element) {
   let container = `<div>`;

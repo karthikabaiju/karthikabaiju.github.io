@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="assets/fonts/Moon/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Indie Flower/style.css" />
-    <link rel="stylesheet" href="assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Moon/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Indie Flower/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Avenir Next Cyr/style.css" />
+    <link rel="stylesheet" href="/assets/fonts/Chillax/chillax.css" />
+    <link rel="stylesheet" href="/assets/fonts/Kathumo/style.css" />
 
     <link
       rel="stylesheet"
@@ -29,6 +31,10 @@
     ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta name="viewport" content="width=device-width">
+    
+    <script type="text/javascript" src="../assets/interactions/simpleTypingCarousel.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
@@ -57,25 +63,37 @@
 
   </head>
 
+  <!-- FCF9F4 -->
   <body>
     
     <!-- Navigation Bar   -->
     <nav class="navbar navbar-expand-lg navbar-collapse fixed-top">
-  <a class="navbar-brand" href="/"><img class="logo" src="assets/images/kb_vector.svg" style="max-height: 15vh;" /></a>
+  <a class="navbar-brand" href="/">
+    <img class="logo" src="assets/images/kb_vector.svg"/>
+  </a>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item large-nav">
           <a class="nav-link" href="/">Design</a>
         </li>
         <li class="nav-item large-nav">
-          <a class="nav-link" href="/art.html">Art</a>
+          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
         </li>
         <li class="nav-item large-nav">
           <a class="nav-link" href="/me.html">Me</a>
         </li>
-        <li class="nav-item large-nav">
-          <a class="nav-link" href="assets/resume/Karthika Baiju.pdf" target="_blank">Resume</a>
-        </li>
+        <!-- <div class="dropdown">
+          <li class="nav-item large-nav">
+            <a class="nav-link" href="/me.html">Me</a>
+            <div class="dropdown-content" style="left:0;">
+              <a href="/me.html">About Me</a>
+              <a href="#">Art from the artist</a>
+            </div>
+          </li> -->
+        </div>
+          
+        
+        
       </ul>
     </div>
   <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -126,7 +144,7 @@ function myFunction() {
     
 
 <!-- Side Index -->
-<div class="sidenav">
+<!-- <div class="sidenav">
   <ul class="navbar-nav ml-auto">
     <li data-val="overview" class="side-nav-item large-nav sidenav-active"><a>Overview</a></li>
     <li data-val="challenge" class="side-nav-item large-nav"><a>Challenge</a></li>
@@ -137,114 +155,125 @@ function myFunction() {
     <li data-val="iterations" class="side-nav-item large-nav"><a>Iterations</a></li>
     <li data-val="learnings" class="side-nav-item large-nav"><a>Learnings</a></li>
   </ul>
-</div>
+</div> -->
+
+<!-- Header -->
+<section id="header" class="banner">
+  <div class=header-padding data-aos="fade-bottom">
+    <p class="header-text-1">Team Project - 2020</p>
+    <p class="header-text-2">Mentoring App</p>
+    <p class="header-text-3">Microsoft</p>
+  </div>
+</section>
 
 <!-- Introduction -->
 <section id="overview">
-  <div class="project-header-padding" style="text-align: center">
-    <p class="content-header">Team Project - 2020</p>
-    <p class="content-header-project">Mentoring App</p>
-    <p class="project-subheader">Microsoft</p>
-  </div>
-  <div class="row content-padding">
+  <div class="row project">
+    
     <div class="col-md-6 col-sm-12">
-      <div class="project-content-left">
-        <p class="content-header">Overview</p>
-        <p class="content-body">A platform designed to make the process of creating a <b>mentor-mentee relation</b>  easier.</p>
-          <p class="content-body">We aim to create a platform that is,</p>
-          <ol class="content-body" style="padding-left: 15%;">
-            <li>Easy to use</li>
-            <li>Makes the process of finding a mentor easy for all people</li>
-            <li>Have a structured mentorship program</li>
-          </ol>
-      </div> 
-      <div>
-        <button class="prototype-button content-body" 
+      <p class="content-heading">Overview</p>
+      <p>A platform designed to make the process of creating a <b>mentor-mentee relation</b>  easier.</p>
+      <p>We aim to create a platform that is,</p>
+      <ol>
+        <li>Easy to use</li>
+        <li>Makes the process of finding a mentor easy for all people</li>
+        <li>Have a structured mentorship program</li>
+      </ol>
+      <button class="project-button" 
         onclick="window.open('https://www.figma.com/proto/65AFwvky5t4X8ZdleXmN9v/Mentoring-App?node-id=193%3A18241&viewport=131%2C468%2C0.08558712899684906&scaling=min-zoom', '_blank');">
           Prototype
-        </button>
-      </div>
+      </button>
     </div>
-    <div class="col-md-6 col-sm-12" style="text-align: left">
+
+    <div class="col-md-6 col-sm-12 center-align">
       <img class="imageModal" src="../assets/images/mentoring_app/Dashboard _ New Mentor _ Topic.svg"/>
-    </div> 
+    </div>
+
   </div>
 </section>
 
 <!-- Project Details -->
 <section id="project details">
-  <div class="row content-padding" style="padding-top: 5%;">
-    <div class="col-md-4 col-sm-12">
-      <p class="content-header">My Role</p>
-      <p class="content-body">Researcher, Designer and 1/5 Developer</p>
+
+  <div class="row project">
+    <div class="col-md-4 col-sm-12 center-align">
+      <p class="content-heading">My Role</p>
+      <p>Researcher, Designer and 1/5 Developer</p>
     </div>
-    <div class="col-md-4 col-sm-12">
-      <p class="content-header">My Team</p>
-      <p class="content-body">We are a team of 6 members. 2 coordinators, 4 developers and 1 designer/developer </p>
+
+    <div class="col-md-4 col-sm-12 center-align">
+      <p class="content-heading">My Team</p>
+      <p>We are a team of 6 members. 2 coordinators, 4 developers and 1 designer/developer</p>
     </div>
-    <div class="col-md-4 col-sm-12">
-      <p class="content-header">Timeline</p>
-      <p class="content-body">September 2020; On Going</p>
+
+    <div class="col-md-4 col-sm-12 center-align">
+      <p class="content-heading">Timeline</p>
+      <p>September 2020</p>
     </div>
   </div>
+
 </section>
 
 <!-- Demo Video -->
 <section>
-  <div>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
+  <div class="project">
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
   </div>
 </section>
 
 <!-- Challenge -->
 <section id="challenge">
-  <div class="content-padding">
-    <p class="content-header">The Challenge</p>
-    <p class="content-body">
+  <div class="project">
+    <p class="content-heading">The Challenge</p>
+    <p>
       When I had joined as a new hire 2 years ago, one of the main issues I faced was that I didn't have a mentor. Since I was new to Microsoft, 
       I didn't know many people or how to approach people for mentorship. I have faced the same challenge as I started learning UX.   
     </p>
-    <p class="content-body"><b>Finding a mentor inside the organization who can help me was difficult</b>.</p>
-    <p class="content-body">When my team came up with the idea of creating a mentoring app that allows you to find a mentor, 
+    <p><b>Finding a mentor inside the organization who can help me was difficult</b>.</p>
+    <p>When my team came up with the idea of creating a mentoring app that allows you to find a mentor, 
       I was more than happy to join the team and start on the problem.</p>
   </div>
 </section>
 
 <!-- The Goal -->
 <section id="goal">
-  <div class="content-padding"><p class="content-header">The Goal</p></div>
-  <div class="row content-padding" style="padding-top: 1%">
-    <div class="col-md-6 col-sm-12">
-      <p class="content-body  project-content-left">
-        When talking to 5 other people in the organization, I came to realize that I was not the only person facing the challenges of finding a mentor. 
-        And more challenges the people were having on this topic came to light as well. After discussions and brainstorming within the team,
-        we were able to converge on the major goal that we wished to accomplish with this application,   
-      </p>
-      <p class="content-body  project-content-left"><b>Provide easy and better mentorship experience to anyone in the organisation</b></p>
+  <div class="project">
+    <p class="content-heading">The Goal</p>
+    <div class="row">
+      <div class="col-md-6 col-sm-12 goal-padding">
+        <p>
+          When talking to 5 other people in the organization, I came to realize that I was not the only person facing the challenges of finding a mentor. 
+          And more challenges the people were having on this topic came to light as well. After discussions and brainstorming within the team,
+          we were able to converge on the major goal that we wished to accomplish with this application,   
+        </p>
+        <p><b>Provide easy and better mentorship experience to anyone in the organisation</b></p>
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+        <img class="imageModal" src="../assets/images/mentoring_app/Goals.svg" />
+      </div>
+
     </div>
-    <div class="col-md-6 col-sm-12" style="text-align: left">
-      <img class="imageModal" src="../assets/images/mentoring_app/Goals.svg" />
-    </div>
-    
   </div>
 </section>
 
 <!-- User Research -->
 <section id="research">
-  <div class="content-padding">
-    <p class="content-header">User Research & Insights</p>
-    <p class="content-body">
+  <div class="project">
+    <p class="content-heading">User Research & Insights</p>
+    <p>
       I conducted <b>user interviews</b> with employees who were new hires, learning a new skill and looking for a role change. 
       Talking to them made me realize that finding the correct mentor was only half of the problem, the other issues that they faces were that they were not able to 
       keep the mentoring session properly arranged, see the progress, find a mentor that they had proper rapport with, reaching out to more people and so on. 
       From the user interview I was able to create an experience map and categorize them into 3 main scenarios:   
     </p>
-    <ol class="content-body" style="padding-left: 15%;">
+    <ol>
       <li>Finding a mentor</li>
       <li>Organizing mentoring session</li>
       <li>Experimental 1:1 session before long term commitment</li>
     </ol>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/ExperienceMap.svg" />
+
     <div class="row insights-row">
       <div class="col-md-6 insights">
         <p>
@@ -296,48 +325,48 @@ function myFunction() {
 
 <!-- Map -->
 <section id="map">
-  <div class="content-padding">
-    <p class="content-header">Journey Map</p>
+  <div class="project">
+    <p class="content-heading">Journey Map</p>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/Journey Map.svg" />
-    <p class="content-body" style="padding-top: 7%;">
+    <p>
       After the <b>user interview</b>, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
       how the steps were going to look for the mentor, mentee and the system. We focused on the flow for getting everything ready and having the first 1:1 mentoring session with 
       a new mentor. We were able to identify the major touchpoints of the user flow. 
     </p>
-  </div>
-  <div class="subcontent content-body">
-    <p>
-      <b>Recommendations:</b> Get a mentor recommendation for available mentors for the topic they selected. 
-    </p>
-    <br />
-    <p><b>The mentee should have the option to state their preference on who they would like to be their mentor:</b> 
-      Request gets sends to the mentor.</p>
-    <br />
-    <p><b>The connection created: </b>If the mentor feels that they will be able to help the mentee, then they will accept the request. 
-      A dedicated channel is created for this mentor-mentee collaboration.</p>
-    <br />
-    <p>
-      <b>First meeting:</b> The first meeting is automatically scheduled and set up.
-    </p>
-    <br/>
-    <p>
-      <b>Option to reject/accept the mentorship for further advancements:</b> 
-      Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. If they accept the request, then the long term schedule will be set up.
-    </p>
-  </div>
-  <div>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Touchpoints.svg" />
+
+    <div class="subcontent">
+      <p>
+        <b>Recommendations:</b> Get a mentor recommendation for available mentors for the topic they selected. 
+      </p>
+      <br />
+      <p><b>The mentee should have the option to state their preference on who they would like to be their mentor:</b> 
+        Request gets sends to the mentor.</p>
+      <br />
+      <p><b>The connection created: </b>If the mentor feels that they will be able to help the mentee, then they will accept the request. 
+        A dedicated channel is created for this mentor-mentee collaboration.</p>
+      <br />
+      <p>
+        <b>First meeting:</b> The first meeting is automatically scheduled and set up.
+      </p>
+      <br/>
+      <p>
+        <b>Option to reject/accept the mentorship for further advancements:</b> 
+        Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. If they accept the request, then the long term schedule will be set up.
+      </p>
+    </div>
+
+    <div>
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/Touchpoints.svg" />
+    </div>
   </div>
 </section>
 
 <!-- Personas -->
 <section id="personas">
-    
-  </div>
-  <div class="row content-padding">
+  <div class="row project">
     <div class="col-md-6 col-sm-12">
-      <p class="content-header">Personas</p>
-      <p class="content-body project-content-left">
+      <p class="content-heading">Personas</p>
+      <p>
         Discussion more on the user research, we were able to identify the persona for whom we wanted to focus on and sketched the persona out.
         The main characteristic of the persona was someone who <b> wanted to learn something new and was looking for a mentor 
         that can guide them in that path.</b>
@@ -351,57 +380,57 @@ function myFunction() {
 
 <!-- Wireframe -->
 <section id="iterations">
-  <div class="content-padding">
-    <p class="content-header">Wireframing, Prototyping, Usability-Testing & Iterations</p>
-    <p class="content-body">
+  <div class="row project">
+    <p class="content-heading">Wireframing, Prototyping, Usability-Testing & Iterations</p>
+    <p>
       We iterated through multiple versions of the app before finally settling on one to create a PowerApps prototype. Each usability test provided insights, 
       corners and cases that we had missed. We iterated through 3 versions of sketches, a sketch wireframe for low fidelity, 
       low fidelity prototype and finally the mid fidelity Figma prototype.
     </p>
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 1 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/sketch1.svg" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/sketch1.svg" />
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 2 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Sketch2.svg" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/Sketch2.svg" />
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 3 - Sketch</b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/sketch3.svg" />
-    <p class="content-body">During the user testing of the app-based version of the iteration, one of the users mentioned that all the functions that we were trying 
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/sketch3.svg" />
+    <p>During the user testing of the app-based version of the iteration, one of the users mentioned that all the functions that we were trying 
       to accomplish can be easily done through Microsoft Teams. He also asked why we needed to take the data out to another platform when everything could just as easily 
       be done in Teams. Since the default application that any employee at Microsoft opens first thing at the start of the workday is Teams. For any new hires, 
       the first application they get on-boarded to and learn to use is Teams, so we decided to use the teams and channel function available in Microsoft Teams 
       as the base for our application.</p>
 
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 4 - Wireframe</b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/Wireframe.svg" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/Wireframe.svg" />
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 5 - Low fidelity prototype</b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/SketchPrototype.gif" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/SketchPrototype.gif" />
 
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 6 - Mid fidelity prototype </b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/FigmaPrototype.gif" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/FigmaPrototype.gif" />
 
-    <p class="content-body" style="padding-top: 5%">
+    <p class="version">
       <b>Version 7 - High fidelity prototype </b>
     </p>
-    <img class="project-header-image imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
     <div>
-      <button class="prototype-button content-body" 
+      <button class="project-button" 
       onclick="window.open('https://www.figma.com/proto/65AFwvky5t4X8ZdleXmN9v/Mentoring-App?node-id=193%3A18241&viewport=131%2C468%2C0.08558712899684906&scaling=min-zoom', '_blank');">
         Prototype
       </button>
@@ -412,9 +441,9 @@ function myFunction() {
 
 <!-- My Learnings -->
 <section id="learnings">
-  <div class="content-padding">
-    <p class="content-header">My Learnings</p>
-    <ol class="content-body">
+  <div class="project">
+    <p class="content-heading">My Learnings</p>
+    <ol>
       <li>
         <b>Iteration makes things better:</b> The solution gets better with each iteration that you run.
         Your solution will go from "this won't work" to "when can I start using it" with each iteration with the user.  
@@ -437,16 +466,16 @@ function myFunction() {
 <section>
   <div class="kktfwp-nav">
     <div class="kktfwp-prev">
-      <a class="project-navigation" href="./project_vets_pocket.html" rel="next">
-        <span class="n-desc project-navigation" data-delay="0" style="color: #5f4e4e">Previous</span>
-        <span class="n-title" style="color: #5f4e4e">Vet's Pocket</span>
+      <a class="project-navigation" href="./project_vets_pocket.html" rel="prev">
+        <span class="n-desc nav-color" data-delay="0">Previous</span>
+        <span class="n-title nav-color">Vet's Pocket</span>
       </a>
     </div>
     
     <div class="kktfwp-next">
-      <a class="project-navigation" href="./project_claire.html" rel="prev">
-        <span class="n-desc" data-delay="0" style="color: #5f4e4e">Next</span>
-        <span class="n-title" style="color: #5f4e4e">Claire</span>
+      <a class="project-navigation" href="./project_tinyboldstrokes.html" rel="next">
+        <span class="n-desc nav-color" data-delay="0">Next</span>
+        <span class="n-title nav-color">Tiny Bold Strokes</span>
       </a>
     </div>
   </div>
@@ -527,8 +556,10 @@ function myFunction() {
 
     
     <!-- Footer -->
-    <div class="footer row">
-    <div class="row col-md-6 col-sm-12">
+    <script type="text/javascript" src="../assets/interactions/scrollToTop.js"></script>
+
+<div class="footer row" style="margin-right: 0">
+    <div class="row col-md-6 col-sm-12 footer-icons">
         <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
         ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
       /></a>
@@ -538,7 +569,7 @@ function myFunction() {
         <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
           ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
         /></a>
-        <a href="https://medium.com/@karthikabaiju.mec" class="footer-social" target="_blank"
+        <a href="https://medium.com/@karthikabaiju" class="footer-social" target="_blank"
           ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
         /></a>
         <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
@@ -547,12 +578,12 @@ function myFunction() {
     </div>
     <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">Copyright &copy; 2020 Karthika Baiju. All Rights Reserved.</div>  
     <div class="scroll-to-top">
-        <a href="" class="scroll-arrow" data-ix="opacity-on-hover">
-            <img src="../assets/images/up-arrow.svg" alt="" class="arrowup" data-ix="fixed-signature">
-        </a>
+      <button id="scrollToTopBtn"
+      onclick=scrollToTop()>&#8593</button>
     </div>
 </div>
 
   
+    <script type="text/javascript" src="../assets/interactions/animationOnScroll.js"></script>
   </body>
 </html>

@@ -1,7 +1,14 @@
 /* About me page */
+.me {
+  font-family: 'Chillax Regular';
+  color: #242424;
+  margin: 0% 10% 5% 10%;
+  font-size: 1rem;
+}
+
 .me-hello {
   /* font-family: 'Moon 2.0 Light'; */
-  font-family: 'Avenir Next Cyr Thin';
+  font-family: 'Chillax Light';
   font-style: normal;
   font-size: 30px;
   /* or 100% */
@@ -12,18 +19,72 @@
   color: #5f4e4e;
 }
 
+.me-contact {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
 .me-email {
   /* font-family: 'Moon 2.0 Light'; */
-  font-family: 'Avenir Next Cyr Regular';
+  font-family: 'Chillax Regular';
   color: #5f4e4e;
   letter-spacing: 0.05em;
 }
 
-.me-social {
-  width: 12%;
-  padding-right: 5%;
+.me-social-text {
+  font-family: 'Chillax Regular';
+  font-size: 1.8rem;
 }
 
+.me-social {
+  width: 10%;
+  padding-right: 2%;
+}
+
+.me-content-padding {
+  padding: 2% 5% 5% 10%;
+}
+
+.me-content-text {
+  font-family: 'Chillax Regular';
+}
+
+.more {
+  font-family: 'Chillax Regular';
+  font-size: 2.5rem;
+  margin-top: 5%;
+}
+
+.art {
+  padding: 2.5% 15% 0 15%;
+}
+
+.filter {
+  filter: brightness(30%);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}
+
+.me-image-2 {
+  padding-left: 10%;
+  padding-right: 12%;
+  padding-top: 5%;
+}
 /* .me-social:hover {
     cursor: pointer;
-  } */
+  } */ ;
