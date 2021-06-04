@@ -152,6 +152,10 @@ a:hover {
 }
 
 /* Project */
+.project-div {
+  background-color: #475a51;
+}
+
 .project {
   font-family: 'Chillax Regular';
   color: #242424;
