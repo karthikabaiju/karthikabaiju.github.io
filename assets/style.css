@@ -109,11 +109,12 @@ a.nav-link {
 }
 
 .intro-child-1 {
-  font-family: 'Chillax Light';
+  font-family: 'Chillax Regular';
   font-size: 1rem;
   line-height: 1.5em;
   color: #242424;
   text-align: center;
+  padding: 0% 5% 3% 5%;
 }
 
 .into-image {
@@ -367,32 +368,6 @@ a {
   text-decoration: none;
 }
 
-.arrow {
-  text-align: center;
-  margin: 0, 0;
-}
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -423,4 +398,38 @@ a {
   right: 0px;
   z-index: 2;
   left: 90%;
+}
+
+/* Bouncing arrow */
+.bounce-arrow {
+  position: fixed;
+  top: auto;
+  right: 50%;
+  z-index: 2;
+
+  bottom: 5%;
+  text-align: center;
+  padding: 0% !important;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }

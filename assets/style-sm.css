@@ -223,9 +223,9 @@
     padding-right: 10%;
   }
 
-  .into-image {
+  /* .into-image {
     padding-top: 2%;
-  }
+  } */
 
   .me-image-2,
   .blog {
@@ -268,6 +268,14 @@
 
   .more {
     font-size: 2.8rem;
+  }
+
+  .bounce-arrow {
+    visibility: hidden;
+  }
+
+  #hero-img-content {
+    margin-top: 10%;
   }
 }
 
