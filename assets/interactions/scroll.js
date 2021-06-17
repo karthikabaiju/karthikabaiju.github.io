@@ -17,11 +17,11 @@ function scrollToTop() {
   $(document).scroll(function () {
     if(window.scrollY > 200)
     {
-      $('#bounce-arrow').fadeOut();
-      $('#scrollToTop').fadeIn();
+      $('#bounce-arrow').hide();
+      $('#scrollToTop').show();
     }
     else{
-      $('#bounce-arrow').fadeIn();
-      $('#scrollToTop').fadeOut();
+      $('#bounce-arrow').show();
+      $('#scrollToTop').hide();
     }
   });

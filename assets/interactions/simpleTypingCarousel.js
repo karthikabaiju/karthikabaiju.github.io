@@ -43,7 +43,7 @@ setTimeout(function() {
 
 window.onload = function() {
 
-    $('#scrollToTop').fadeOut();
+    $('#scrollToTop').hide();
 
 var elements = document.getElementsByClassName('txt-rotate');
 for (var i=0; i<elements.length; i++) {
