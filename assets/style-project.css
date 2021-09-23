@@ -31,14 +31,22 @@
 .project {
   font-family: 'Chillax Regular';
   color: #242424;
-  margin: 7% 15% 5% 15%;
+  margin: 2% 15% 5% 15%;
   font-size: 1rem;
 }
 
 .content-heading {
   font-family: 'Chillax Medium';
+  font-size: 1.2rem;
+  margin-bottom: 0%;
+  color: #868686;
+  margin-top: 10%;
+}
+
+.content-heading-details {
+  font-family: 'Chillax Medium';
   font-size: 2rem;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
 }
 
 .subcontent {
@@ -290,4 +298,9 @@ li {
   /* border-bottom-width: 20px; */
   font-family: 'Avenir Next Cyr Demi';
   font-size: 1.5em;
+}
+
+.image-text {
+  text-align: center;
+  padding-bottom: 20%;
 }

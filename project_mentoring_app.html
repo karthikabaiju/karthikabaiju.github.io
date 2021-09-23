@@ -172,21 +172,21 @@ function myFunction() {
     
     <div class="col-md-6 col-sm-12">
       <p class="content-heading">Overview</p>
-      <p>A platform designed to make the process of creating a <b>mentor-mentee relation</b>  easier.</p>
-      <p>We aim to create a platform that is,</p>
-      <ol>
-        <li>Easy to use</li>
-        <li>Makes the process of finding a mentor easy for all people</li>
-        <li>Have a structured mentorship program</li>
-      </ol>
+      <p>
+        When I had joined as a new hire many years ago, one of the main issues I faced was that I didn't have a mentor. Since I was new to Microsoft, 
+        I didn't know many people or how to approach people for mentorship. I have faced the same challenge as I started learning UX.   
+      </p>
+      <p><b>Finding a mentor inside the organization who can help me was difficult</b>.</p>
+      <p>When my team came up with the idea of creating a mentoring app that allows you to find a mentor, 
+        I was more than happy to join the team and start on the problem.</p>
       <button class="project-button" 
         onclick="window.open('https://www.figma.com/proto/65AFwvky5t4X8ZdleXmN9v/Mentoring-App?node-id=193%3A18241&viewport=131%2C468%2C0.08558712899684906&scaling=min-zoom', '_blank');">
           Prototype
       </button>
     </div>
 
-    <div class="col-md-6 col-sm-12 center-align">
-      <img class="imageModal" src="../assets/images/mentoring_app/Dashboard _ New Mentor _ Topic.svg"/>
+    <div class="col-md-6 col-sm-12 center-align content-heading">
+      <img class="imageModal" src="../assets/images/mentoring_app/Mock.png"/>
     </div>
 
   </div>
@@ -223,49 +223,37 @@ function myFunction() {
 
 <!-- Challenge -->
 <section id="challenge">
-  <div class="project">
+  <div class="project" id="challenge1">
     <p class="content-heading">The Challenge</p>
+    <p class="content-heading-details">Finding a mentor was based on personal connection</p>
     <p>
-      When I had joined as a new hire 2 years ago, one of the main issues I faced was that I didn't have a mentor. Since I was new to Microsoft, 
-      I didn't know many people or how to approach people for mentorship. I have faced the same challenge as I started learning UX.   
+      If someone wanted to find a mentor, they had to search in their network to find someone who has the experience in the area you seek mentorship. 
+      If there is no one in your network, you will need to be introduced to the potential new mentor by a reliable source. 
+      This process tends to be time-consuming and increases the chances of not finding the help required.
     </p>
-    <p><b>Finding a mentor inside the organization who can help me was difficult</b>.</p>
-    <p>When my team came up with the idea of creating a mentoring app that allows you to find a mentor, 
-      I was more than happy to join the team and start on the problem.</p>
   </div>
-</section>
 
-<!-- The Goal -->
-<section id="goal">
-  <div class="project">
-    <p class="content-heading">The Goal</p>
-    <div class="row">
-      <div class="col-md-6 col-sm-12 goal-padding">
-        <p>
-          When talking to 5 other people in the organization, I came to realize that I was not the only person facing the challenges of finding a mentor. 
-          And more challenges the people were having on this topic came to light as well. After discussions and brainstorming within the team,
-          we were able to converge on the major goal that we wished to accomplish with this application,   
-        </p>
-        <p><b>Provide easy and better mentorship experience to anyone in the organisation</b></p>
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <img class="imageModal" src="../assets/images/mentoring_app/Goals.svg" />
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- User Research -->
-<section id="research">
-  <div class="project">
-    <p class="content-heading">User Research & Insights</p>
+  <div class="project" id="challenge2">
+    <p class="content-heading-details">No coherent platform existed yet for mentoring or keeping track of your mentoring sessions</p>
     <p>
-      I conducted <b>user interviews</b> with employees who were new hires, learning a new skill and looking for a role change. 
-      Talking to them made me realize that finding the correct mentor was only half of the problem, the other issues that they faces were that they were not able to 
-      keep the mentoring session properly arranged, see the progress, find a mentor that they had proper rapport with, reaching out to more people and so on. 
-      From the user interview I was able to create an experience map and categorize them into 3 main scenarios:   
+      There are some platforms, online well as in-person, that help you connect with people for mentorship. 
+      But post the initial connection, people find it hard to keep track of their mentoring sessions and progress.
+    </p>
+  </div>
+</section>
+
+<!-- Research -->
+<section id="research">
+  <div class="project" id="research1">
+    <p class="content-heading">Research</p>
+    <p class="content-heading-details">Talking to users revealed some interesting pain points like difficulty in finding a good mentor and keeping tabs on sessions and progress.</p>
+    <p>
+      I conducted user interviews with many employees. 
+      Talking to them made me realize that finding the correct mentor was only half the problem. 
+      For mentoring sessions that already existed, they faced issues like not being able to arrange the mentoring session and seeing the progress. 
+      For new sessions, they found it difficult to reach out to people and find a mentor that they had a rapport. 
+      Many talked about requiring mentoring when newly hired, when learning a new skill and when changing roles. 
+      From the user interviews,  I was able to create an experience map and categorize them into three main scenarios:  
     </p>
     <ol>
       <li>Finding a mentor</li>
@@ -273,36 +261,41 @@ function myFunction() {
       <li>Experimental 1:1 session before long term commitment</li>
     </ol>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/ExperienceMap.svg" />
+  </div>
+  <div class="project" id="research1">
+    <p class="content-heading-details">Some insights on what the users had to say during the research.</p>
 
     <div class="row insights-row">
       <div class="col-md-6 insights">
         <p>
-          The most consistent opinion was on finding a mentor that would be able to mentor you in your area of interest. Easy of finding such a mentor was the top request.
+          The most consistent opinion was on finding a mentor for your area of interest. The ease of finding such a mentor was the top request.
         </p>
-        <p class="content-quote">"If I am a PM looking for a design mentor, better to have a PM with design skills so they can help me in knowing how much design knowledge I would need"</p>
+        <p class="content-quote">“If I am a PM looking for a design mentor, better to have a PM with design skills so they can help me in knowing how much design knowledge I would need.”</p>
       </div>
       <div class="col-md-6 insights">
-        <p>Role-based mentorship was also something people were interested in. If they are looking for a role change or want to know the future of their role, 
+        <p>Role-based mentorship was also something people were interested in. 
+          If they are looking for a role change or want to know the future of their role, 
           they want someone who went through that journey to mentor them.</p>
-        <p class="content-quote">"If I am changing my role, i need a mentor who went through the same transition"</p>
+        <p class="content-quote">"If I am changing my role, I need a mentor who went through the same transition."</p>
       </div>
     </div>
     
     <div class="row insights-row">
       <div class="col-md-6 insights">
         <p>
-          Everyone wanted to choose their mentors and not have it auto-assigned or chosen for them. They want to know about the mentor, 
-          what they are offering in the mentorship and their available time before they decide on a mentor.
+          Everyone wanted to choose their mentors and not have them auto-assigned or chosen for them. 
+          They want to know about the mentor, what they are offering in the mentorship, and their available time before deciding on a mentor.
         </p>
-        <p class="content-quote">"Prefer to have a choice. In case I don't know who to choose, then auto-assign"</p>
-        <p class="content-quote">"Scheduling the timing that works for both mentor and mentee"</p>
+        <p class="content-quote">"Prefer to have a choice. In case I don't know who to choose, then auto-assign."</p>
+        <p class="content-quote">"Scheduling the timing that works for both mentor and mentee."</p>
       </div>
       <div class="col-md-6 insights">
         <p>
-          They want a place where they can easily access their mentorship status and organize resources and conversations. A dedicated place of collaboration with the mentor.
+          They want a place where they can easily access their mentorship status and organize resources and conversations. 
+          A dedicated place of collaboration with the mentor.
         </p>
         <p class="content-quote">
-          "See my mentorship status and activities at a single place"
+          "See my mentorship status and activities at a single place."
         </p>
       </div>
     </div>
@@ -310,28 +303,32 @@ function myFunction() {
     <div class="row insights-row">
       <div class="col-md-7 insights">
         <p>
-          Users wanted to ensure that they have a good rapport with the mentor, So they want the option to either continue or terminate the mentorship after the first meeting.
+          Users wanted to ensure that they have a good rapport with the mentor, 
+          so they want the option to either continue or terminate the mentorship after the first meeting.
         </p>
         <p class="content-quote">
-          "Trial talk to understand if the mentor is on the same page as a mentee"
+          "Trial talk to understand if the mentor is on the same page as a mentee."
         </p>
         <p class="content-quote">
-          "Ensure that the first meeting scheduled between the mentor and mentee occurs"
+          "Ensure that the first meeting scheduled between the mentor and mentee occurs."
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Map -->
-<section id="map">
-  <div class="project">
-    <p class="content-heading">Journey Map</p>
-    <img class="imageModal image-padding" src="../assets/images/mentoring_app/Journey Map.svg" />
+<!-- Ideation -->
+<section id="Ideation">
+  <div class="project" id="ideation1">
+    <p class="content-heading">Ideation</p>
+    <p class="content-heading-details">How would the user journey for this problem look like?</p>
+    <img class="imageModal image-padding" src="../assets/images/mentoring_app/Touchpoints.svg" />
+
     <p>
-      After the <b>user interview</b>, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
-      how the steps were going to look for the mentor, mentee and the system. We focused on the flow for getting everything ready and having the first 1:1 mentoring session with 
-      a new mentor. We were able to identify the major touchpoints of the user flow. 
+      After the user interview, we regrouped over Microsoft Teams and conducted an in-depth discussion on how we are going to proceed with the functionalities of the mentoring app, 
+      how the steps were going to look for the mentor, mentee, and the system. 
+      We focused on the flow for getting everything ready and having the first 1:1 mentoring session with a new mentor. 
+      We were able to identify the major touchpoints of the user flow.
     </p>
 
     <div class="subcontent">
@@ -351,25 +348,20 @@ function myFunction() {
       <br/>
       <p>
         <b>Option to reject/accept the mentorship for further advancements:</b> 
-        Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. If they accept the request, then the long term schedule will be set up.
+        Both the mentor and the mentee will have the option to either reject or accept the mentorship after their first meeting according to whether they find the mentorship relation useful. 
+        If they accept the request, then the long term schedule will be set up.
       </p>
     </div>
 
-    <div>
-      <img class="imageModal image-padding" src="../assets/images/mentoring_app/Touchpoints.svg" />
-    </div>
   </div>
-</section>
-
-<!-- Personas -->
-<section id="personas">
-  <div class="row project">
+  <div class="row project" id="iterations2">
+    <p class="content-heading-details">The main characteristic of the persona was someone who wanted to learn something new and was looking for a mentor that could guide them in that path.</p>
     <div class="col-md-6 col-sm-12">
-      <p class="content-heading">Personas</p>
+     
       <p>
-        Discussion more on the user research, we were able to identify the persona for whom we wanted to focus on and sketched the persona out.
-        The main characteristic of the persona was someone who <b> wanted to learn something new and was looking for a mentor 
-        that can guide them in that path.</b>
+        Discussing more on the user research, 
+        we were able to identify the persona for whom we wanted to focus on and sketched the persona out. 
+        The main characteristic of the persona was someone who wanted to learn something new and was looking for a mentor that could guide them in that path.</b>
       </p>
     </div>
     <div class="col-md-6 col-sm-12" style="padding-top: 1%">
@@ -378,10 +370,11 @@ function myFunction() {
   </div>
 </section>
 
-<!-- Wireframe -->
+<!-- iterations -->
 <section id="iterations">
-  <div class="row project">
-    <p class="content-heading">Wireframing, Prototyping, Usability-Testing & Iterations</p>
+  <div class="project">
+    <p class="content-heading">Iterations</p>
+    <p class="content-heading-details">Wireframing, Prototyping, Usability-Testing & Iterations</p>
     <p>
       We iterated through multiple versions of the app before finally settling on one to create a PowerApps prototype. Each usability test provided insights, 
       corners and cases that we had missed. We iterated through 3 versions of sketches, a sketch wireframe for low fidelity, 
@@ -402,38 +395,138 @@ function myFunction() {
       <b>Version 3 - Sketch</b>
     </p>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/sketch3.svg" />
-    <p>During the user testing of the app-based version of the iteration, one of the users mentioned that all the functions that we were trying 
-      to accomplish can be easily done through Microsoft Teams. He also asked why we needed to take the data out to another platform when everything could just as easily 
-      be done in Teams. Since the default application that any employee at Microsoft opens first thing at the start of the workday is Teams. For any new hires, 
-      the first application they get on-boarded to and learn to use is Teams, so we decided to use the teams and channel function available in Microsoft Teams 
-      as the base for our application.</p>
-
+    <p>During the user testing of the app-based version of the iteration, 
+      one of the users mentioned that all the functions that we were trying to accomplish can be easily done through Microsoft Teams. 
+      He also asked why we needed to take the data out to another platform when everything could just as easily be done in Teams. 
+      Since the default application that any employee at Microsoft opens first thing at the start of the workday is Teams. 
+      For any new hires, the first application they get on-boarded to and learn to use is Teams, 
+      so we decided to use the teams and channel function available in Microsoft Teams as the base for our application.</p>
 
     <p class="version">
       <b>Version 4 - Wireframe</b>
     </p>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/Wireframe.svg" />
-
-    <p class="version">
-      <b>Version 5 - Low fidelity prototype</b>
-    </p>
     <img class="imageModal image-padding" src="../assets/images/mentoring_app/SketchPrototype.gif" />
 
+    <div id="version 5">
+      <p class="version">
+        <b>Version 5 - Mid fidelity prototype </b>
+      </p>
 
-    <p class="version">
-      <b>Version 6 - Mid fidelity prototype </b>
-    </p>
-    <img class="imageModal image-padding" src="../assets/images/mentoring_app/FigmaPrototype.gif" />
+      <div class="row" id="Mid fidelity prototype row 1">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/1. Dashboard - Schedule.png" />
+          <p class="image-text">1. Mentee Dashboard - Schedule</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/2. New Mentor - 1.png" />
+          <p class="image-text">2. New mentoring session landing screen. You can select topic of find a specific mentor</p>
+        </div>
+      </div>
 
-    <p class="version">
-      <b>Version 7 - High fidelity prototype </b>
-    </p>
-    <img class="imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
-    <div>
-      <button class="project-button" 
-      onclick="window.open('https://www.figma.com/proto/65AFwvky5t4X8ZdleXmN9v/Mentoring-App?node-id=193%3A18241&viewport=131%2C468%2C0.08558712899684906&scaling=min-zoom', '_blank');">
-        Prototype
-      </button>
+      <div class="row" id="Mid fidelity prototype row 2">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/3. New Mentor - Suggestions.png" />
+          <p class="image-text">3. New mentoring session - mentor suggestions according to the topic or mentor selection</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/4. New Mentor - Mentor Profile.png" />
+          <p class="image-text">4. New mentoring session - Mentor Profile</p>
+        </div>
+      </div>
+
+      <div class="row" id="Mid fidelity prototype row 3">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/5. Dashboard - Schedule-1.png" />
+          <p class="image-text">5. Dashboard after adding a new mentoring session</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/6. Dashboard - My Requests 1.png" />
+          <p class="image-text">6. Dashboard - My Requests</p>
+        </div>
+      </div>
+
+      <div class="row" id="Mid fidelity prototype row 4">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/7. Mentor_ Post.png" />
+          <p class="image-text">7. Discussion session between mentor and mentee</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/8. Mentor_ Assignments.png" />
+          <p class="image-text">8. Section to keep track of notes, reading and assignments if any</p>
+        </div>
+      </div>
+
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/FigmaPrototype.gif" />
+    </div>
+    
+    <div id="version 6">
+      <p class="version">
+        <b>Version 6 - High fidelity prototype </b>
+      </p>
+
+      <div class="row" id="High fidelity prototype row 1">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/1. Starting page.png" />
+          <p class="image-text">1. Teams; before mentoring team is added to Teams.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/2. Create Team templates.png" />
+          <p class="image-text">2. Template for adding mentoring team to Teams.</p>
+        </div>
+      </div>
+
+      <div class="row" id="High fidelity prototype row 2">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/3. Dashboard _ Mentee Profile 1.png" />
+          <p class="image-text">3. Initial step is to complete the mentee information.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/4. Welcome page.png" />
+          <p class="image-text">4. Welcome page for the mentorship space.</p>
+        </div>
+      </div>
+
+      <div class="row" id="High fidelity prototype row 3">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/5. Dashboard _ New Mentor _ Topic.png" />
+          <p class="image-text">5. My mentor dashboard</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/7. Dashboard _ New Mentor _ Suggestions.png" />
+          <p class="image-text">6. Searching for a new mentor</p>
+        </div>
+      </div>
+
+      <div class="row" id="High fidelity prototype row 4">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/8. Dashboard _ New Mentor _ Mentor Profile.png" />
+          <p class="image-text">7. Mentor details and booking</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/9. Dashboard _ My Requests.png" />
+          <p class="image-text">8. My requests page</p>
+        </div>
+      </div>
+
+      <div class="row" id="High fidelity prototype row 5">
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/10. Channel _ Post.png" />
+          <p class="image-text">9. Post and discussion channel</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <img class="imageModal image-padding" src="../assets/images/mentoring_app/High fid/11. Dashboard _ New Mentor _ Find.png" />
+          <p class="image-text">10. Assignments</p>
+        </div>
+      </div>
+
+      <img class="imageModal image-padding" src="../assets/images/mentoring_app/HighFidelity.gif" />
+      <div>
+        <button class="project-button" 
+        onclick="window.open('https://www.figma.com/proto/65AFwvky5t4X8ZdleXmN9v/Mentoring-App?node-id=193%3A18241&viewport=131%2C468%2C0.08558712899684906&scaling=min-zoom', '_blank');">
+          Prototype
+        </button>
+      </div>
     </div>
 
   </div>
@@ -443,6 +536,7 @@ function myFunction() {
 <section id="learnings">
   <div class="project">
     <p class="content-heading">My Learnings</p>
+    <p class="content-heading-details">Some of the things that I learnt while working on this project.</p>
     <ol>
       <li>
         <b>Iteration makes things better:</b> The solution gets better with each iteration that you run.
@@ -456,7 +550,7 @@ function myFunction() {
       <li>
         <b>Breakthrough suggestions on technology can come from the user as well:</b> 
         We were planning on going with an app for this, then a user suggested that we can have most of the function within Microsoft Teams. 
-        Teams already most of the functionality that we were trying to create and we do not have to build from scratch. 
+        Teams already have most of the functionality that we were trying to create and we do not have to build from scratch. 
       </li>
     </ol>
   </div>
