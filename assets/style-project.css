@@ -79,6 +79,11 @@
   border-radius: 14.0928px;
 }
 
+.image-background-gray {
+  background-color:#EFEFEF;
+  padding: 5%
+}
+
 /* General */
 
 li {
