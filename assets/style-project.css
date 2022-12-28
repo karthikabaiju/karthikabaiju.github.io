@@ -4,6 +4,10 @@
   background-color: #475a51;
 }
 
+.banner-scream {
+  background-position: center;
+}
+
 .header-padding {
   padding: 10% 0 10% 0;
   font-family: 'Chillax Regular';
@@ -108,7 +112,6 @@ li {
 }
 
 .content-quote {
-  font-family: 'Indie Flower';
   font-style: normal;
   font-weight: normal;
   line-height: 30px;
