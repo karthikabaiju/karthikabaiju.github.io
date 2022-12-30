@@ -174,18 +174,18 @@ a:hover {
 }
 
 .project-content-h1 {
-  font-size: 5em;
+  font-size: 2em;
   color: white;
   font-family: 'Chillax Regular';
-  line-height: 6rem;
-  padding-bottom: 2rem;
+  line-height: 3rem;
+  padding: 2% 2% 0% 2%;
 }
 
 .project-content-h2 {
   margin-left: 2%;
   font-family: 'Chillax Regular';
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .project-content-h3 {

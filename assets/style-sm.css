@@ -25,8 +25,7 @@
   }
 
   .project-content-h1 {
-    font-size: 4em;
-    line-height: 4.5rem;
+    font-size: 2em;
   }
 }
 
@@ -36,12 +35,12 @@
   }
 
   .project-content-h1 {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 3.5rem;
   }
 
   .project-content-h2 {
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 
   .txt-rotate {
