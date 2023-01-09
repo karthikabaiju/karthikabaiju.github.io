@@ -39,6 +39,25 @@
   font-size: 1rem;
 }
 
+.project-black-bg {
+  font-family: 'Chillax Regular';
+  color: white;
+  margin: 2% 15% 5% 15%;
+  font-size: 1rem;
+}
+
+.black-bg {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #000000;
+}
+
+.impt {
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+
 .content-heading {
   font-family: 'Chillax Medium';
   font-size: 1.2rem;
