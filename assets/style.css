@@ -110,10 +110,19 @@ a.nav-link {
 
 .intro-child-1 {
   font-family: 'Chillax Regular';
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.5em;
   color: #242424;
   text-align: center;
+  padding: 0% 5% 3% 5%;
+}
+
+.intro-child-2 {
+  font-family: 'Chillax Regular';
+  font-size: 0.95rem;
+  line-height: 0.5em;
+  color: #242424;
+  text-align: left;
   padding: 0% 5% 3% 5%;
 }
 
