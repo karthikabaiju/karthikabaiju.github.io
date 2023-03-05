@@ -15,7 +15,11 @@
 
   .navbar {
     box-shadow: none !important;
-    margin: 0 19% !important;
+    margin: 0 0% !important;
+  }
+
+  .fixed-top{
+    padding: 0% 10% 0% 10%;
   }
 }
 
@@ -27,6 +31,22 @@
   .project-content-h1 {
     font-size: 2em;
   }
+  
+  .header-text-2 {
+    font-size: 8rem;
+    line-height: 7rem;
+    text-align: center;
+  }
+  
+  .header-text-3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .header-text-1 {
+    text-align: center;
+  }
+
 }
 
 @media only screen and (max-width: 1233px) {
@@ -45,6 +65,11 @@
 
   .txt-rotate {
     font-size: 1.8rem;
+  }
+
+  .header-text-2 {
+    font-size: 6rem;
+    line-height: 5rem;
   }
 }
 

@@ -1,3 +1,90 @@
+/* Revamp - March 2023 */
+.intro-background {
+  padding-top: 15%;
+  background-color: #F3F1EF;
+  padding-bottom: 5%;
+}
+
+.section-padding{
+  /* padding-top: 5%; */
+  padding-bottom: 5%;
+}
+
+.section-background{
+  background-color: #F3F1EF;
+}
+
+.header-main-text {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+.header-project-type {
+  font-size: 1.2rem;
+  font-family: 'Chillax Light';
+}
+
+.header-company {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: 'Chillax Light';
+}
+
+.overview {
+  font-size: 1.3rem;
+}
+
+.project-header {
+  font-family: 'Chillax Regular';
+  color: #242424;
+  margin: 2% 10% 5% 10%;
+  font-size: 1rem;
+}
+
+/* list */
+.customlist{
+  margin: 0% 5% 0% 5%;
+  font-size: 1.2rem;
+}
+
+.listgroup {
+  position: relative;
+  width: 413px;
+  height: 105px;
+  margin: 5% 0% 5% 0%;
+  
+}
+.o1 {
+  color: #F3F1EF;
+  font-size: 8.5rem;
+  line-height: 35px;
+  font-weight: 600;
+  font-family: Chillax, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  letter-spacing: 0.02em;
+  position: absolute;
+  left: 0;
+  right: 46.247%;
+  top: 0;
+  bottom: 0;
+  
+  text-align: justify;
+  flex-direction: column;
+}
+.bodyText {
+  position: absolute;
+  left: 33.1719%;
+  right: 0;
+  top: 9.5238%;
+  bottom: 23.8095%;
+  width: 276px;
+  height: min-content;
+  flex-direction: column;
+}
+
+
+
+
 /* Header */
 .banner {
   margin-top: 10%;
@@ -21,8 +108,8 @@
 }
 
 .header-text-2 {
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: 10rem;
+  line-height: 7rem;
 }
 
 .header-text-3 {
@@ -63,13 +150,14 @@
   font-size: 1.2rem;
   margin-bottom: 0%;
   color: #868686;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .content-heading-details {
   font-family: 'Chillax Medium';
   font-size: 2rem;
   margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .subcontent {
