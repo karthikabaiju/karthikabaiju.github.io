@@ -375,6 +375,10 @@
   .thankyou {
     font-size: 2rem;
   }
+
+  .listgroup{
+    padding: 15%;
+  }
 }
 
 @media screen and (max-width: 515px) {
@@ -403,5 +407,9 @@
   #hero > div > div:last-child {
     padding-top: 9rem;
     padding: 6rem;
+  }
+
+  .listgroup {
+    padding: 30%;
   }
 }
