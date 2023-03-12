@@ -128,8 +128,7 @@ a.nav-link {
 
 .into-image {
   max-height: 100%;
-  padding-top: 15%;
-
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
@@ -142,6 +141,7 @@ a:hover {
 .intro-container {
   padding-left: 10%;
   width: 100%;
+  margin-top: 5%;
 }
 
 /* General */
@@ -159,6 +159,14 @@ a:hover {
 
 .center-align {
   text-align: center;
+}
+
+.overview {
+  font-size: 1.3rem;
+  font-family: 'Chillax Regular';
+  line-height: 1.5em;
+  color: #242424;
+  padding: 0% 5% 3% 5%;
 }
 
 /* Project */
