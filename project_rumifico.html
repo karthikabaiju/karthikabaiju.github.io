@@ -56,6 +56,7 @@
 <link rel="stylesheet" href="assets/style-project.css" />
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+<link rel="stylesheet" href="assets/style-side-nav.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <title>Rumifico</title>
@@ -149,152 +150,190 @@ function myFunction() {
  
     
 
-<!-- Header -->
-<section id="header" class="banner" style="background-color: #000000">
-  <div class=header-padding>
-    <p class="header-text-1">Team Project - 2022</p>
-    <p class="header-text-2">Rumifico</p>
-    <p class="header-text-3">Collaboration with HP - UC Berkeley</p>
-    <div>
-      <p class="header-text-1" style="margin-bottom: 0rem;">"Best Project Award"</p>
-      <p class="header-text-1" style="margin-bottom: 0rem;">Jacobs Showcase</p>
-    </div>
-    <!-- <img class="imageModal" src="../assets/images/rumifico/Rumifico index 2.svg" /> -->
+<style>
+  .color-white {
+    color: white;
+  }
+
+  .color-background {
+    background-color: white;
+  }
+
+  .rumifico-dark-background {
+    background-color: #222527;
+
+    padding-bottom: 5%;
+  }
+
+  .s-nav-list-item {}
+</style>
+
+<div id="header-container" class="s-navbar-section navigator side-header strikingly-fixed">
+  <div class="header-inner">
+    <ul class="s-nav">
+      <li class="s-nav-list-item" data-val="Introduction"><a class="s-nav-item"><span
+            class="s-font-body">Introduction</span></a></li>
+      <li class="s-nav-list-item" data-val="ProblemSpace"><a class="s-nav-item"><span class="s-font-body">Problem
+            Space</span></a></li>
+      <li class="s-nav-list-item" data-val="Solution"><a class="s-nav-item"><span
+            class="s-font-body">Solution</span></a></li>
+      <li class="s-nav-list-item" data-val="Challenge"><a class="s-nav-item"><span
+            class="s-font-body">Challenge</span></a></li>
+      <li class="s-nav-list-item" data-val="Research"><a class="s-nav-item"><span
+            class="s-font-body">Research</span></a></li>
+      <li class="s-nav-list-item" data-val="Synthesis"><a class="s-nav-item"><span
+            class="s-font-body">Synthesis</span></a></li>
+      <li class="s-nav-list-item" data-val="Ideation"><a class="s-nav-item"><span
+            class="s-font-body">Ideation</span></a></li>
+      <li class="s-nav-list-item" data-val="Prototype"><a class="s-nav-item"><span
+            class="s-font-body">Prototype</span></a></li>
+      <li class="s-nav-list-item" data-val="Rumifico"><a class="s-nav-item"><span class="s-font-body">Rumifico</span></a></li>
+      <li class="s-nav-list-item" data-val="Companion"><a class="s-nav-item"><span class="s-font-body">Companion App</span></a></li>
+      <li class="s-nav-list-item" data-val="Team"><a class="s-nav-item"><span class="s-font-body">Team</span></a></li>
+    </ul>
   </div>
-  <div class=header-padding-2>
-    
-  </div>
-</section>
+</div>
 
 <!-- Introduction -->
-<section id="overview">
+<section id="Introduction" class="intro-background color-background">
+  <div class="row project-header ">
+    <div class="col-md-6 col-sm-12 center-align">
+      <p class="header-text-1">Team Project - 2022</p>
+      <p class="header-text-2">Rumifico</p>
+      <p class="header-text-3" style="line-height: 1rem; margin-bottom: 0rem;">Collaboration with HP </p>
+      <p class="header-text-3">UC Berkeley</p>
+      <br>
+      <div>
+        <p class="header-text-1" style="margin-bottom: 0rem;">"Best Project Award"</p>
+        <p class="header-text-1" style="margin-bottom: 0rem;">Jacobs Showcase</p>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12 center-align">
+      <img class="imageModal" src="../assets/images/rumifico/iPhone 12 Pro.png" />
+      <img class="imageModal" src="../assets/images/rumifico/Vector.png" />
+    </div>
+  </div>
+
   <div class="row project">
-    
-    <div class="col-md-6 col-sm-12">
-      <p class="content-heading">Overview</p>
-      <p>Have you ever been in a situation where you missed an important message from your family while studying in the library? 
-        It's a common problem that many students face. However, checking your phone for messages often leads to getting lost in the endless 
-        cycle of social media scrolling, resulting in wasted hours.</p>
-      <p>That's where Rumifico comes in. Our product allows for contextual sharing of moments between parents and college students. 
-        Our innovative device, which resembles a pager, allows you to receive messages from the most important people in your life, 
-        without getting sucked into the endless cycle of phone use.</p>
-        
-      <p>Our companion app allows you to configure who can send messages to your Rumifico device and set up quick replies using the three 
-        buttons on the device. If you need to send a custom message, you can use the chat function in the companion app to send a message to 
-        the other person's Rumifico device. With Rumifico, you can stay connected with your loved ones without getting distracted from your 
-        studies.
+    <div class="col-md-6 col-sm-12 overview" style="padding-left: 0%;">
+      <p>Rumifico offers a solution for students who miss important messages from family while studying. Their device
+        allows contextual sharing of moments and resembles a pager. The companion app lets users configure who can send
+        messages and set up quick replies. Custom messages can be sent through the app's chat function.
       </p>
-      <button class="project-button" 
-        onclick="window.open('https://www.figma.com/proto/ORsqaJnnxYiaVvzKndHKEX/HP-Rumifico?page-id=0%3A1&node-id=1%3A473&viewport=420%2C403%2C0.29&scaling=scale-down&starting-point-node-id=1%3A473', '_blank');">
-          Prototype
-      </button>
+      <br>
+      <p>
+        Rumifico facilitates emotive and contextual sharing of moments between parents and children once they move away
+        to
+        college. Rumifico helps students stay connected without distractions.
+      </p>
     </div>
 
-    <div class="col-md-6 col-sm-12 center-align content-heading" style="margin-top: 5%;">
-      <img class="imageModal" src="../assets/images/rumifico/iPhone 12 Pro.png"/>
-      <img class="imageModal" src="../assets/images/rumifico/Vector.png"/>
+    <div class="col-md-6 col-sm-12" style="padding-left: 10%;">
+      <div class="">
+        <p class="content-heading">My Role</p>
+        <p>Designer</p>
+      </div>
+
+      <div class="">
+        <p class="content-heading">My Team</p>
+        <p>We are a team of 5</p>
+      </div>
+
+      <div class="">
+        <p class="content-heading">Timeline</p>
+        <p>August 2022 - December 2022</p>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- Project Details -->
-<section id="project details">
-
-  <div class="row project">
-    <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">My Role</p>
-      <p>Digital Product Designer</p>
-    </div>
-
-    <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">My Team</p>
-      <p>Team of 5</p>
-    </div>
-
-    <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">Timeline</p>
-      <p>August 2022 - December 2022</p>
-    </div>
-
-    <div class="project">
-    
-      <!-- <img class="imageModal" src="../assets/images/rumifico/Rumifico index 1.svg" /> -->
-    </div>
-    <!-- <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">Project Type</p>
-      <p>Product Design</p>
-    </div>
-
-    <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">Exhibitions</p>
-      <p>Jacobs Design Showcase - UC Berkeley</p>
-    </div>
-
-    <div class="col-md-4 col-sm-12 center-align">
-      <p class="content-heading">Awards</p>
-      <p>Best Project</p>
-    </div> -->
+<!-- Problem Space -->
+<section id="ProblemSpace" class="rumifico-dark-background">
+  <div class="project-black-bg" id="problem space">
+    <p class="content-heading">Problem Space</p>
+    <p class="content-heading-details">Have you ever missed an urgent message from your family while studying in the
+      library?</p>
+    <p>It's a common problem that many students face. However, checking your phone for messages often leads to getting
+      lost in the endless cycle of social media scrolling, resulting in wasted hours.</p>
   </div>
-
 </section>
 
-<!-- Demo Video -->
-<section>
-  <div class="project">
+<!-- Solution -->
+<section id="Solution">
+  <div class="project" id="solution">
+    <p class="content-heading">Solution</p>
+    <p class="content-heading-details">Rumifico and its companion app</p>
+    <p>Rumifico allows for contextual sharing of moments between parents and college
+      students. Our innovative device, which resembles a pager, allows you to receive messages from the most important
+      people in your life, without getting sucked into the endless cycle of phone use.</p>
+    <br>
+    <p>Our companion app allows you to configure who can send messages to your Rumifico device and set up quick replies
+      using the three buttons on the device. If you need to send a custom message, you can use the chat function in the
+      companion app to send a message to the other person's Rumifico device. With Rumifico, you can stay connected with
+      your loved ones without getting distracted from your studies.
+
+    </p>
+  </div>
+
+  <div class="project ">
     <video width="100%" controls>
       <source src="../assets/images/rumifico/video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+      Your browser does not support the video tag.
     </video>
   </div>
-  
 </section>
 
-<!-- POG -->
-<section id="POG" class="black-bg" style="text-align: center">
-  <div class="project-black-bg">
-    <p class="impt">Facilitate emotive and contextual sharing of moments between parents and children once they move away to college.</p>
+<!-- App -->
+<section id="App" class="rumifico-dark-background" style="text-align: center; padding: 0%;">
+  <div class="project-black-bg ">
+    <img class="imageModal" src="../assets/images/rumifico/Simple Mockup Free Scene.png" />
     <!-- <img class="imageModal" src="../assets/images/rumifico/Poster.jpg" /> -->
   </div>
 </section>
 
 <!-- Challenge -->
 <section id="Challenge">
-  <div class="project" id="challenge1">
-    <p class="content-heading">The Challenge</p>
+  <div class="project" id="challenge">
+    <p class="content-heading" style="padding-top: 5%;">The Challenge</p>
     <p class="content-heading-details">Identifying the Product Opportunity Gaps and defining the challenge.</p>
     <p>
-      To develop the concept for our product, the team started with a wide range of potential areas to address, 
-      including memory sharing. We gathered ideas from various sources such as conference talks, research papers and articles, 
-      as well as through reflective writing and personal experiences. In order to identify the most promising opportunity, 
-      we used methods such as affinity mapping and a weighted matrix to evaluate around 50 Product Opportunity Gaps (POGs). 
-      After careful consideration, we were able to narrow down and prioritize the best POG to focus on, 
-      which eventually led to the concept for our product.
+      We began by exploring many areas for their product, such as memory sharing. We gathered ideas from conferences,
+      research papers, articles, reflective writing, and personal experiences. By using evaluation methods like affinity
+      mapping and weighted matrix, we narrowed down around 50 opportunities to focus on the most promising POG, leading
+      to the current product concept.
     </p>
     <img class="imageModal" src="../assets/images/rumifico/pog generation.png" />
   </div>
 </section>
 
-
-
 <!-- Research -->
-<section id="Research" class="black-bg">
+<section id="Research" class="rumifico-dark-background">
   <div class="project-black-bg" id="Research1">
     <p class="content-heading">Research</p>
     <p class="content-heading-details">We went out and talked to people.</p>
-    <p class="content-quote" style="color: #D4D4D4;">"Purposefully don't communicate often due to not wanting to disturb due to assignments. Not sure when she will be free."</p>
+  </div>
+
+  <div class="row project-black-bg">
+    <div class="col-md-6 col-sm-12" id="Research2">
+      <img class="imageModal" src="../assets/images/rumifico/reseach icons.svg" />
+      <p class="content-quote" style="color: #D4D4D4; margin-top: 12%;">"Purposefully don't communicate often due to not
+        wanting to disturb
+        due to assignments. Not sure when she will be free."</p>
+    </div>
+
+    <div class="row col-md-6 col-sm-12" style="padding-left: 5%;">
+      <div class="" id="Research2">
+        <img class="imageModal" src="../assets/images/rumifico/interview.png" />
+
+      </div>
+    </div>
+
   </div>
 
   <div class="project-black-bg" id="Research2">
-    <img class="imageModal" src="../assets/images/rumifico/research.svg" />
-  </div>
-
-  <div class="project-black-bg" id="Research2">
-    <img class="imageModal" src="../assets/images/rumifico/interview.png" />
-  </div>
-
-  <div class="project-black-bg" id="Research2">
-    <p class="content-heading-details" style="padding-top: 10%; padding-bottom: 10%;">What we found was missing.</p>
+    <p class="content-heading-details" style="padding-top: 5%; padding-bottom: 5%;">What we found was missing.</p>
     <img class="imageModal" style="width: 80%; padding-left: 10%" src="../assets/images/rumifico/Findings.svg" />
   </div>
 </section>
@@ -310,84 +349,131 @@ function myFunction() {
     <img class="imageModal" src="../assets/images/rumifico/Sara.png" />
   </div>
 
-  <div class="project"> 
-      <p class="content-heading-details">
-        We identified our personas
-      </p>
-      <p>From the insights from the user research, we considered four personas for the project: the independent graduate, the far-away one, the empty nester, and the working parent. We identified two more personas: the helicopter parent and the first mover. However, we have decided to exclude these from the scope as they have radically different needs, such as constant contact.</p>
-      <img class="imageModal" src="../assets/images/rumifico/personas.svg" />
+  <div class="project">
+    <p class="content-heading-details">
+      We identified our personas
+    </p>
+
+    <p>From the insights from the user research, we considered four personas for the project, 2 student persona and 2
+      parent persona. We identified two more personas: the helicopter parent
+      and the first mover. However, we have decided to exclude these from the scope as they have radically different
+      needs, such as constant contact.</p>
+
+    <div class="row customlist">
+      <div class="col-md-6 col-sm-12 listgroup">
+        <div class="o1">o1</div>
+        <div class="bodyText">
+          <div>The Independent Graduate</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 listgroup">
+        <div class="o1">o2</div>
+        <div class="bodyText">
+          <div>The Far-away one
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row customlist">
+      <div class="col-md-6 col-sm-12 listgroup">
+        <div class="o1">o3</div>
+        <div class="bodyText">
+          <div>The Empty Nester</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 listgroup">
+        <div class="o1">o4</div>
+        <div class="bodyText">
+          <div>The Working Parent
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img class="imageModal" src="../assets/images/rumifico/personas.svg" />
   </div>
 
-  <div class="project"> 
+  <div class="project">
     <p class="content-heading-details">
       Product Requirements: We converted our research findings into aspects our solution must, could, and should have.
     </p>
-    <p>The majority of our must-haves fell under emotion and identity. Emotion must-haves centered around the ability to share emotions and feel emotionally at peace, knowing relatives are safe and well. Identity must-haves centered around the idea of 360 contexts to allow users to share when and where events are happening and express that through their own personal lens</p>
-</div>
+    <p>The majority of our must-haves fell under emotion and identity. Emotion must-haves centered around the ability to
+      share emotions and feel emotionally at peace, knowing relatives are safe and well. Identity must-haves centered
+      around the idea of 360 contexts to allow users to share when and where events are happening and express that
+      through their own personal lens.</p>
+  </div>
 </section>
 
 <!-- Ideation -->
-<section id="Ideation" class="black-bg">
+<section id="Ideation" class="rumifico-dark-background">
   <div class="project-black-bg" id="2x2">
     <p class="content-heading">Ideation</p>
     <p class="content-heading-details">We brainstormed 50+ ideas</p>
 
     <p>
-      Each member created approximately 10 concepts using Analogical Reasoning, Forced Analogy, 
-      Biomimicry, and other processes from class. This led to a total of 51 ideas. 
+      Each member created approximately 10 concepts using Analogical Reasoning, Forced Analogy,
+      Biomimicry, and other processes from class. This led to a total of 51 ideas.
     </p>
 
-    <img class="imageModal" src="../assets/images/rumifico/2x2.png" />  
+    <img class="imageModal" src="../assets/images/rumifico/2x2.png" />
   </div>
 
   <div class="project-black-bg" id="dot voting">
     <p class="content-heading-details">Narrowing down the ideas</p>
     <p>
-      To streamline the ideation process, we used affinity mapping to group similar ideas and identify peripheral concepts that did 
-      not align with our POG. This process led to the creation of a "feature graveyard" which listed features unique to eliminated ideas 
-      that could be interesting and applicable in the future. Following this, we conducted a dot voting exercise, 
-      where each team member was given five votes to assign to the ideas they felt best aligned with our team and personal goals, 
+      To streamline the ideation process, we used affinity mapping to group similar ideas and identify peripheral
+      concepts that did
+      not align with our POG. This process led to the creation of a "feature graveyard" which listed features unique to
+      eliminated ideas
+      that could be interesting and applicable in the future. Following this, we conducted a dot voting exercise,
+      where each team member was given five votes to assign to the ideas they felt best aligned with our team and
+      personal goals,
       as well as the POG. After this exercise, we were able to narrow down our list to 14 promising ideas.
     </p>
 
-    <img class="imageModal" src="../assets/images/rumifico/dot.png" /> 
-  
+    <img class="imageModal" src="../assets/images/rumifico/dot.png" />
+
   </div>
 
   <div class="project-black-bg" id="tech">
     <p class="content-heading-details">VOA & Technology Target</p>
     <p>
-      To further refine our selection, we utilized a scoring system based on the number of critical features that each idea fulfilled. 
-      After this initial round of evaluation, we plotted the ideas on a target diagram, 
-      with the most promising concepts placed at the center to represent their potential for high impact. 
-      This target was divided into three levels of digital intensity - fully digital, hybrid, and fully physical. 
-      Based on this analysis, we narrowed down our selection to the six most central ideas, 
+      To further refine our selection, we utilized a scoring system based on the number of critical features that each
+      idea fulfilled.
+      After this initial round of evaluation, we plotted the ideas on a target diagram,
+      with the most promising concepts placed at the center to represent their potential for high impact.
+      This target was divided into three levels of digital intensity - fully digital, hybrid, and fully physical.
+      Based on this analysis, we narrowed down our selection to the six most central ideas,
       which we deemed to have the highest potential impact.
     </p>
 
-    <img class="imageModal" style="width: 80%; padding-left: 20%;" src="../assets/images/rumifico/tech.png" /> 
-  
+    <img class="imageModal" style="width: 80%; padding-left: 20%;" src="../assets/images/rumifico/tech.png" />
+
   </div>
 
   <div class="project-black-bg" id="pugh">
     <p class="content-heading-details">Pugh Chart</p>
     <p>
-      A pugh chart was used as a quantitative analysis selection tool with the goal of mitigating bias and ensuring all relevant criteria were considered. 
+      A pugh chart was used as a quantitative analysis selection tool with the goal of mitigating bias and ensuring all
+      relevant criteria were considered.
       All ideas were compared against the baseline design, Interactive Wall Apparatus.
     </p>
 
-    <img class="imageModal" src="../assets/images/rumifico/pugh.png" /> 
+    <img class="imageModal" src="../assets/images/rumifico/pugh.png" />
   </div>
 
   <div class="project-black-bg" id="final">
     <p class="content-heading-details">Introducing our final concept</p>
     <p>
-      A minimalist device that displays critical messages to loved ones, via visual and tactile alerts. 
+      A minimalist device that displays critical messages to loved ones, via visual and tactile alerts.
       The unique feature of the device is that it can be stuck to any surface like a book, water bottle or key chain.
-      Is is a way to ensure that parents and childeren can stay connected.  
+      Is is a way to ensure that parents and childeren can stay connected.
     </p>
 
-    <img class="imageModal" src="../assets/images/rumifico/final.png" /> 
+    <img class="imageModal" src="../assets/images/rumifico/final.png" />
   </div>
 
 </section>
@@ -399,32 +485,35 @@ function myFunction() {
     <p class="content-heading-details">We tried out a few rapid prototypes</p>
 
     <p>
-      Low fidelity prototypes developed in a 30 minute span to gain insight in product use types and to aid in producing questions for further user interviews.
-      We tried out different form factors and docking positions for rumifico using rapid paper prototyping.  
+      Low fidelity prototypes developed in a 30 minute span to gain insight in product use types and to aid in producing
+      questions for further user interviews.
+      We tried out different form factors and docking positions for rumifico using rapid paper prototyping.
     </p>
 
-    <img class="imageModal" src="../assets/images/rumifico/prototypr.png" />  
+    <img class="imageModal" src="../assets/images/rumifico/prototypr.png" />
   </div>
 
   <div class="project" id="appPrototyping">
-    <p class="content-heading-details">We created a wireframe for Rumifico companion app</p>
+    <p class="content-heading-details">We created a low-fi wireframe for Rumifico companion app</p>
 
-    <p>
-      
-    </p>
+    <img class="imageModal" src="../assets/images/rumifico/Wireframe.png" />
+  </div>
 
-    <img class="imageModal" src="../assets/images/rumifico/Wireframe.png" />  
+  <div class="project" id="appversion1">
+    <p class="content-heading-details">Companion App - Mid-Fidelity</p>
+
+    <img class="imageModal" src="../assets/images/rumifico/Version 1.png" />
   </div>
 
 </section>
 
 <!-- Final -->
-<section id="Rumifico" class="black-bg">
+<section id="Rumifico" class="rumifico-dark-background">
   <div class="project-black-bg" id="Prototype">
     <p class="content-heading">Rumifico</p>
     <p class="content-heading-details">We present to you, RUMIFICO</p>
 
-    <img class="imageModal" src="../assets/images/rumifico/Features.png" />  
+    <img class="imageModal" src="../assets/images/rumifico/Features.png" />
   </div>
 
   <div class="project-black-bg" id="Prototype1">
@@ -448,10 +537,11 @@ function myFunction() {
             Messages are completely customizable allowing full self expression.
           </li>
           <li>
-            The companion app combined with Rumifico hardware streamlines communication as it allows individuals to filter out all extra notifications and noise a smartphone provides. 
+            The companion app combined with Rumifico hardware streamlines communication as it allows individuals to
+            filter out all extra notifications and noise a smartphone provides.
           </li>
         </ul>
-      </div>  
+      </div>
     </div>
 
     <div>
@@ -459,13 +549,13 @@ function myFunction() {
       <div>
         <ul>
           <li>
-            Nostalgia design allows for individuals who struggle with newer technology to engage seamlessly.  
+            Nostalgia design allows for individuals who struggle with newer technology to engage seamlessly.
           </li>
           <li>
             Companion app is streamlined to the basic necessities.
           </li>
         </ul>
-      </div>  
+      </div>
     </div>
 
     <div>
@@ -479,42 +569,82 @@ function myFunction() {
             Compact size for portability.
           </li>
           <li>
-            The companion app combined with Rumifico hardware streamlines communication as it allows individuals to filter out all extra notifications and noise a smartphone provides. 
+            The companion app combined with Rumifico hardware streamlines communication as it allows individuals to
+            filter out all extra notifications and noise a smartphone provides.
           </li>
         </ul>
-      </div>  
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Companion app -->
-<section id="App" class="">
+<section id="Companion" class="">
   <div class="project" id="Prototype">
     <p class="content-heading">App Versions</p>
     <p class="content-heading-details">Companion app</p>
-    <p class="version">
-      <b>Version 1</b>
-    </p>
-    <img class="imageModal" src="../assets/images/rumifico/Version 1.png" />  
+
+    <div class="row" id="Family">
+      <div class="col-md-6 col-sm-12" style="padding-top: 5%;">
+        <p class="header-text-3" style="text-align: left;"><b>Your Family</b></p>
+        <p class="overview">Control who can contact you through your Rumifico device by choosing which family members
+          can message you. Easily add close family members to your Rumifico Ecosystem, allowing them to stay connected
+          with you through the device.</p>
+      </div>
+      <div class="col-md-6 col-sm-12" style="padding-left: 5%;">
+        <div>
+          <figure>
+            <img class="imageModal" style="width: 50%;" src="../assets/images/rumifico/Screen 1.png">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="Chat" style="padding-top: 5%;">
+      <div class="col-md-6 col-sm-12 " style="padding-top: 10%;">
+        <div>
+          <img class="imageModal" style="width: 45%;" src="../assets/images/rumifico/Screen 3.png">
+        </div>
+
+      </div>
+      <div class="col-md-6 col-sm-12" style="padding-top: 15%;">
+        <p class="header-text-3" style="text-align: left;"><b>Configure Quick Messages</b></p>
+        <p class="overview">Customize the quick reply messages for each of the 3 buttons on your Rumifico device,
+          allowing you to send them directly from the device.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="Settings">
+      <div class="col-md-6 col-sm-12" style="padding-top: 15%;">
+        <p class="header-text-3" style="text-align: left;"><b>For Custom Messages</b></p>
+        <p class="overview">Need to send a custom message? No problem! The companion app comes equipped with a chat
+          feature for sending personalized messages.</p>
+      </div>
+      <div class="col-md-6 col-sm-12" style="padding-top: 10%; padding-left: 5%;">
+        <div>
+          <figure>
+            <img class="imageModal" src="../assets/images/rumifico/Screen 2.png">
+          </figure>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="project" id="Prototype">
-    <p class="version">
-      <b>Version 2</b>
-    </p>
-    <img class="imageModal" src="../assets/images/rumifico/Version 2.png" />  
+    <p class="content-heading-details">Design System</p>
+    <img class="imageModal" src="../assets/images/rumifico/Design System.svg">
   </div>
-</section> 
-
+</section>
 
 <!-- Team -->
-<section id="Team" class="black-bg">
+<section id="Team" class="rumifico-dark-background">
   <div class="project-black-bg" id="Team">
-    <p class="content-heading-details">Meet the team</p>
+    <p class="content-heading-details" style="padding-top: 10%;">Meet the team</p>
 
-    <img class="imageModal" src="../assets/images/rumifico/team.jpg" />  
+    <img class="imageModal" src="../assets/images/rumifico/team.jpg" />
   </div>
-</section> 
+</section>
 
 <!-- Project Navigation -->
 <section>
@@ -525,7 +655,7 @@ function myFunction() {
         <span class="n-title nav-color">Vet's Pocket</span>
       </a>
     </div>
-    
+
     <div class="kktfwp-next">
       <a class="project-navigation" href="./project_scream.html" rel="prev">
         <span class="n-desc nav-color" data-delay="0">Next</span>
@@ -534,44 +664,52 @@ function myFunction() {
     </div>
   </div>
 </section>
-           
+
 <!-- Side Nav -->
 <script>
-    // Active tab setting
-    $('.side-nav-item').click(function () {
-      let currentSection = $(this).data('val');
-  
-      $('html, body').animate({
-          scrollTop: $(`#${currentSection}`).offset().top
-      }, 1000);
-  
-      $(this).addClass('sidenav-active');
-      $("ul.navbar-nav > li.side-nav-item").each(function() {
-        let currentItem = $(this).data('val');
-        if(currentItem != currentSection){
-          $(this).removeClass('sidenav-active');
+  // Active tab setting
+  $('.s-nav-list-item').click(function () {
+    let currentSection = $(this).data('val');
+    console.log(currentSection);
+
+    let scrollToViewElement = this.scrollIntoView({behavior: "smooth",
+    block: "center" ,
+    inline: "center"});
+
+  $('html, body').animate({
+    scrollTop: $(`#${currentSection}`).offset().top
+  }, 1000);
+
+  document.querySelector(`li[data-val=${currentSection}] a`).classList.add('selected');
+  // $(this).addClass('selected');
+  $("ul.navbar-nav > li.side-nav-item").each(function () {
+    let currentItem = $(this).data('val');
+    if (currentItem != currentSection) {
+      document.querySelector(`li[data-val=${currentSection}] a`).classList.remove('selected');
+    }
+  });
+    });
+
+  window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        console.log(entry.intersectionRatio);
+        if (entry.intersectionRatio > 0) {
+          document.querySelector(`li[data-val=${id}] a`).classList.add('selected');
+        } else {
+          document.querySelector(`li[data-val=${id}] a`).classList.remove('selected');
         }
       });
     });
 
-    window.addEventListener('DOMContentLoaded', () => {
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.add('sidenav-active');
-            } else {
-                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.remove('sidenav-active');
-            }
-        });
-    });
-
     // Track all sections that have an `id` applied
     document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-    });});
-  </script>
+      observer.observe(section);
+    });
+  });
+</script>
 
 
 

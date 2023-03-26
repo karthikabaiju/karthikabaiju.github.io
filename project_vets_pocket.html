@@ -572,41 +572,49 @@ function myFunction() {
 
 <!-- Side Nav -->
 <script>
-    // Active tab setting
-    $('.side-nav-item').click(function () {
-      let currentSection = $(this).data('val');
-  
-      $('html, body').animate({
-          scrollTop: $(`#${currentSection}`).offset().top
-      }, 1000);
-  
-      $(this).addClass('sidenav-active');
-      $("ul.navbar-nav > li.side-nav-item").each(function() {
-        let currentItem = $(this).data('val');
-        if(currentItem != currentSection){
-          $(this).removeClass('sidenav-active');
+  // Active tab setting
+  $('.s-nav-list-item').click(function () {
+    let currentSection = $(this).data('val');
+    console.log(currentSection);
+
+    let scrollToViewElement = this.scrollIntoView({behavior: "smooth",
+    block: "center" ,
+    inline: "center"});
+
+  $('html, body').animate({
+    scrollTop: $(`#${currentSection}`).offset().top
+  }, 1000);
+
+  document.querySelector(`li[data-val=${currentSection}] a`).classList.add('selected');
+  // $(this).addClass('selected');
+  $("ul.navbar-nav > li.side-nav-item").each(function () {
+    let currentItem = $(this).data('val');
+    if (currentItem != currentSection) {
+      document.querySelector(`li[data-val=${currentSection}] a`).classList.remove('selected');
+    }
+  });
+    });
+
+  window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        console.log(entry.intersectionRatio);
+        if (entry.intersectionRatio > 0) {
+          document.querySelector(`li[data-val=${id}] a`).classList.add('selected');
+        } else {
+          document.querySelector(`li[data-val=${id}] a`).classList.remove('selected');
         }
       });
     });
 
-    window.addEventListener('DOMContentLoaded', () => {
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.add('sidenav-active');
-            } else {
-                document.querySelector(`div li[data-val=${id}] a`).parentElement.classList.remove('sidenav-active');
-            }
-        });
-    });
-
     // Track all sections that have an `id` applied
     document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-    });});
-  </script>
+      observer.observe(section);
+    });
+  });
+</script>
 
 
 
