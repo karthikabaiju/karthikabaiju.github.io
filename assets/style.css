@@ -260,17 +260,15 @@ img {
 }
 
 .footer-text {
-  font-family: 'Avenir Next Cyr Regular';
-  color: silver;
-  font-size: 0.7em;
+  font-family: 'Chillax Regular';
+  color: #242424;
+  font-size: 1em;
   letter-spacing: 0.05em;
   z-index: 2;
-  text-align: end;
 }
 
 .footer-social {
-  width: 7%;
-  padding-left: 3%;
+  padding-left: 1%;
 }
 
 /* Scroll to the top */

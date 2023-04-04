@@ -56,6 +56,7 @@
 <link rel="stylesheet" href="assets/style-project.css" />
 <link rel="stylesheet" href="assets/style.css" />
 <link rel="stylesheet" href="assets/style-sm.css" />
+<link rel="stylesheet" href="assets/style-side-nav.css" />
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <title>Vet's Pocket Design by Karthika</title>
@@ -149,72 +150,97 @@ function myFunction() {
  
     
 
+<!-- Side Navigation -->
+<div id="header-container" class="s-navbar-section navigator side-header strikingly-fixed">
+  <div class="header-inner">
+    <ul class="s-nav">
+      <li class="s-nav-list-item" data-val="Introduction"><a class="s-nav-item"><span
+            class="s-font-body">Introduction</span></a></li>
+      <li class="s-nav-list-item" data-val="ProblemSpace"><a class="s-nav-item"><span class="s-font-body">Problem
+            Space</span></a></li>
+      <li class="s-nav-list-item" data-val="Solution"><a class="s-nav-item"><span
+            class="s-font-body">Solution</span></a></li>
+      <li class="s-nav-list-item" data-val="Research"><a class="s-nav-item"><span
+            class="s-font-body">Research</span></a></li>
+      <li class="s-nav-list-item" data-val="Ideation"><a class="s-nav-item"><span
+            class="s-font-body">Ideation</span></a></li>
+      <li class="s-nav-list-item" data-val="iterations"><a class="s-nav-item"><span
+            class="s-font-body">Iterations</span></a></li>
+      <li class="s-nav-list-item" data-val="Final Design"><a class="s-nav-item"><span class="s-font-body">Final
+            Design</span></a></li>
+      <li class="s-nav-list-item" data-val="designsystems"><a class="s-nav-item"><span class="s-font-body">Design
+            System</span></a></li>
+      <li class="s-nav-list-item" data-val="learnings"><a class="s-nav-item"><span
+            class="s-font-body">Learnings</span></a></li>
+    </ul>
+  </div>
+</div>
 
 <!-- Introduction -->
-<section id="overview" class="intro-background">
+<section id="Introduction" class="intro-background">
   <div class="row project-header ">
-    <div class="col-md-6 col-sm-12 center-align"> 
-        <p class="header-text-1">Team Project - 2021</p>
-        <p class="header-text-2">Vet's</p>
-        <p class="header-text-2">Pocket</p>
-        <p class="header-text-3">Freelance</p>
+    <div class="col-md-6 col-sm-12 center-align">
+      <p class="header-text-1">Team Project - 2021</p>
+      <p class="header-text-2">Vet's</p>
+      <p class="header-text-2">Pocket</p>
+      <p class="header-text-3">Freelance</p>
     </div>
-  
+
     <div class="col-md-6 col-sm-12 center-align">
       <figure>
-        <img class="imageModal"  src="../assets/images/vets_pocket/Vets Pocket Mockup.svg"/>
+        <img class="imageModal" src="../assets/images/vets_pocket/Vets Pocket Mockup.svg" />
       </figure>
     </div>
   </div>
 
   <div class="row project">
-    <div class="col-md-6 col-sm-12 overview"> 
-      <p>A pocket-friendly solution for field veterinarians to easily manage patient 
-        details on the go, addressing the challenge of limited access to desktop computers and little 
+    <div class="col-md-6 col-sm-12 overview">
+      <p>A pocket-friendly solution for field veterinarians to easily manage patient
+        details on the go, addressing the challenge of limited access to desktop computers and little
         time for data entry.</p>
-        <br>
-        <p>Help doctors <b>save 2-3 hours per week</b> on patient 
+      <br>
+      <p>Help doctors <b>save 2-3 hours per week</b> on patient
         and inventory management, allowing them to spend more time providing care to their animal patients.
       </p>
       <div>
-        <button class="project-button" 
-        onclick="window.open('https://www.figma.com/proto/I3CFvxIRqTR8E2SuWOGufG/Revised-Prototype?page-id=15%3A207&node-id=115%3A4043&viewport=560%2C175%2C0.05&scaling=min-zoom&starting-point-node-id=115%3A4043', '_blank');">
+        <button class="project-button"
+          onclick="window.open('https://www.figma.com/proto/I3CFvxIRqTR8E2SuWOGufG/Revised-Prototype?page-id=15%3A207&node-id=115%3A4043&viewport=560%2C175%2C0.05&scaling=min-zoom&starting-point-node-id=115%3A4043', '_blank');">
           Prototype
         </button>
       </div>
     </div>
-  
+
     <div class="col-md-6 col-sm-12" style="padding-left: 10%;">
       <div class="">
         <p class="content-heading" style="margin-top: 5%;">My Role</p>
         <p>Researcher and Designer</p>
       </div>
-  
+
       <div class="">
         <p class="content-heading">My Team</p>
         <p>We are a team of 2. 1 designer and 1 developer</p>
       </div>
-  
+
       <div class="">
         <p class="content-heading">Timeline</p>
         <p>September 2020 - November 2021</p>
       </div>
     </div>
-  
+
   </div>
 </section>
 
 <!-- Problem Space -->
-<section id="Problem Space" class="section-padding">
+<section id="ProblemSpace" class="section-padding">
   <div class="project" id="problem space">
     <p class="content-heading">Problem Space</p>
-    <p class="content-heading-details">Field vets don't have an effective way to keep track of their patient 
+    <p class="content-heading-details">Field vets don't have an effective way to keep track of their patient
       data which is easy to use, portable and easy on the pocket.</p>
-    <p>Field veterinarians are always on the move, so they have a hard time using traditional hospital 
-      management software. The few available mobile versions are either too expensive for a new vet just 
-      starting in the field or just a big nightmare to use (you end up chucking it to the corner of your app 
-      list). Even though there are software options available for traditional hospital management and pet 
-      owners, there is no proper one that works on a budget, on the field vets.</p>  
+    <p>Field veterinarians are always on the move, so they have a hard time using traditional hospital
+      management software. The few available mobile versions are either too expensive for a new vet just
+      starting in the field or just a big nightmare to use (you end up chucking it to the corner of your app
+      list). Even though there are software options available for traditional hospital management and pet
+      owners, there is no proper one that works on a budget, on the field vets.</p>
   </div>
 </section>
 
@@ -223,13 +249,13 @@ function myFunction() {
   <div class="project" id="solution">
     <p class="content-heading">Solution</p>
     <p class="content-heading-details">Reimagining the Vet's application</p>
-    <p>Our team developed a pocket-friendly solution that allows vets to manage their appointments, 
-      records, and inventory on the go.</p>  
+    <p>Our team developed a pocket-friendly solution that allows vets to manage their appointments,
+      records, and inventory on the go.</p>
   </div>
   <div class="project">
 
     <figure>
-        <img class="imageModal"  src="../assets/images/vets_pocket/product.png"/>
+      <img class="imageModal" src="../assets/images/vets_pocket/product.png" />
     </figure>
   </div>
 </section>
@@ -239,34 +265,38 @@ function myFunction() {
   <div class="project" id="research">
     <p class="content-heading">Research</p>
     <p class="content-heading-details">What were the Vets using before?</p>
-    <p>When in the field, veterinarians typically opt for the most flexible solution available to them. </p>  
+    <p>When in the field, veterinarians typically opt for the most flexible solution available to them. </p>
     <div>
       <figure>
-          <img class="imageModal"  src="../assets/images/vets_pocket/Used.svg"/>
+        <img class="imageModal" src="../assets/images/vets_pocket/Used.svg" />
       </figure>
     </div>
   </div>
-  
+
   <div class="project">
     <p class="content-heading-details" style="padding-top: 8%;">A look into what's out there.</p>
     <p>
-      I searched online and on the App Store for a solution to help me, but most options were either expensive, focused on pets, or difficult to use.
+      I searched online and on the App Store for a solution to help me, but most options were either expensive, focused
+      on pets, or difficult to use.
     </p>
     <img class="imageModal" src="../assets/images/vets_pocket/Study.svg" />
 
     <div class="row" style="padding-top: 10%">
       <div class="col-md-6 col-sm-12" style="padding-right: 5%">
-          <img class="imageModal" src="../assets/images/vets_pocket/Budget.svg" />
+        <img class="imageModal" src="../assets/images/vets_pocket/Budget.svg" />
       </div>
       <div class="col-md-6 col-sm-12" style="text-align: left; padding-left: 6%; padding-bottom: 5%;">
-          <img class="imageModal" src="../assets/images/vets_pocket/Userfriendly.svg" />
+        <img class="imageModal" src="../assets/images/vets_pocket/Userfriendly.svg" />
       </div>
     </div>
 
-    <p class="content-heading-details" style="padding-top: 5%;">Getting on the field to talk to real users revealed a lot of information.</p>
+    <p class="content-heading-details" style="padding-top: 5%;">Getting on the field to talk to real users revealed a
+      lot of information.</p>
     <p>
-      I interviewed 5 vets who are field vets, that mean they do not work in the clinic but are on the move most of the times.
-      I interviewed both <b>experienced field workers</b> and <b>recent college graduates</b>  to create an experience map that captures the 
+      I interviewed 5 vets who are field vets, that mean they do not work in the clinic but are on the move most of the
+      times.
+      I interviewed both <b>experienced field workers</b> and <b>recent college graduates</b> to create an experience
+      map that captures the
       current user journey and pain points.
     </p>
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/ExperienceMap.svg" />
@@ -318,7 +348,7 @@ function myFunction() {
         </div>
       </div>
     </div>
-    
+
   </div>
 </section>
 
@@ -328,20 +358,20 @@ function myFunction() {
     <p class="content-heading">Ideation</p>
     <p class="content-heading-details">How would the user journey for this problem look?</p>
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/jm2.png" />
-  
+
   </div>
 
   <div class="project" id="focus">
     <p class="content-heading-details">Which parts are we focusing on?</p>
     <div class="subcontent">
       <p class="overview-text">
-        <b>Appointment:</b>  
+        <b>Appointment:</b>
       </p>
-      <p>On getting a call about a patient, the users have to either schedule an appointment 
-        (need to note down the place and time) or have an online consultation (note down the observations, 
+      <p>On getting a call about a patient, the users have to either schedule an appointment
+        (need to note down the place and time) or have an online consultation (note down the observations,
         treatments, and billing).</p>
       <br />
-      <p class="overview-text"><b>Patient records:</b> 
+      <p class="overview-text"><b>Patient records:</b>
       </p>
       <p>
         Maintain and track all the patient details, visits and owner details.
@@ -351,12 +381,12 @@ function myFunction() {
         <b>Visit: </b>
       </p>
       <p>
-        Note down all the observations, treatment, and billing for a visit. 
+        Note down all the observations, treatment, and billing for a visit.
         Have them stored along with the patient. Schedule a follow-up appointment for the visit.
       </p>
-      <br/>
+      <br />
       <p class="overview-text">
-        <b>Inventory:</b> 
+        <b>Inventory:</b>
       </p>
       <p>
         Keep track of medical items that the user has in hand and what all they have used.
@@ -366,16 +396,16 @@ function myFunction() {
 
   <div class="project" id="ideation2">
     <p class="content-heading-details">During ideation, we identified two personas for our solution</p>
-  
+
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <p style="margin-top: 10%;">
-          Meet Kim, our new field vet who is straight out of college. 
-          She and some of her friends are planning on starting a small initiative called "Vets on Wheels" 
+          Meet Kim, our new field vet who is straight out of college.
+          She and some of her friends are planning on starting a small initiative called "Vets on Wheels"
           which focused on patient visits. She and her friends are new to the field and are on a budget. </b>
         </p>
       </div>
-  
+
       <div class="col-md-6 col-sm-12 center-align" style="padding-top: 1%">
         <img class="imageModal" style="padding-left: 5%;" src="../assets/images/vets_pocket/Kim.svg" />
       </div>
@@ -384,19 +414,19 @@ function myFunction() {
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <p style="margin-top: 10%;">
-          Meet Dr. Ram. He is a field vet who has been doing this job for the past three years. 
-          He has a total patient count of 160. 
-          Since he has not been able to find a good solution where he can quickly enter data on the field, 
-          he uses Microsoft OneNote to keep track of all his patient records and add details while on the 
+          Meet Dr. Ram. He is a field vet who has been doing this job for the past three years.
+          He has a total patient count of 160.
+          Since he has not been able to find a good solution where he can quickly enter data on the field,
+          he uses Microsoft OneNote to keep track of all his patient records and add details while on the
           field so that he will not forget any details to enter when he gets home. </b>
         </p>
       </div>
-  
+
       <div class="col-md-6 col-sm-12 center-align" style="padding-top: 1%">
         <img class="imageModal" style="padding-left: 5%;" src="../assets/images/vets_pocket/Ram.svg" />
       </div>
     </div>
-  
+
   </div>
 </section>
 
@@ -410,45 +440,45 @@ function myFunction() {
 
     <p class="version">
       <b>Version 1 - Sketch</b>
-      <p>We verified the two assumptions that we started within the sketch,</p>
-      <ol style="padding-left: 5%;">
-        <li>The marking of items needed for a visit was not used frequently. 
-          While the other to note down animal details as confirmed.</li>
-        <li>They needed options to know when their next visits were.</li>
-        </ol>
+    <p>We verified the two assumptions that we started within the sketch,</p>
+    <ol style="padding-left: 5%;">
+      <li>The marking of items needed for a visit was not used frequently.
+        While the other to note down animal details as confirmed.</li>
+      <li>They needed options to know when their next visits were.</li>
+    </ol>
     </p>
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/Version 2.svg" />
 
     <p class="version">
       <b>Version 2 - Sketch</b>
-      <ol style="padding-left: 5%;">
-        <li>User prioritized viewing upcoming appointments on the dashboard. 
-          So, the <b>upcoming visits page</b> will be the landing page in the future.</li>
-        <li>The users mentioned that they would like to view all the appointments in their Google calendar as well.</li>
-        <li>When recording a new patient call, they went for entering the owner details first. 
-          Contrary to the assumption that the animal details are first to be entered.</li>
-        <li>Similarly, when searching for an animal, they were more comfortable in finding the owner first 
-           searching for the animal by the owner.</li>
-        <li>Quick create should be accessible from everywhere.</li>
-      </ol>
+    <ol style="padding-left: 5%;">
+      <li>User prioritized viewing upcoming appointments on the dashboard.
+        So, the <b>upcoming visits page</b> will be the landing page in the future.</li>
+      <li>The users mentioned that they would like to view all the appointments in their Google calendar as well.</li>
+      <li>When recording a new patient call, they went for entering the owner details first.
+        Contrary to the assumption that the animal details are first to be entered.</li>
+      <li>Similarly, when searching for an animal, they were more comfortable in finding the owner first
+        searching for the animal by the owner.</li>
+      <li>Quick create should be accessible from everywhere.</li>
+    </ol>
     </p>
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/Sketch Wireframe.gif" />
 
     <p class="version">
       <b>Version 3 - Wireframe</b>
-      <ol style="padding-left: 5%;">
-        <li>Adding more medical-related details to the animal record.</li>
-        <li>The layout was designed so that all the details for the visits were on a single page. 
-          This caused the users to get confused about how to find a section. 
-          So I decided to break down the data entry into chunks and make it into tabs so that navigation 
-          between elements will be easier. Easy to find the stuff that you need.</li>
-          <li>Ability to add all sorts of files as attachments.</li>
-      </ol>
+    <ol style="padding-left: 5%;">
+      <li>Adding more medical-related details to the animal record.</li>
+      <li>The layout was designed so that all the details for the visits were on a single page.
+        This caused the users to get confused about how to find a section.
+        So I decided to break down the data entry into chunks and make it into tabs so that navigation
+        between elements will be easier. Easy to find the stuff that you need.</li>
+      <li>Ability to add all sorts of files as attachments.</li>
+    </ol>
     </p>
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/Wireframe.gif" />
 
   </div>
-</section> 
+</section>
 
 <!-- Final Solution -->
 <section id="Final" class="section-padding section-background">
@@ -458,34 +488,34 @@ function myFunction() {
     <div class="row" id="Appointment">
       <div class="col-md-6 col-sm-12" style="padding-top: 15%;">
         <p class="header-text-3" style="text-align: left;"><b>Appointments</b></p>
-        <p class="overview" >On the home screen, veterinarians can view all upcoming appointments along with 
-          their respective details. They also have the option to schedule new appointments for initial visits 
+        <p class="overview">On the home screen, veterinarians can view all upcoming appointments along with
+          their respective details. They also have the option to schedule new appointments for initial visits
           by utilizing the "new visit" button, or schedule follow-up appointments for existing visits.</p>
       </div>
       <div class="col-md-6 col-sm-12" style="padding-top: 10%; padding-left: 5%;">
         <div>
           <figure>
-            <img class="imageModal"  src="../assets/images/vets_pocket/Design/appointment.png">
+            <img class="imageModal" src="../assets/images/vets_pocket/Design/appointment.png">
           </figure>
         </div>
-        
+
       </div>
-      
+
     </div>
 
     <div class="row" id="visits" style="padding-top: 5%;">
       <div class="col-md-6 col-sm-12 " style="padding-top: 10%;">
         <div>
           <figure>
-            <img class="imageModal"  src="../assets/images/vets_pocket/Design/visit.png">
+            <img class="imageModal" src="../assets/images/vets_pocket/Design/visit.png">
           </figure>
         </div>
-        
+
       </div>
       <div class="col-md-6 col-sm-12" style="padding-top: 15%; padding-left: 5%;">
         <p class="header-text-3" style="text-align: left;"><b>Visits</b></p>
-        <p class="overview">Upon reaching the patient site, veterinarians can go through the necessary steps of a visit. 
-          They can add important details, such as images, attachments, recordings, and billing information. 
+        <p class="overview">Upon reaching the patient site, veterinarians can go through the necessary steps of a visit.
+          They can add important details, such as images, attachments, recordings, and billing information.
           Additionally, veterinarians have the option to create a follow-up appointment during the visit.
         </p>
       </div>
@@ -494,22 +524,23 @@ function myFunction() {
     <div class="row" id="rest" style="padding-top: 5%;">
       <div class="col-md-6 col-sm-12" style="padding-top: 15%;">
         <p class="header-text-3" style="text-align: left;"><b>Records, Billing and Inventory</b></p>
-        <p class="overview">Veterinarians have the ability to monitor and manage patient and owner records, inventory, billing, and accounts.</p>
+        <p class="overview">Veterinarians have the ability to monitor and manage patient and owner records, inventory,
+          billing, and accounts.</p>
       </div>
       <div class="col-md-6 col-sm-12" style="padding-top: 10%; padding-left: 5%;">
         <div>
           <figure>
-            <img class="imageModal"  src="../assets/images/vets_pocket/Design/rest.png">
+            <img class="imageModal" src="../assets/images/vets_pocket/Design/rest.png">
           </figure>
         </div>
       </div>
-      
+
     </div>
   </div>
 </section>
 
 <!-- Design Systems -->
-<section id="design systems" class="section-padding">
+<section id="designsystems" class="section-padding">
   <div class="project">
     <p class="content-heading">Design System</p>
     <p class="content-heading-details">
@@ -518,32 +549,33 @@ function myFunction() {
     <img class="imageModal image-padding" src="../assets/images/vets_pocket/Design System.svg" />
 
   </div>
-</section> 
+</section>
 
 <!-- My Learnings -->
-<section id="learnings" class="section-padding section-background"> 
+<section id="learnings" class="section-padding section-background">
   <div class="project">
     <p class="content-heading">My Learnings</p>
     <p class="content-heading-details">Some of the things that I learnt while working on this project.</p>
     <ol>
       <li>
-        <b>Talking to clients and seeing them use the product is different: </b> 
-        For user research, the more you watch what the users use and do, the more you find their problems. 
-        It's way better than just doing a user interview. 
-        During the initial interview, the users were mostly talking about how they are not able to keep track of their patient records, 
-        but while observing them, we were able to find the additional problems in inventory, animal history, and 
+        <b>Talking to clients and seeing them use the product is different: </b>
+        For user research, the more you watch what the users use and do, the more you find their problems.
+        It's way better than just doing a user interview.
+        During the initial interview, the users were mostly talking about how they are not able to keep track of their
+        patient records,
+        but while observing them, we were able to find the additional problems in inventory, animal history, and
         recording of data.
       </li>
       <li>
-        <b>Articulate design decisions: </b> 
-        When the clients are people who are in a field that has nothing to do with UX or technology. 
+        <b>Articulate design decisions: </b>
+        When the clients are people who are in a field that has nothing to do with UX or technology.
         You need to better articulate your design decisions to make them understand.
         <br />
       </li>
       <li>
-        <b>Fast paced research:</b> 
-        Doctors especially on the field vets are very busy people. 
-        Its hard pressed to get their time for user testing. 
+        <b>Fast paced research:</b>
+        Doctors especially on the field vets are very busy people.
+        Its hard pressed to get their time for user testing.
         So we need to be prepared fully and conduct the user testing real fast.
       </li>
     </ol>
@@ -558,7 +590,7 @@ function myFunction() {
         <span class="n-desc" data-delay="0">Previous</span>
       </a>
     </div>
-    
+
     <div class="kktfwp-next">
       <a class="project-navigation" href="./project_rumifico.html" rel="prev">
         <span class="n-desc nav-color" data-delay="0">Next</span>
@@ -655,35 +687,21 @@ function myFunction() {
     <!-- Footer -->
     <script type="text/javascript" src="../assets/interactions/scroll.js"></script>
 
-<div class="footer row" style="margin-right: 0">
-    <div class="row col-md-6 col-sm-12 footer-icons">
-        <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"
-        ><img src="../assets/images/me/envelope.svg" style="width: 100%" alt=""
-      /></a>
-        <a href="https://www.linkedin.com/in/karthikabaiju/" class="footer-social" target="_blank"
-          ><img src="../assets/images/me/linkedin.svg" style="width: 100%" alt=""
-        /></a>
-        <a href="https://www.instagram.com/karthika.baiju/" class="footer-social" target="_blank"
-          ><img src="../assets/images/me/instagram.svg" style="width: 100%" alt=""
-        /></a>
-        <a href="https://medium.com/@karthikabaiju" class="footer-social" target="_blank"
-          ><img src="../assets/images/me/medium.svg" style="width: 100%" alt=""
-        /></a>
-        <a href="https://github.com/karthikabaiju" class="footer-social" target="_blank"
-          ><img src="../assets/images/me/github.svg" style="width: 100%" alt=""
-        /></a>
-    </div>
-    <div class="col-md-6 col-sm-12 footer-text" style="padding-left: 1%;">
-      <p>Designed and Developed by Karthika Baiju.</p>
-      <p>&copy; 2020 Karthika Baiju. All Rights Reserved.</p>
-    </div>  
-    <div id="scrollToTop" class="scroll-to-top">
-      <button id="scrollToTopBtn"
-      onclick=scrollToTop()>&#8593</button>
-    </div>
-    
-</div>
+<div class="footer" style="margin-right: 0">
+  <div class="footer-text">
+    <p>Designed and Built by me. Say Hi on
+      <a href="mailto: karthikabaiju.mec@gmail.com" class="footer-social" target="_blank"><img
+          src="../assets/images/me/envelope.svg" style="width: 3.5%" alt="" /></a>
+      <a href="https://www.linkedin.com/in/karthikabaiju/" class="footer-social" target="_blank"><img
+          src="../assets/images/me/linkedin.svg" style="width: 4%; padding-right:1%;" alt="" /></a>
+      and 
+      <a href="https://medium.com/@karthikabaiju" class="footer-social" target="_blank"><img
+        src="../assets/images/me/medium.svg" style="width: 3%" alt="" /></a>
+    </p>
 
+    <p>&copy; 2020 Karthika Baiju. All Rights Reserved.</p>
+  </div>
+</div>
   
     <script type="text/javascript" src="../assets/interactions/animationOnScroll.js"></script>
   </body>
