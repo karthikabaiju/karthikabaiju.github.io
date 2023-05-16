@@ -123,15 +123,16 @@
 .project {
   font-family: 'Chillax Regular';
   color: #242424;
-  margin: 2% 15% 5% 15%;
-  font-size: 1rem;
+  margin: 2% 20% 5% 20%;
+  font-size: 1.3rem;
 }
+
 
 .project-black-bg {
   font-family: 'Chillax Regular';
   color: white;
-  margin: 2% 15% 5% 15%;
-  font-size: 1rem;
+  margin: 2% 20% 5% 20%;
+  font-size: 1.3rem;
 }
 
 .black-bg {
@@ -163,7 +164,8 @@
 
 .subcontent {
   padding-top: 3%;
-  padding-left: 5%;
+  padding-left: 10%;
+  padding-right: 10%
 }
 
 .version {

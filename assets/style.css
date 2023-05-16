@@ -166,7 +166,7 @@ a:hover {
   font-family: 'Chillax Regular';
   line-height: 1.5em;
   color: #242424;
-  padding: 0% 5% 3% 5%;
+  padding: 0% 7% 3% 0%;
 }
 
 /* Project */
@@ -177,8 +177,8 @@ a:hover {
 .project {
   font-family: 'Chillax Regular';
   color: #242424;
-  margin: 2% 15% 5% 15%;
-  font-size: 1rem;
+  margin: 2% 20% 5% 20%;
+  font-size: 1.3rem;
 }
 
 .project-container {
@@ -288,6 +288,7 @@ img {
   padding-right: 2%;
   width: 20%;
   left: 80%;
+  color: #242424;
 }
 
 /* image model */
