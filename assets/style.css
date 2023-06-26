@@ -162,11 +162,11 @@ a:hover {
 }
 
 .overview {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Chillax Regular';
   line-height: 1.5em;
   color: #242424;
-  padding: 0% 7% 3% 0%;
+  /* padding: 0% 7% 3% 0%; */
 }
 
 /* Project */
@@ -178,7 +178,7 @@ a:hover {
   font-family: 'Chillax Regular';
   color: #242424;
   margin: 2% 20% 5% 20%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .project-container {

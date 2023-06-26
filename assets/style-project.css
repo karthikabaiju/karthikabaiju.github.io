@@ -5,12 +5,12 @@
   padding-bottom: 5%;
 }
 
-.section-padding{
+.section-padding {
   /* padding-top: 5%; */
   padding-bottom: 5%;
 }
 
-.section-background{
+.section-background {
   background-color: #F3F1EF;
 }
 
@@ -42,7 +42,7 @@
 }
 
 /* list */
-.customlist{
+.customlist {
   margin: 0% 5% 0% 5%;
   font-size: 1.2rem;
 }
@@ -53,8 +53,9 @@
   /* height: 105px; */
   padding: 5%;
   margin: 5% 0% 5% 0%;
-  
+
 }
+
 .o1 {
   color: #F3F1EF;
   font-size: 8.5rem;
@@ -68,10 +69,11 @@
   right: 46.247%;
   top: 0;
   bottom: 0;
-  
+
   text-align: justify;
   flex-direction: column;
 }
+
 .bodyText {
   position: absolute;
   left: 33.1719%;
@@ -181,8 +183,8 @@
   padding-top: 5%;
   padding-bottom: 5%;
   display: block;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-shadow {
@@ -194,7 +196,7 @@
 }
 
 .image-background-gray {
-  background-color:#EFEFEF;
+  background-color: #EFEFEF;
   padding: 5%
 }
 
@@ -295,11 +297,11 @@ li {
   transition: width 0.25s ease;
 }
 
-.kktfwp-nav div.kktfwp-prev a:hover > .n-desc:after {
+.kktfwp-nav div.kktfwp-prev a:hover>.n-desc:after {
   width: 100%;
 }
 
-.kktfwp-nav div.kktfwp-prev a:hover > .n-title {
+.kktfwp-nav div.kktfwp-prev a:hover>.n-title {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
@@ -341,11 +343,11 @@ li {
   transition: width 0.25s ease;
 }
 
-.kktfwp-nav div.kktfwp-next a:hover > .n-desc:after {
+.kktfwp-nav div.kktfwp-next a:hover>.n-desc:after {
   width: 100%;
 }
 
-.kktfwp-nav div.kktfwp-next a:hover > .n-title {
+.kktfwp-nav div.kktfwp-next a:hover>.n-title {
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
@@ -424,4 +426,23 @@ li {
 .image-text {
   text-align: center;
   padding-bottom: 20%;
+}
+
+/* Prototype Buttons */
+.prototype-button {
+  background-color: #e3b8a6;
+  border: none;
+  color: #242424;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 3%;
+}
+
+.prototype-button:hover {
+  border: none;
+  background-color: #d8aa97;
+  color: black;
 }
