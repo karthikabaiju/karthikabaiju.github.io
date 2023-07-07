@@ -161,6 +161,10 @@ a:hover {
   text-align: center;
 }
 
+.vertical-center{
+  margin: auto;
+}
+
 .overview {
   font-size: 1.2rem;
   font-family: 'Chillax Regular';
