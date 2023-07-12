@@ -173,6 +173,12 @@ a:hover {
   /* padding: 0% 7% 3% 0%; */
 }
 
+figcaption {
+  font-size: 0.8rem;
+  font-family: 'Chillax Light';
+  padding-bottom: 5%;
+}
+
 /* Project */
 .project-div {
   background-color: #475a51;
